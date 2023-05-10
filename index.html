@@ -9682,7 +9682,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20230510214958085" list="[[Using Github Actions]] [[Evaluate Dependabot PRs]]" modified="20230510221823189" title="$:/StoryList">
+<div created="20230510214958085" list="[[Using Github Actions]] [[Load artefacts not built within this repository]] [[Evaluate Dependabot PRs]]" modified="20230510221924401" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -9918,12 +9918,12 @@ and run your build with the new profile:
 &lt;code&gt;mvn package -P unit&lt;/code&gt;
 </pre>
 </div>
-<div created="20230510210219354" modified="20230510221840234" order="50" tags="githubActions" title="Evaluate Dependabot PRs">
-<pre>Dependabot will inspect your project and generate pull requests:
+<div created="20230510210219354" modified="20230510221909193" order="50" tags="githubActions" title="Evaluate Dependabot PRs">
+<pre>Dependabot will inspect your project and generate pull requests:&lt;br&gt;
 
 https://github.com/Melati/Melati/pulls?q=is%3Apr+author%3Aapp%2Fdependabot
 
-these will be built in the Action as though they had been applied:
+these will be built in the Action as though they had been applied:&lt;br&gt;
 
 https://github.com/Melati/Melati/actions
 
@@ -9990,13 +9990,13 @@ You will be taken to http://localhost:8888/lab
 
 </pre>
 </div>
-<div created="20230510195423352" modified="20230510221606685" order="20" tags="githubActions" title="Load artefacts not built within this repository">
+<div created="20230510195423352" modified="20230510221959014" order="20" tags="githubActions" title="Load artefacts not built within this repository">
 <pre>We have some weird old jars not in public repositories. 
 
 Run a bash script to install from a &lt;code&gt;libs&lt;/code&gt; directory into the local cache: 
 &lt;br&gt;
 &lt;code&gt;mvn --no-transfer-progress install:install-file -Dpackaging=jar -DgeneratePom=true \
--DgroupId=com.oracle -DartifactId=cmsdk -Dversion=9.0.3  -Dfile=cmsdk-9.0.3.jar&lt;/code&gt;</pre>
+-DgroupId=com.old -DartifactId=dark -Dversion=9.0.3  -Dfile=dark-9.0.3.jar&lt;/code&gt;</pre>
 </div>
 <div created="20220608115536104" modified="20220608115709114" tags="" title="My mother on Science Direct">
 <pre>My mother has 14 papers on Science Direct, something I am very proud of: 
