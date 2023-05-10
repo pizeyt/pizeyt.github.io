@@ -9884,10 +9884,9 @@ Error message and password prompt
 
 </pre>
 </div>
-<div created="20230510200036526" modified="20230510220353216" order="20" tags="githubActions" title="Create a profile which excludes any integration tests">
-<pre>If your integration tests require external fixtures then create profile which excludes them and run your build with the new profile: 
-&lt;code&gt;
-&amp;lt;profiles&gt;
+<div created="20230510200036526" modified="20230510220538728" order="20" tags="githubActions" title="Create a profile which excludes any integration tests">
+<pre>If your integration tests require external fixtures then create profile which excludes them :
+&lt;br&gt;&lt;code&gt;&amp;lt;profiles&gt;
   &amp;lt;profile&gt;
     &amp;lt;id&gt;unit&amp;lt;/id&gt;
     &amp;lt;activation&gt;
@@ -9908,7 +9907,12 @@ Error message and password prompt
      &amp;lt;/build&gt;
   &amp;lt;/profile&gt;
 &amp;lt;/profiles&gt;
-&amp;lt;/code&gt;</pre>
+&lt;/code&gt;
+
+and run your build with the new profile: 
+&lt;br&gt;
+&lt;code&gt;mvn package -P unit&lt;/code&gt;
+</pre>
 </div>
 <div created="20230510210219354" modified="20230510215846462" order="50" tags="githubActions" title="Evaluate Dependabot PRs">
 <pre>Dependabot will inspect your project and generate pull requests:
