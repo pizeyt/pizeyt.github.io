@@ -9677,7 +9677,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20230510214958085" list="[[Using Github Actions]]" modified="20230510220617012" title="$:/StoryList">
+<div created="20230510214958085" list="[[Using Github Actions]] [[Once you have a passing build enable Dependabot]]" modified="20230510220744991" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -9738,8 +9738,8 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div created="20220430203621864" modified="20220430203631559" title="$:/temp/search">
-<pre>viewTemplate</pre>
+<div created="20220430203621864" modified="20230510220653220" title="$:/temp/search">
+<pre></pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="$:/themes/tiddlywiki/vanilla" description="Emphasises individual tiddlers" name="Snow White" plugin-priority="0" plugin-type="theme" title="$:/themes/tiddlywiki/snowwhite" type="application/json" version="5.1.22">
 <pre>{
@@ -10001,13 +10001,13 @@ https://www.sciencedirect.com/search?qs=oncology&amp;authors=bullimore
 <div created="20220718115120713" modified="20220718115137964" tags="" title="My mother on SCOPUS">
 <pre>https://www.scopus.com/results/results.uri?sort=plf-f&amp;src=s&amp;st1=bullimore&amp;st2=jill&amp;nlo=1&amp;nlr=20&amp;nls=count-f&amp;sid=76525d1a2bbad8ffdf13367abf72df73&amp;sot=anl&amp;sdt=aut&amp;sl=38&amp;s=AU-ID%28%22Bullimore%2c+Jill+A.%22+7003727607%29&amp;txGid=9f9032c6a77cac4547eb094b923f863a</pre>
 </div>
-<div created="20230510205553288" modified="20230510215819926" order="30" tags="githubActions" title="Once you have a passing build enable Dependabot">
+<div created="20230510205553288" modified="20230510220800365" order="30" tags="githubActions" title="Once you have a passing build enable Dependabot">
 <pre>On your project navigate to 
 
 &lt;code&gt;Settings &gt;&gt; Code security and analysis 
 &lt;/code&gt;
 
-Enable everything, which will involve you adding a &lt;tt&gt;dependabot.yml&lt;/tt&gt; into which you need to add 
+Enable everything, which will involve you adding a &lt;code&gt;dependabot.yml&lt;/code&gt; into which you need to add 
 
 &lt;code&gt;      package-ecosystem: &quot;maven&quot;&lt;/code&gt;</pre>
 </div>
@@ -10020,9 +10020,9 @@ Select //No expiry date//
 
 Ensure access token has only 'Access Public  Repo' checked</pre>
 </div>
-<div created="20230510192938175" modified="20230510215652310" order="10" tags="githubActions" title="Remove unreachable repositories">
+<div created="20230510192938175" modified="20230510220720044" order="10" tags="githubActions" title="Remove unreachable repositories">
 <pre>Check if you are actually using internal repositories. 
-One parent POM.xml had a &amp;lt;repositories&gt; section for no good reason.
+One parent POM.xml had a &lt;code&gt;&amp;lt;repositories&gt;&lt;/code&gt; section for no good reason.
 Maven does appear to check every repository, certainly for artefacts not in Maven Central, and waits a long while to time out, so you can have a six hour build failing with a timeout. 
 </pre>
 </div>
