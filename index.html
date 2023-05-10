@@ -9954,9 +9954,10 @@ Select //No expiry date//
 
 Ensure access token has only 'Access Public  Repo' checked</pre>
 </div>
-<div created="20230510192938175" modified="20230510193218230" tags="githubActions" title="Remove unreachable repositories">
+<div created="20230510192938175" modified="20230510193733721" tags="githubActions" title="Remove unreachable repositories">
 <pre>Check if you are actually using internal repositories. 
-One parent POM.xml had a &amp;lt;repositories&gt; for no good reason.</pre>
+One parent POM.xml had a &amp;lt;repositories&gt; section for no good reason.
+Maven does appear to check every repository, certainly for artefacts not in Maven Central, and waits a long while to time out, so you can have a six hour build failing with a timeout. </pre>
 </div>
 <div created="20220430213918386" modified="20220430221603350" tags="" title="Tiddler Title and Text Template">
 <pre>The Tiddler Title and Text Template is a such a simple template that you have to write it yourself!
