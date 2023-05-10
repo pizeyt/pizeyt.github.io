@@ -9677,7 +9677,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20230510214958085" list="[[Using Github Actions]] [[Load artefacts not built within this repository]]" modified="20230510215950563" title="$:/StoryList">
+<div created="20230510214958085" list="[[Using Github Actions]] [[Load artefacts not built within this repository]]" modified="20230510220133243" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -9982,12 +9982,13 @@ You will be taken to http://localhost:8888/lab
 
 </pre>
 </div>
-<div created="20230510195423352" modified="20230510220005275" order="15" tags="githubActions" title="Load artefacts not built within this repository">
+<div created="20230510195423352" modified="20230510220142776" order="15" tags="githubActions" title="Load artefacts not built within this repository">
 <pre>We have some weird old jars not in public repositories. 
 
-Run a bash script to install from a libs directory into the local cache: 
-&lt;code&gt;
-mvn --no-transfer-progress install:install-file -Dpackaging=jar -DgeneratePom=true \
+Run a bash script to install from a &lt;code&gt;libs&lt;/code&gt; directory into the local cache: 
+
+
+&lt;code&gt;mvn --no-transfer-progress install:install-file -Dpackaging=jar -DgeneratePom=true \
 -DgroupId=com.oracle -DartifactId=cmsdk -Dversion=9.0.3  -Dfile=cmsdk-9.0.3.jar&lt;/code&gt;</pre>
 </div>
 <div created="20220608115536104" modified="20220608115709114" tags="" title="My mother on Science Direct">
