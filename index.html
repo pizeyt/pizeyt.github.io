@@ -195,10 +195,6 @@ Error message and password prompt
 
 <li>CPS Team Sites</li>
 
-<li>Create a profile which excludes any integration tests</li>
-
-<li>Evaluate Dependabot PRs</li>
-
 <li>Everything should always be in git</li>
 
 <li>Github Pages TiddlyWiki HowTo</li>
@@ -207,13 +203,9 @@ Error message and password prompt
 
 <li>Jupyter Notebooks on Windows10</li>
 
-<li>Load artefacts not built in this repository</li>
-
 <li>My mother on Science Direct</li>
 
 <li>My mother on SCOPUS</li>
-
-<li>Once you have a passing build enable Dependabot</li>
 
 <li>Personal Access Token</li>
 
@@ -9671,13 +9663,13 @@ Error message and password prompt
 <div created="20220426114632150" modified="20220426114632150" title="$:/state/tab/moresidebar-1850697562">
 <pre>$:/core/ui/MoreSideBar/System</pre>
 </div>
-<div created="20200717094020014" modified="20230510205429564" title="$:/state/tab/sidebar--595412856">
+<div created="20200717094020014" modified="20230510213036798" title="$:/state/tab/sidebar--595412856">
 <pre>$:/core/ui/SideBar/Open</pre>
 </div>
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20230510192248633" list="[[Evaluate Dependabot PRs]] [[Using Github Actions]] Home" modified="20230510210736992" title="$:/StoryList">
+<div list="[[Using Github Actions]]" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -9884,45 +9876,6 @@ Error message and password prompt
 
 </pre>
 </div>
-<div created="20230510200036526" modified="20230510201111157" tags="githubActions" title="Create a profile which excludes any integration tests">
-<pre>We have some weird old jars not in public repositories. 
-
-Run a bash script to install from a libs directory into the local cache: 
-&lt;code&gt;
-&amp;lt;profiles&gt;
-  &amp;lt;profile&gt;
-    &amp;lt;id&gt;unit&amp;lt;/id&gt;
-    &amp;lt;activation&gt;
-      &amp;lt;activeByDefault&gt;false&amp;lt;/activeByDefault&gt;
-    &amp;lt;/activation&gt;
-    &amp;lt;build&gt;
-     &amp;lt;plugins&gt;
-       &amp;lt;plugin&gt;
-         &amp;lt;groupId&gt;org.apache.maven.plugins&amp;lt;/groupId&gt;
-         &amp;lt;artifactId&gt;maven-surefire-plugin&amp;lt;/artifactId&gt;
-           &amp;lt;configuration&gt;
-             &amp;lt;excludes&gt;
-               &amp;lt;exclude&gt;**/AWSTest.java&amp;lt;/exclude&gt;
-             &amp;lt;/excludes&gt;
-           &amp;lt;/configuration&gt;
-         &amp;lt;/plugin&gt;
-       &amp;lt;/plugins&gt;
-     &amp;lt;/build&gt;
-  &amp;lt;/profile&gt;
-&amp;lt;/profiles&gt;
-&amp;lt;/code&gt;</pre>
-</div>
-<div created="20230510210219354" modified="20230510210648470" tags="githubActions" title="Evaluate Dependabot PRs">
-<pre>Dependabot will inspect your project and generate pull requests:
-https://github.com/Melati/Melati/pulls?q=is%3Apr+author%3Aapp%2Fdependabot
-
-these will be built in the Action as though they had been applied:
-https://github.com/Melati/Melati/actions
-
-If the build passes then you are good to merge the PR. 
-
-</pre>
-</div>
 <div created="20220430203911355" modified="20220430221529978" title="Everything should always be in git">
 <pre>I should not need to say this but, anything you do: name it, create a directory with that name. and initialise git.
 
@@ -9982,14 +9935,6 @@ You will be taken to http://localhost:8888/lab
 
 </pre>
 </div>
-<div created="20230510195423352" modified="20230510210850654" tags="githubActions" title="Load artefacts not built in this repository">
-<pre>We have some weird old jars not in public repositories. 
-
-Run a bash script to install from a libs directory into the local cache: 
-&lt;code&gt;
-mvn --no-transfer-progress install:install-file -Dpackaging=jar -DgeneratePom=true \
--DgroupId=com.oracle -DartifactId=cmsdk -Dversion=9.0.3  -Dfile=cmsdk-9.0.3.jar&lt;/code&gt;</pre>
-</div>
 <div created="20220608115536104" modified="20220608115709114" tags="" title="My mother on Science Direct">
 <pre>My mother has 14 papers on Science Direct, something I am very proud of: 
 
@@ -9999,16 +9944,6 @@ https://www.sciencedirect.com/search?qs=oncology&amp;authors=bullimore
 </div>
 <div created="20220718115120713" modified="20220718115137964" tags="" title="My mother on SCOPUS">
 <pre>https://www.scopus.com/results/results.uri?sort=plf-f&amp;src=s&amp;st1=bullimore&amp;st2=jill&amp;nlo=1&amp;nlr=20&amp;nls=count-f&amp;sid=76525d1a2bbad8ffdf13367abf72df73&amp;sot=anl&amp;sdt=aut&amp;sl=38&amp;s=AU-ID%28%22Bullimore%2c+Jill+A.%22+7003727607%29&amp;txGid=9f9032c6a77cac4547eb094b923f863a</pre>
-</div>
-<div created="20230510205553288" modified="20230510210910302" tags="githubActions" title="Once you have a passing build enable Dependabot">
-<pre>On your project navigate to 
-
-&lt;code&gt;Settings &gt;&gt; Code security and analysis 
-&lt;/code&gt;
-
-Enable everything, which will involve you adding a &lt;tt&gt;dependabot.yml&lt;/tt&gt; into which you need to add 
-
-&lt;code&gt;      package-ecosystem: &quot;maven&quot;&lt;/code&gt;</pre>
 </div>
 <div created="20200720235908159" modified="20220927102438304" tags="" title="Personal Access Token">
 <pre>From http://github.com
@@ -10053,10 +9988,10 @@ Don't worry about &lt;span style=&quot;background-color:red;color:white;&quot;&g
 * http://tim.pizey.uk/
 </pre>
 </div>
-<div created="20230510192208918" modified="20230510205518389" tags="" title="Using Github Actions">
-<pre>Assuming you have maven java projects in github. 
+<div created="20230510192208918" modified="20230510213158764" tags="" title="Using Github Actions">
+<pre>Assuming you have a maven java project in github. 
 
-The steps below were tried on my pet project https://github.com/Melati/Melati/actions which is open source and then on work projects. 
+The steps below were tried on my pet project https://github.com/Melati/Melati/actions which is open and then on work projects. 
 
 &lt;ul&gt;
 &lt;$list filter=&quot;[tag[githubActions]]&quot;&gt;
