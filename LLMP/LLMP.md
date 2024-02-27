@@ -171,7 +171,7 @@ Whatever
 
 
 ----
-# GhatGPT
+# chatGPT
 ### What happens when you use Maven for a long time?
 Using Maven for a long time can lead to various outcomes, both positive and negative, depending on how it's utilized and the context of its usage. Here are some potential scenarios:
 
@@ -231,32 +231,12 @@ In summary, using Maven over the long term can lead to greater stability, effici
 - <a href="https://tim-pizey.blogspot.com/2009/01/first-post.html" target=_>
 First Post - January 2009
 </a>
-- <a href="https://tim-pizey.blogspot.com/2023/07/press-release-driven-development.html" target=_> 
-  Press Release Driven Development</a>
-- <a href="https://tim-pizey.blogspot.com/2023/08/variety-build-up-in-long-lived-project.html" target=_> 
-  Variety Build Up in a Long Lived Project</a>
-- <a href="https://tim-pizey.blogspot.com/2023/09/making-maven-dependency-tree-readable.html" target=_>
-  Making the Maven Dependency Tree Readable</a>
-    - - <a href="conflicts.txt" target=_>conflicts.txt</a>
-- <a href="https://tim-pizey.blogspot.com/2023/11/unique-versions-as-pitons-out-of-maven.html" target=_> 
-  Unique version</a>
-- <a href="https://tim-pizey.blogspot.com/2024/01/maven-version-schema-change.html" target=_>
-  germ of an idea</a>
-- <a href="https://tim-pizey.blogspot.com/2024/01/maven-version-versions-and-regex-block.html" target=_>
-  Best laid plans</a>
-- <a href="https://tim-pizey.blogspot.com/2024/01/five-element-maven-version-numbering.html" target=_>
-  N5 Versioning</a>
-- <a href="https://tim-pizey.blogspot.com/2024/02/remembrancemd-tombstones-for-git.html" target=_>
-  Tombstones</a>
-
-# Presenter Notes
-
-I am a blogger
-Blogs are good.  
-
 
 ----
-# PR Driven Development 
+# <a href="https://tim-pizey.blogspot.com/2023/07/press-release-driven-development.html" target=_> 
+  Press Release Driven Development</a>
+----
+# PR Driven Development
 ###Internal Press Release: $name Upgrade Completed
 
 #### Today we can announce the upgrade of $name
@@ -273,6 +253,40 @@ In the process we have achieved the following:
 ### This enables us to take on the strategic work of ....
 
 
+
+----
+- <a href="https://tim-pizey.blogspot.com/2023/08/variety-build-up-in-long-lived-project.html" target=_> 
+  Variety Build Up in a Long Lived Project</a>
+
+----
+# Profiles
+!["Profiles"](Profiles.png)
+
+
+
+----
+- <a href="https://tim-pizey.blogspot.com/2023/11/unique-versions-as-pitons-out-of-maven.html" target=_> 
+  Unique version</a>
+- <a href="https://tim-pizey.blogspot.com/2024/01/maven-version-schema-change.html" target=_>
+  germ of an idea</a>
+- <a href="https://tim-pizey.blogspot.com/2024/01/maven-version-versions-and-regex-block.html" target=_>
+  Best laid plans</a>
+- <a href="https://tim-pizey.blogspot.com/2024/01/five-element-maven-version-numbering.html" target=_>
+  N5 Versioning</a>
+
+
+---- 
+# Maven dependency:tree
+- <a href="https://tim-pizey.blogspot.com/2023/09/making-maven-dependency-tree-readable.html" target=_>
+  Making the Maven Dependency Tree Readable</a>
+    -<a href="conflicts.txt" target=_>conflicts.txt</a>
+
+
+----
+# Archival
+
+- <a href="https://tim-pizey.blogspot.com/2024/02/remembrancemd-tombstones-for-git.html" target=_>
+  Tombstones</a>
 
 ---- 
 # Git Tombstones
@@ -304,6 +318,48 @@ In the process we have achieved the following:
 
     Was : 40675
     Is:   23525 
+
+----
+# Redundant XML
+
+## Use inheritance whwre you can
+- properties
+- repositories
+- distributionManagement
+
+Inheritance of SCM and Profiles tags is more tricky:
+
+[https://maven.apache.org/pom.html#Inheritance](https://maven.apache.org/pom.html#Inheritance)
+
+    !XML
+    <properties>
+        <git.repo.name>module23</git.repo.name>
+    </properties>
+
+    <scm>
+        <connection>scm|git|ssh://git@github.com/timp/${git.repo.name}</connection>
+        <developerConnection>scm|git|ssh://git@github.com/timp/${git.repo.name}</developerConnection>
+        <url>scm|git|ssh://git@github.com/timp/${git.repo.name}</url>
+        <tag>HEAD</tag>
+    </scm>
+
+----
+# Work around Maven 'inheritance'
+    !XML
+	<scm 
+          child.scm.connection.inherit.append.path="false" 
+          child.scm.developerConnection.inherit.append.path="false" 
+          child.scm.url.inherit.append.path="false">
+	    <connection>scm|git|ssh://git@github.com/timp/${git.repo.name}</connection>
+		<developerConnection>scm|git|ssh://git@github.com/timp/${git.repo.name}</developerConnection>
+		<url>scm|git|ssh://git@github.com/timp/${git.repo.name}</url>
+		<tag>HEAD</tag>
+    </scm>
+---
+    !XML
+    <properties>
+        <git.repo.name>module23</git.repo.name>
+    </properties>
 
 ----
 # Automated Reporting 
@@ -362,46 +418,7 @@ In the process we have achieved the following:
 !["Ignored Tests"](IgnoredTests.png)
 
 
-----
-# Profiles
-!["Profiles"](Profiles.png)
 
-
-
-----
-# Redundant XML
-
-[https://maven.apache.org/pom.html#Inheritance](https://maven.apache.org/pom.html#Inheritance)
-
-    !XML
-    <properties>
-        <git.repo.name>module23</git.repo.name>
-    </properties>
-
-    <scm>
-        <connection>scm|git|ssh://git@github.com/timp/${git.repo.name}</connection>
-        <developerConnection>scm|git|ssh://git@github.com/timp/${git.repo.name}</developerConnection>
-        <url>scm|git|ssh://git@github.com/timp/${git.repo.name}</url>
-        <tag>HEAD</tag>
-    </scm>
-
-----
-# Work around Maven 'inheritance'
-    !XML
-	<scm 
-          child.scm.connection.inherit.append.path="false" 
-          child.scm.developerConnection.inherit.append.path="false" 
-          child.scm.url.inherit.append.path="false">
-	    <connection>scm|git|ssh://git@github.com/timp/${git.repo.name}</connection>
-		<developerConnection>scm|git|ssh://git@github.com/timp/${git.repo.name}</developerConnection>
-		<url>scm|git|ssh://git@github.com/timp/${git.repo.name}</url>
-		<tag>HEAD</tag>
-    </scm>
----
-    !XML
-    <properties>
-        <git.repo.name>module23</git.repo.name>
-    </properties>
 
 ----
 # Archiving
