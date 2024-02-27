@@ -280,11 +280,11 @@ In the process we have achieved the following:
 ---- 
 # rememberance.md
 
-| File                |    Date    | Reason                                   |
-|---------------------|:----------:|:-----------------------------------------|
-| maven-tomcat-plugin | 2013-11-11 | Who knows, the team just walked away     |
-| tpp-module          | 2024-02-22 | Finished polishing, flushing now         |
-| my-perl-script.pl   | 2019-03-23 | Moving on up                             |
+ | File                |    Date    | Reason                                   |
+ |---------------------|:----------:|:-----------------------------------------|
+ | maven-tomcat-plugin | 2013-11-11 | Who knows, the team just walked away     |
+ | tpp-module          | 2024-02-22 | Finished polishing, flushing now         |
+ | my-perl-script.pl   | 2019-03-23 | Moving on up                             |
 
 
 
