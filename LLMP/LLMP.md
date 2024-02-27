@@ -424,6 +424,7 @@ Inheritance of SCM and Profiles tags is more tricky:
 - If not passing tests document in README
 - Put reason for archiving in README
 - Mark as archived in github
+- Remove from super build
 
 ## Archiving is scary so should be done by a Team Lead
 
@@ -452,9 +453,13 @@ Both?
       </dependency>
 
 ---- 
-# N5 Numbering 
+# N5 Numbering
+
+- Unique artifact identifier 
 - <a href="https://tim-pizey.blogspot.com/2024/01/five-element-maven-version-numbering.html" target=_>
   N5 Versioning</a>
+- So nice in IntelliJ
+
 
 ----
 # Versions Maven Plugin
