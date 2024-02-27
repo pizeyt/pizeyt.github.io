@@ -162,25 +162,10 @@ Whatever
 
 ----
 # Long Lived Maven Projects
-## Maven is the longest lived Maven project
+## Chat GPT 
+## Blogging 
+## Press Release Driven Development
 
-
-
-----
-# Blogger
-
-- <a href="https://tim-pizey.blogspot.com/2009/01/first-post.html" target=_>
-First Post - January 2009
-</a>
-- <a href="https://tim-pizey.blogspot.com/2024/01/five-element-maven-version-numbering.html" target=_>
-N5 Versioning
-</a>
-
-
-# Presenter Notes
-
-I am a blogger
-Blogs are good.  
 
 ----
 # GhatGPT
@@ -226,17 +211,57 @@ In summary, using Maven over the long term can lead to greater stability, effici
 - `CGPT:` With prolonged use of Maven, you may encounter dependency conflicts, build errors, and potentially slower build times due to the accumulation of dependencies and configurations. It's important to regularly update dependencies and plugins to mitigate these issues.
 
 
-----
-# Long Lived Projects 
 
 ----
-# ∀
+# Blogger
+
+- <a href="https://tim-pizey.blogspot.com/2009/01/first-post.html" target=_>
+First Post - January 2009
+</a>
+- <a href="https://tim-pizey.blogspot.com/2023/07/press-release-driven-development.html" target=_> 
+  Press Release Driven Development</a>
+- <a href="https://tim-pizey.blogspot.com/2023/08/variety-build-up-in-long-lived-project.html" target=_> 
+  Variety Build Up in a Long Lived Project</a>
+- <a href="https://tim-pizey.blogspot.com/2023/09/making-maven-dependency-tree-readable.html" target=_>
+  Making the Maven Dependency Tree Readable</a>
+- <a href="https://tim-pizey.blogspot.com/2023/11/unique-versions-as-pitons-out-of-maven.html" target=_> 
+  Unique version</a>
+- <a href="https://tim-pizey.blogspot.com/2024/01/maven-version-schema-change.html" target=_>
+  germ of an idea</a>
+- <a href="https://tim-pizey.blogspot.com/2024/01/maven-version-versions-and-regex-block.html" target=_>
+  Best laid plans</a>
+- <a href="https://tim-pizey.blogspot.com/2024/01/five-element-maven-version-numbering.html" target=_>
+  N5 Versioning</a>
+- <a href="https://tim-pizey.blogspot.com/2024/02/remembrancemd-tombstones-for-git.html" target=_>
+  Tombstones</a>
+
+# Presenter Notes
+
+I am a blogger
+Blogs are good.  
+
+----
+# Press Release Driven Development 
+##Internal Press Release: Important System Upgrade Completed
+##Anticipated release date see: Upgrade Epic Ticket
+
+Today we can announce that we have upgraded the whole of Important System.
+
+In the process we have achieved the following:
+
+- Extended and upgraded our ability to act upon and monitor all repositories
+- Archived XX repositories
+- Reduced the number of ignored tests from XX to XX
+- Removed all Sonar Bugs and Vulnerabilities
+- Updated all libraries
+- Installed Dependabot to ensure we do not fall behind again
+
+## This enables us to take on the strategic work of removing Bad Thing from our estate.
+
 
 ----
 # For all
-
----- 
-# Git Tombstones
+## ∀
 
 ---- 
 # Git Tombstones
@@ -277,14 +302,8 @@ In summary, using Maven over the long term can lead to greater stability, effici
     Is:   23525 
 
 ----
-# Imports
+# Automated Progress Reporting 
 
-![Imports](imports-Screenshot_2024-02-02_100120.png)
-
-
-
-
-# Progress
 ----
 # Artefacts
 ![Artefacts](Artefacts.png)
