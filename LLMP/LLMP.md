@@ -254,8 +254,8 @@ Blogs are good.
 
 ----
 # PR Driven Development 
-##Internal Press Release: Important System Upgrade Completed
-##Anticipated release date see: Upgrade Epic Ticket
+###Internal Press Release: Important System Upgrade Completed
+###Anticipated release date see: Upgrade Epic Ticket
 
 Today we can announce that we have upgraded the whole of Important System.
 
@@ -268,7 +268,7 @@ In the process we have achieved the following:
 - Updated all libraries
 - Installed Dependabot to ensure we do not fall behind again
 
-## This enables us to take on the strategic work of removing Bad Thing from our estate.
+### This enables us to take on the strategic work of removing Bad Thing from our estate.
 
 
 
