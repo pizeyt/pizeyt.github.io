@@ -227,6 +227,7 @@ First Post - January 2009
   Variety Build Up in a Long Lived Project</a>
 - <a href="https://tim-pizey.blogspot.com/2023/09/making-maven-dependency-tree-readable.html" target=_>
   Making the Maven Dependency Tree Readable</a>
+    - - <a href="conflicts.txt" target=_>conflicts.txt</a>
 - <a href="https://tim-pizey.blogspot.com/2023/11/unique-versions-as-pitons-out-of-maven.html" target=_> 
   Unique version</a>
 - <a href="https://tim-pizey.blogspot.com/2024/01/maven-version-schema-change.html" target=_>
@@ -310,21 +311,20 @@ In the process we have achieved the following:
 ----
 # Dot Graphs
 
-[smd_repo_dependencies.svg](smd_repo_dependencies.svg)
 
-[all_pom_all_dependencies.svg](all_pom_all_dependencies.svg)
+- <a href="all_pom_all_dependencies.svg" target=_>all_pom_all_dependencies.svg</a>
 
-[all_pom_our_dependencies.svg](all_pom_our_dependencies.svg)
+- <a href="all_pom_our_dependencies.svg" target=_>all_pom_our_dependencies.svg</a>
 
-[all_repo_dependencies.svg](all_repo_dependencies.svg)
+- <a href="all_repo_dependencies.svg" target=_>all_repo_dependencies.svg</a>
 
-[conflicts.txt](conflicts.txt)
+- <a href="java_repo_dependencies.svg" target=_>java_repo_dependencies.svg</a>
 
-[java_repo_dependencies.svg](java_repo_dependencies.svg)
+- <a href="smd_pom_all_dependencies.svg" target=_>smd_pom_all_dependencies.svg</a>
 
-[smd_pom_all_dependencies.svg](smd_pom_all_dependencies.svg)
+- <a href="smd_pom_our_dependencies.svg" target=_>smd_pom_our_dependencies.svg</a>
 
-[smd_pom_our_dependencies.svg](smd_pom_our_dependencies.svg)
+- <a href="smd_repo_dependencies.svg" target=_>smd_repo_dependencies.svg</a>
 
 ----
 # Java Repositories
