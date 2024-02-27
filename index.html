@@ -145,6 +145,8 @@ Error message and password prompt
 
 <li>$:/config/NewJournal/Title</li>
 
+<li>$:/config/RelinkOnRename</li>
+
 <li>$:/core</li>
 
 <li>$:/DefaultTiddlers</li>
@@ -163,6 +165,10 @@ Error message and password prompt
 
 <li>$:/SiteTitle</li>
 
+<li>$:/state/edit/references--1951335179</li>
+
+<li>$:/state/folded/Using Github Actions</li>
+
 <li>$:/state/sidebar</li>
 
 <li>$:/state/tab-1749438307</li>
@@ -179,29 +185,61 @@ Error message and password prompt
 
 <li>$:/temp/info-plugin</li>
 
+<li>$:/temp/NewTagName</li>
+
+<li>$:/temp/search</li>
+
 <li>$:/themes/tiddlywiki/snowwhite</li>
 
 <li>$:/themes/tiddlywiki/vanilla</li>
+
+<li>Adding an icon</li>
 
 <li>Contents</li>
 
 <li>CPS Team Sites</li>
 
-<li>Draft of 'TT'</li>
+<li>Create a profile which excludes any integration tests</li>
 
-<li>Github Pages Demo</li>
+<li>Evaluate Dependabot PRs</li>
+
+<li>Everything should always be in git</li>
+
+<li>Github Pages TiddlyWiki HowTo</li>
 
 <li>Home</li>
 
+<li>In the long term which is the best repository strategy, one repository per module or one huge repository?</li>
+
 <li>Jupyter Notebooks on Windows10</li>
+
+<li>Load artefacts not built within this repository</li>
+
+<li>My mother on Science Direct</li>
+
+<li>My mother on SCOPUS</li>
+
+<li>Once you have a passing build enable Dependabot</li>
 
 <li>Personal Access Token</li>
 
-<li>TT</li>
+<li>Prompts</li>
+
+<li>Remove unreachable repositories</li>
+
+<li>Should Infosys return to the offices in India?</li>
+
+<li>Tiddler Title and Text Template</li>
+
+<li>TTTT</li>
 
 <li>URLs</li>
 
+<li>Using Github Actions to enable Dependabot</li>
+
 <li>Using the Github Saver</li>
+
+<li>Using the Github Saver for Github Pages site</li>
 
 <li>Why the git saver is needed</li>
 
@@ -226,6 +264,9 @@ Error message and password prompt
 </div>
 <div created="20200717113406169" modified="20200717113422440" title="$:/config/NewJournal/Title">
 <pre>YYYY-MM-DD</pre>
+</div>
+<div created="20220430221453438" modified="20220430221453438" title="$:/config/RelinkOnRename">
+<pre>yes</pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="" description="TiddlyWiki5 core" list="readme" name="Core" plugin-priority="0" plugin-type="plugin" title="$:/core" type="application/json" version="5.1.22">
 <pre>{
@@ -9625,7 +9666,13 @@ Error message and password prompt
 <div created="20200717093850546" modified="20200717093902385" title="$:/SiteTitle">
 <pre>Tim's Work Site</pre>
 </div>
-<div created="20211018203040113" modified="20211111122657233" title="$:/state/sidebar">
+<div created="20220430221456964" modified="20220430221456964" title="$:/state/edit/references--1951335179">
+<pre>show</pre>
+</div>
+<div created="20230510221442429" modified="20230510221442429" title="$:/state/folded/Using Github Actions">
+<pre>show</pre>
+</div>
+<div created="20211018203040113" modified="20230510222011184" title="$:/state/sidebar">
 <pre>yes</pre>
 </div>
 <div created="20200720222619029" modified="20200721090813588" title="$:/state/tab-1749438307">
@@ -9637,13 +9684,13 @@ Error message and password prompt
 <div created="20220426114632150" modified="20220426114632150" title="$:/state/tab/moresidebar-1850697562">
 <pre>$:/core/ui/MoreSideBar/System</pre>
 </div>
-<div created="20200717094020014" modified="20220430132525578" title="$:/state/tab/sidebar--595412856">
+<div created="20200717094020014" modified="20230510225458152" title="$:/state/tab/sidebar--595412856">
 <pre>$:/core/ui/SideBar/Recent</pre>
 </div>
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20220430131032004" list="[[Draft of 'TT']] Home [[Using the Github Saver]] [[Why the git saver is needed]]" modified="20220430132530810" title="$:/StoryList">
+<div created="20231221113225099" list="Home [[CPS Team Sites]]" modified="20231221113252849" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -9703,6 +9750,12 @@ Error message and password prompt
         }
     }
 }</pre>
+</div>
+<div created="20230516140918795" modified="20230516140918795" title="$:/temp/NewTagName">
+<pre></pre>
+</div>
+<div created="20220430203621864" modified="20230510220653220" title="$:/temp/search">
+<pre></pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="$:/themes/tiddlywiki/vanilla" description="Emphasises individual tiddlers" name="Snow White" plugin-priority="0" plugin-type="theme" title="$:/themes/tiddlywiki/snowwhite" type="application/json" version="5.1.22">
 <pre>{
@@ -9813,44 +9866,103 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div created="20220430113223485" modified="20220430115255870" tags="" title="Contents">
+<div created="20220430140954387" modified="20220430204338752" tags="" title="Adding an icon">
+<pre>* https://image.online-convert.com/convert-to-ico
+* Upload your icon
+* Save result as //favicon.ico// at the top level of your repository
+* Git add/commit/push</pre>
+</div>
+<div created="20220430113223485" modified="20230510225542947" tags="Template" title="Contents">
 <pre>&lt;ul&gt;
-&lt;$list filter=&quot;[!tag[Template]!is[system]]&quot;&gt;
+&lt;$list filter=&quot;[!tag[Template]!is[system]!tag[githubActions]]&quot;&gt;
 &lt;li&gt;&lt;$link to=&lt;&lt;currentTiddler&gt;&gt;&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt; &lt;/li&gt;
 &lt;/$list&gt;
 &lt;/ul&gt;</pre>
 </div>
-<div created="20220426092613151" modified="20220427145847507" tags="" title="CPS Team Sites">
-<pre>* https://jangirv.github.io/ 
+<div created="20220426092613151" modified="20231221113401018" tags="" title="CPS Team Sites">
+<pre>* https://jangirv.github.io/ &amp;diams;
+* https://lakshmikanthans.github.io/
 * https://shanulydia.github.io/ 	&amp;diams;
 * https://lakshmanshyju.github.io/ &amp;diams;
 * https://sarangapanir.github.io/
 * https://ayyanav.github.io/ &amp;diams;
-* https://skkadium.github.io/
 * https://sabiaegan.github.io/ &amp;diams;
 * https://ponnusamya.github.io/ &amp;diams;
 * https://sundaramm-elsevier.github.io/ &amp;diams;
+* https://rejetivamsi.github.io/ &amp;diams;
 * https://pizeyt.github.io/ &amp;diams;
+* https://muthumaniv.github.io/
 
+!! Alumni
+* https://karp1.github.io/ 
+* https://sheebha-a.github.io/ &amp;diams;
+* https://skkadium.github.io/
 
 
 </pre>
 </div>
-<div created="20220430111501761" draft.of="TT" draft.title="TT" modified="20220430132646888" tags="Template" title="Draft of 'TT'">
-<pre>[[{{!!title}}]]&lt;br/&gt;
-{{&lt;&lt;currentTiddler&gt;&gt;}}
-
-&lt;$link to=&lt;&lt;currentTiddler&gt;&gt;&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt; &lt;br/&gt;
-{{$currentTiddler}}
- </pre>
+<div created="20230510200036526" modified="20230510221629935" order="30" tags="githubActions" title="Create a profile which excludes any integration tests">
+<pre>If your integration tests require external fixtures then create a profile which excludes them :
+&lt;br&gt;&lt;code&gt;&amp;lt;profiles&gt;
+  &amp;lt;profile&gt;
+    &amp;lt;id&gt;unit&amp;lt;/id&gt;
+    &amp;lt;activation&gt;
+      &amp;lt;activeByDefault&gt;false&amp;lt;/activeByDefault&gt;
+    &amp;lt;/activation&gt;
+    &amp;lt;build&gt;
+     &amp;lt;plugins&gt;
+       &amp;lt;plugin&gt;
+         &amp;lt;groupId&gt;org.apache.maven.plugins&amp;lt;/groupId&gt;
+         &amp;lt;artifactId&gt;maven-surefire-plugin&amp;lt;/artifactId&gt;
+           &amp;lt;configuration&gt;
+             &amp;lt;excludes&gt;
+               &amp;lt;exclude&gt;**/AWSTest.java&amp;lt;/exclude&gt;
+             &amp;lt;/excludes&gt;
+           &amp;lt;/configuration&gt;
+         &amp;lt;/plugin&gt;
+       &amp;lt;/plugins&gt;
+     &amp;lt;/build&gt;
+  &amp;lt;/profile&gt;
+&amp;lt;/profiles&gt;
+&lt;/code&gt;
+and run your build with the new profile: 
+&lt;br&gt;
+&lt;code&gt;mvn package -P unit&lt;/code&gt;
+</pre>
 </div>
-<div created="20200717113441865" modified="20220426114119954" tags="" title="Github Pages Demo">
+<div created="20230510210219354" modified="20230510221909193" order="50" tags="githubActions" title="Evaluate Dependabot PRs">
+<pre>Dependabot will inspect your project and generate pull requests:&lt;br&gt;
+
+https://github.com/Melati/Melati/pulls?q=is%3Apr+author%3Aapp%2Fdependabot
+
+these will be built in the Action as though they had been applied:&lt;br&gt;
+
+https://github.com/Melati/Melati/actions
+
+If the build passes then you are good to merge the PR. 
+
+</pre>
+</div>
+<div created="20220430203911355" modified="20220430221529978" title="Everything should always be in git">
+<pre>I should not need to say this but, anything you do: name it, create a directory with that name. and initialise git.
+
+```
+mkdir new-thing
+cd new-thing
+git init
+echo My new thing &gt; README.md
+```
+
+</pre>
+</div>
+<div created="20200717113441865" modified="20230714152541745" tags="" title="Github Pages TiddlyWiki HowTo">
 <pre>* Create a public repo with name yourgithubaccount.github.io
 * Add README.md
 * Checkout
 * Download [[TiddlyWiki|http://tiddlywiki.com]] Empty into repo as index.html
 * Add, Commit, Push
 * Create [[Personal Access Token]]
+* Open your local index.html 
 * Add that to Settings &gt;&gt; Sharing &gt;&gt; Github with tiddlywiki
 * Commit, Push
 * View site at http://yourgithubaccount.github.io/
@@ -9858,17 +9970,20 @@ Error message and password prompt
 
 </pre>
 </div>
-<div created="20200717094043980" modified="20220430115223879" tags="" title="Home">
+<div created="20200717094043980" modified="20220430213400672" tags="" title="Home">
 <pre>!Tim Pizey's Work Site
 
 !!! My Urls
 {{URLs}}
 
-{{Contents}}
+{{Contents||TTTT}}
 
 
 
 </pre>
+</div>
+<div created="20230516140843743" modified="20230516140926234" tags="Prompt" title="In the long term which is the best repository strategy, one repository per module or one huge repository?">
+<pre></pre>
 </div>
 <div created="20211018182026696" modified="20211018203424737" tags="" title="Jupyter Notebooks on Windows10">
 <pre>You will need admin privs, I usually work in gitbash, but this time I went for Powershell as Admin. 
@@ -9891,19 +10006,81 @@ You will be taken to http://localhost:8888/lab
 
 </pre>
 </div>
-<div created="20200720235908159" modified="20220430105057137" tags="" title="Personal Access Token">
+<div created="20230510195423352" modified="20230510221959014" order="20" tags="githubActions" title="Load artefacts not built within this repository">
+<pre>We have some weird old jars not in public repositories. 
+
+Run a bash script to install from a &lt;code&gt;libs&lt;/code&gt; directory into the local cache: 
+&lt;br&gt;
+&lt;code&gt;mvn --no-transfer-progress install:install-file -Dpackaging=jar -DgeneratePom=true \
+-DgroupId=com.old -DartifactId=dark -Dversion=9.0.3  -Dfile=dark-9.0.3.jar&lt;/code&gt;</pre>
+</div>
+<div created="20220608115536104" modified="20220608115709114" tags="" title="My mother on Science Direct">
+<pre>My mother has 14 papers on Science Direct, something I am very proud of: 
+
+https://www.sciencedirect.com/search?qs=oncology&amp;authors=bullimore
+
+</pre>
+</div>
+<div created="20220718115120713" modified="20220718115137964" tags="" title="My mother on SCOPUS">
+<pre>https://www.scopus.com/results/results.uri?sort=plf-f&amp;src=s&amp;st1=bullimore&amp;st2=jill&amp;nlo=1&amp;nlr=20&amp;nls=count-f&amp;sid=76525d1a2bbad8ffdf13367abf72df73&amp;sot=anl&amp;sdt=aut&amp;sl=38&amp;s=AU-ID%28%22Bullimore%2c+Jill+A.%22+7003727607%29&amp;txGid=9f9032c6a77cac4547eb094b923f863a</pre>
+</div>
+<div created="20230510205553288" modified="20230510220800365" order="30" tags="githubActions" title="Once you have a passing build enable Dependabot">
+<pre>On your project navigate to 
+
+&lt;code&gt;Settings &gt;&gt; Code security and analysis 
+&lt;/code&gt;
+
+Enable everything, which will involve you adding a &lt;code&gt;dependabot.yml&lt;/code&gt; into which you need to add 
+
+&lt;code&gt;      package-ecosystem: &quot;maven&quot;&lt;/code&gt;</pre>
+</div>
+<div created="20200720235908159" modified="20231204180039071" tags="" title="Personal Access Token">
 <pre>From http://github.com
 
 Profile &gt;&gt; Settings &gt;&gt; Developer Settings &gt;&gt; PAT
 
-Ensure access token has only 'Access Public  Repo checked'</pre>
-</div>
-<div created="20220430111501761" modified="20220430132617407" tags="Template" title="TT">
-<pre>[[{{!!title}}]]&lt;br/&gt;
-{{&lt;&lt;currentTiddler&gt;&gt;}}
+Select //No expiry date//
 
+Ensure access token has only '''public_repo Access public repositories''' checked.
+</pre>
+</div>
+<div created="20230516140655252" modified="20230516141119992" tags="" title="Prompts">
+<pre>The below are questions which Chatbots have responded to interestingly.
+&lt;ul&gt;
+&lt;$list filter=&quot;[tag[Prompt]]&quot;&gt;
+{{||TTTT}} &lt;br&gt;
+
+&lt;/$list&gt;
+&lt;/ul&gt;</pre>
+</div>
+<div created="20230510192938175" modified="20230510220720044" order="10" tags="githubActions" title="Remove unreachable repositories">
+<pre>Check if you are actually using internal repositories. 
+One parent POM.xml had a &lt;code&gt;&amp;lt;repositories&gt;&lt;/code&gt; section for no good reason.
+Maven does appear to check every repository, certainly for artefacts not in Maven Central, and waits a long while to time out, so you can have a six hour build failing with a timeout. 
+</pre>
+</div>
+<div created="20230516141016146" modified="20230516141023119" tags="Prompt" title="Should Infosys return to the offices in India?">
+<pre></pre>
+</div>
+<div created="20220430213918386" modified="20220430221603350" tags="" title="Tiddler Title and Text Template">
+<pre>The Tiddler Title and Text Template is a such a simple template that you have to write it yourself!
+
+I expect that there is a ready made one, but I have not  found it. 
+
+It enables you to include the text and title of your tiddler, a style which I find I need a lot.
+
+See the tiddler contents here: [[TTTT]]
+
+Don't worry about &lt;span style=&quot;background-color:red;color:white;&quot;&gt;Recursive transclusion error in transclude widget&lt;/span&gt;
+</pre>
+</div>
+<div created="20220430111501761" modified="20220430213927722" tags="Template" title="TTTT">
+<pre>&lt;!--
+{{Tiddler Title and Text Template}}
+--&gt;
 &lt;$link to=&lt;&lt;currentTiddler&gt;&gt;&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt; &lt;br/&gt;
-{{$currentTiddler}}
+&lt;$transclude /&gt;
+
  </pre>
 </div>
 <div created="20220430114428214" modified="20220430114452822" tags="" title="URLs">
@@ -9914,16 +10091,36 @@ Ensure access token has only 'Access Public  Repo checked'</pre>
 * http://tim.pizey.uk/
 </pre>
 </div>
-<div created="20220430105143736" modified="20220430132737674" tags="" title="Using the Github Saver">
-<pre>{{Why the git saver is needed||TT}}
+<div created="20230510192208918" modified="20230516141033639" tags="" title="Using Github Actions to enable Dependabot">
+<pre>Assuming you have a maven java project in github. 
+
+
+The steps below were tried on my pet project https://github.com/Melati/Melati/actions which is open source and then on work projects. 
+
+&lt;ul&gt;
+&lt;$list filter=&quot;[tag[githubActions]sort[order]]&quot;&gt;
+{{||TTTT}} &lt;br&gt;
+
+&lt;/$list&gt;
+&lt;/ul&gt;</pre>
+</div>
+<div created="20220430105143736" modified="20220430213426516" tags="" title="Using the Github Saver">
+<pre>{{Why the git saver is needed||TTTT}}
+
+{{Using the Github Saver for Github Pages site||TTTT}} 
+
+
 </pre>
 </div>
-<div created="20220430110714565" modified="20220430110811189" tags="" title="Why the git saver is needed">
-<pre>For good reasons browsers may not write to a local disk, if you manually save the the file you have to explicitly choose to use the same file name and allow the file to be overwritten. This is tiresome and error prone. Anyway ''everything should always be in git''</pre>
+<div created="20220430205229304" modified="20220501225330855" title="Using the Github Saver for Github Pages site">
+<pre>This enables you, and only you, to edit your github pages in the same way as your personal notes or any other tiddler. Now you have [[Writable webspace]].</pre>
 </div>
-<div created="20201214154110841" modified="20220430131104618" tags="" title="Writable webspace">
+<div created="20220430110714565" modified="20220430221519598" tags="" title="Why the git saver is needed">
+<pre>For good reasons browsers may not write to a local disk, if you manually save the file you have to explicitly choose to use the same file name and allow the file to be overwritten. This is tiresome and error prone. [[Everything should always be in git]] anyway.</pre>
+</div>
+<div created="20201214154110841" modified="20220430203342708" tags="" title="Writable webspace">
 <pre>At last!
-I update this.</pre>
+I can update this from anywhere.</pre>
 </div>
 
 
