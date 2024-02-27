@@ -429,7 +429,8 @@ Inheritance of SCM and Profiles tags is more tricky:
 
 ----
 # Versioning
-Date.Build ?
+### Other Options: 
+- Date.Build 
 
      !XML 
      <dependency>
@@ -439,7 +440,8 @@ Date.Build ?
        <scope>test</scope>
      </dependency>
 
-For those without Groups:
+- What?
+
 
      !XML 
      <dependency>
