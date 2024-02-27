@@ -255,8 +255,6 @@ Blogs are good.
 ----
 # PR Driven Development 
 ###Internal Press Release: $name Upgrade Completed
-###Anticipated release date see Epic Ticket
-
 ## Today we can announce the upgrade of $name
 
 In the process we have achieved the following:
