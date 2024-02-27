@@ -392,11 +392,11 @@ In the process we have achieved the following:
           child.scm.connection.inherit.append.path="false" 
           child.scm.developerConnection.inherit.append.path="false" 
           child.scm.url.inherit.append.path="false">
-		<connection>scm|git|ssh://git@github.com/timp/${git.repo.name}</connection>
+	    <connection>scm|git|ssh://git@github.com/timp/${git.repo.name}</connection>
 		<developerConnection>scm|git|ssh://git@github.com/timp/${git.repo.name}</developerConnection>
 		<url>scm|git|ssh://git@github.com/timp/${git.repo.name}</url>
 		<tag>HEAD</tag>
-        </scm>
+    </scm>
 ---
     !XML
     <properties>
