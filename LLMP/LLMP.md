@@ -393,16 +393,6 @@ Inheritance of SCM and Profiles tags is more tricky:
 # Java Repositories
 !["Java Repositories"](JavaRepositories.png)
 
-----
-
-# Java Repositories Stacked
-!["Java Repositries"](JavaRepositoriesStacked.png)
-
-
-----
-
-# Total Repositories
-!["Total Repositories"](TotalRepositories.png)
 
 ----
 # Total Repositories Stacked
@@ -423,7 +413,6 @@ Inheritance of SCM and Profiles tags is more tricky:
 
 # Ignored Tests
 !["Ignored Tests"](IgnoredTests.png)
-
 
 
 
@@ -526,6 +515,7 @@ For those without Groups:
 - Module sequential artifact id needs to be project scoped
 - Open Source library maintainers are not responsible for updating their clients, Enterprise Developers are
 - Don't use properties for versions
+- Technical Debt is OK if you measure it
 - Archiving is a Team Lead responsibility
 - Keep everything at 1.0.0-SNAPSHOT 
 
