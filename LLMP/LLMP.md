@@ -255,7 +255,8 @@ Blogs are good.
 ----
 # PR Driven Development 
 ###Internal Press Release: $name Upgrade Completed
-## Today we can announce the upgrade of $name
+
+#### Today we can announce the upgrade of $name
 
 In the process we have achieved the following:
 
