@@ -250,11 +250,10 @@ Blogs are good.
 ### #monolithsGood
 ### MicroServicesBad
 
-## For all
-### ∀
+## For all ∀ 
 
 ----
-# Press Release Driven Development 
+# PR Driven Development 
 ##Internal Press Release: Important System Upgrade Completed
 ##Anticipated release date see: Upgrade Epic Ticket
 
