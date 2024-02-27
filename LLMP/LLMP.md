@@ -285,9 +285,9 @@ In the process we have achieved the following:
   Making the Maven Dependency Tree Readable</a>
     -<a href="conflicts.txt" target=_>conflicts.txt</a>
 
-
 ----
 # Archival
+
 
 - <a href="https://tim-pizey.blogspot.com/2024/02/remembrancemd-tombstones-for-git.html" target=_>
   Tombstones</a>
@@ -326,7 +326,7 @@ In the process we have achieved the following:
 ----
 # Redundant XML
 
-## Use inheritance whwre you can
+## Use inheritance where you can
 - properties
 - repositories
 - distributionManagement
@@ -334,6 +334,9 @@ In the process we have achieved the following:
 Inheritance of SCM and Profiles tags is more tricky:
 
 [https://maven.apache.org/pom.html#Inheritance](https://maven.apache.org/pom.html#Inheritance)
+
+----
+# Repeated block 
 
     !XML
     <properties>
