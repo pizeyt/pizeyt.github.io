@@ -468,8 +468,6 @@ Both?
 
 Do not introduce a new, private, unvalidated property naming system
 
-
-     !XML 
      <properties>
        <aws.sdk.version>1.12.287</aws.sdk.version>
      </properties>
