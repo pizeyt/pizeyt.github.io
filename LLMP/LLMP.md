@@ -269,7 +269,7 @@ In the process we have achieved the following:
 - <a href="https://tim-pizey.blogspot.com/2023/11/unique-versions-as-pitons-out-of-maven.html" target=_> 
   Unique version</a>
 - <a href="https://tim-pizey.blogspot.com/2024/01/maven-version-schema-change.html" target=_>
-  germ of an idea</a>
+  Germ of an idea</a>
 - <a href="https://tim-pizey.blogspot.com/2024/01/maven-version-versions-and-regex-block.html" target=_>
   Best laid plans</a>
 - <a href="https://tim-pizey.blogspot.com/2024/01/five-element-maven-version-numbering.html" target=_>
