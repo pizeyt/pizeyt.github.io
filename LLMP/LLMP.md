@@ -266,6 +266,8 @@ In the process we have achieved the following:
 
 
 ----
+# A namespace unique artifact sequence identifier 
+
 - <a href="https://tim-pizey.blogspot.com/2023/11/unique-versions-as-pitons-out-of-maven.html" target=_> 
   Unique version</a>
 - <a href="https://tim-pizey.blogspot.com/2024/01/maven-version-schema-change.html" target=_>
@@ -275,6 +277,7 @@ In the process we have achieved the following:
 - <a href="https://tim-pizey.blogspot.com/2024/01/five-element-maven-version-numbering.html" target=_>
   N5 Versioning</a>
 
+## (not a version string)
 
 ---- 
 # Maven dependency:tree
