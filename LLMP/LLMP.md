@@ -163,7 +163,8 @@ Whatever
 ----
 # Long Lived Maven Projects
 ## Chat GPT 
-## Blogging 
+## Blogging
+## Slogans
 ## Press Release Driven Development
 
 
@@ -241,6 +242,18 @@ I am a blogger
 Blogs are good.  
 
 ----
+# Slogans
+## DRY
+### Do NOT Repeat Yourself
+
+## Mono-Repo
+### #monolithsGood
+### MicroServicesBad
+
+## For all
+### ∀
+
+----
 # Press Release Driven Development 
 ##Internal Press Release: Important System Upgrade Completed
 ##Anticipated release date see: Upgrade Epic Ticket
@@ -259,9 +272,6 @@ In the process we have achieved the following:
 ## This enables us to take on the strategic work of removing Bad Thing from our estate.
 
 
-----
-# For all
-## ∀
 
 ---- 
 # Git Tombstones
@@ -278,14 +288,6 @@ In the process we have achieved the following:
 | tpp-module          | 2024-02-22 | Finished polishing, flushing now         |
 | my-perl-script.pl   | 2019-03-23 | Moving on up                             |
 
-
-----
-# DRY
-## Do NOT Repeat Yourself
-
-----
-# Mono-Repo
-## #monolithsGood
 
 
 
