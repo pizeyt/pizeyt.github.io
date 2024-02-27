@@ -1,0 +1,2675 @@
+<!DOCTYPE html>
+<!--
+  Copyright 2010 Google Inc.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+
+  Original slides: Marcin Wichary (mwichary@google.com)
+  Modifications: Ernest Delgado (ernestd@google.com)
+                 Alex Russell (slightlyoff@chromium.org)
+
+  landslide modifications: Adam Zapletal (adamzap@gmail.com)
+                           Nicolas Perriault (nperriault@gmail.com)
+-->
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Long Lived <br>Maven Projects</title>
+
+  
+     <link rel="stylesheet" href="..\..\..\usr-local\python\Lib\site-packages\darkslide\themes\default\css\base.css">
+  
+
+  
+     <link rel="stylesheet" href="..\..\..\usr-local\python\Lib\site-packages\darkslide\themes\default\css\print.css">
+  
+
+  
+     <link rel="stylesheet" href="..\..\..\usr-local\python\Lib\site-packages\darkslide\themes\default\css\screen.css">
+  
+
+  
+     <link rel="stylesheet" href="..\..\..\usr-local\python\Lib\site-packages\darkslide\themes\white\css\theme.css">
+  
+
+  
+     <link rel="stylesheet" href="style.css">
+  
+
+
+  
+    <script type="text/javascript" src="..\..\..\usr-local\python\Lib\site-packages\darkslide\themes\default\js\slides.js"></script>
+  
+
+</head>
+<body>
+  <div id="blank"></div>
+  <div class="presentation">
+    <div id="current_presenter_notes">
+      <div id="presenter_note"></div>
+    </div>
+    <div class="slides">
+      
+      <!-- slide source: LLMP.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_footer slide-1">
+          <div class="inner">
+            
+            <header><h1>Long Lived <br>Maven Projects</h1></header>
+            
+            
+            <section>
+<h1>Tim . Pizey . UK</h1>
+<p><img alt="PinPanza" src="pinpanza.png" title="PinPanza" /></p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              <a href="LLMP_default.html">default theme</a> | <a href="LLMP_abyss.html">abyss theme</a> | <a href="LLMP_void.html">void theme</a> | <a href="LLMP_white.html">white theme</a> | <a href="https://github.com/ionelmc/python-darkslide">github</a>
+            
+            
+            <aside class="source">
+              Source: <a href="LLMP.md">LLMP.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              1/62
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: LLMP.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_footer slide-2">
+          <div class="inner">
+            
+            <header><h1>Keep polishing</h1></header>
+            
+            
+            <section><p><img alt="Polished coprolite" src="Coprolite.jpg" title="Giving the lie to the saying that you cannot polish a turd" /></p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              <a href="LLMP_default.html">default theme</a> | <a href="LLMP_abyss.html">abyss theme</a> | <a href="LLMP_void.html">void theme</a> | <a href="LLMP_white.html">white theme</a> | <a href="https://github.com/ionelmc/python-darkslide">github</a>
+            
+            
+            <aside class="source">
+              Source: <a href="LLMP.md">LLMP.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              2/62
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: LLMP.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_footer slide-3">
+          <div class="inner">
+            
+            <header><h1>Talk Structure</h1></header>
+            
+            
+            <section><h2>The Road to Maven</h2>
+<h2>Long Lived Projects</h2>
+<h2>Current Project</h2>
+<h2>Take Aways</h2></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              <a href="LLMP_default.html">default theme</a> | <a href="LLMP_abyss.html">abyss theme</a> | <a href="LLMP_void.html">void theme</a> | <a href="LLMP_white.html">white theme</a> | <a href="https://github.com/ionelmc/python-darkslide">github</a>
+            
+            
+            <aside class="source">
+              Source: <a href="LLMP.md">LLMP.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              3/62
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: LLMP.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_footer slide-4">
+          <div class="inner">
+            
+            <header><h2>The Road to Maven</h2></header>
+            
+            
+            <section><h2>bash</h2>
+<h2>make</h2>
+<h2>ant</h2>
+<h2>maven</h2>
+<h2>maven2</h2>
+<h2>maven3</h2>
+<h2>gradle</h2></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              <a href="LLMP_default.html">default theme</a> | <a href="LLMP_abyss.html">abyss theme</a> | <a href="LLMP_void.html">void theme</a> | <a href="LLMP_white.html">white theme</a> | <a href="https://github.com/ionelmc/python-darkslide">github</a>
+            
+            
+            <aside class="source">
+              Source: <a href="LLMP.md">LLMP.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              4/62
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: LLMP.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_code has_footer slide-5">
+          <div class="inner">
+            
+            <header><h1>Bash</h1></header>
+            
+            
+            <section><div class="highlight"><pre><span></span><span class="nv">hereRaw</span><span class="o">=</span><span class="w">    </span><span class="sb">`</span>dirname<span class="w"> </span><span class="nv">$0</span><span class="sb">`</span>
+<span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$hereRaw</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>.<span class="w"> </span><span class="o">]</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<span class="nv">here</span><span class="o">=</span>
+<span class="k">else</span>
+<span class="nv">here</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$hereRaw</span><span class="s2">/&quot;</span>
+<span class="k">fi</span>
+
+<span class="nb">echo</span><span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;Compiling using </span><span class="nv">$JAVAC</span><span class="s2">\n&quot;</span>
+
+<span class="nv">ldb</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$here</span><span class="s2">&quot;</span>org.melati.LogicalDatabase.properties
+<span class="nv">ldbe</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$ldb</span><span class="s2">.example&quot;</span>
+
+<span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span>!<span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$ldb</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">]</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="o">[</span><span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$ldbe</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">]</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<span class="nb">echo</span><span class="w"> </span>&gt;<span class="p">&amp;</span><span class="m">2</span><span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;*** warning: </span><span class="nv">$ldb</span><span class="s2"> not found, \nso creating new </span><span class="nv">$ldb</span><span class="s2"> from&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="s2">&quot;</span><span class="nv">$ldbe</span><span class="s2">\n\n&quot;</span>
+cp<span class="w"> </span><span class="nv">$ldbe</span><span class="w"> </span><span class="nv">$ldb</span>
+<span class="k">fi</span>
+</pre></div>
+</section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              <a href="LLMP_default.html">default theme</a> | <a href="LLMP_abyss.html">abyss theme</a> | <a href="LLMP_void.html">void theme</a> | <a href="LLMP_white.html">white theme</a> | <a href="https://github.com/ionelmc/python-darkslide">github</a>
+            
+            
+            <aside class="source">
+              Source: <a href="LLMP.md">LLMP.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              5/62
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: LLMP.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_code has_footer slide-6">
+          <div class="inner">
+            
+            
+            <section><div class="highlight"><pre><span></span><span class="o">[</span><span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$ldb</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">]</span><span class="w"> </span><span class="o">&amp;&amp;</span>
+<span class="nv">wronglines</span><span class="o">=</span><span class="sb">`</span>grep<span class="w"> </span>-v<span class="w"> </span><span class="s1">&#39;^[[:space:]]*[#!]&#39;</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$ldb</span><span class="s2">&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>fgrep<span class="w"> </span>-n<span class="w"> </span>jdbc1<span class="sb">`</span><span class="w"> </span><span class="o">&amp;&amp;</span>
+<span class="nb">echo</span><span class="w"> </span>-e<span class="w"> </span>&gt;<span class="p">&amp;</span><span class="m">2</span><span class="w"> </span><span class="s2">&quot;*** warning: your </span><span class="nv">$ldb</span><span class="s2"> mentions jdbc1 rather than jdbc2&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="s2">&quot;in the following lines:\n\n</span><span class="nv">$wronglines</span><span class="s2">\n\n&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="s2">&quot;You must use JDK1.2 with Melati now, so you should change them to jdbc2.&quot;</span>
+</pre></div>
+</section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              <a href="LLMP_default.html">default theme</a> | <a href="LLMP_abyss.html">abyss theme</a> | <a href="LLMP_void.html">void theme</a> | <a href="LLMP_white.html">white theme</a> | <a href="https://github.com/ionelmc/python-darkslide">github</a>
+            
+            
+            <aside class="source">
+              Source: <a href="LLMP.md">LLMP.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              6/62
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: LLMP.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_code has_footer slide-7">
+          <div class="inner">
+            
+            <header><h1>The Good Bit</h1></header>
+            
+            
+            <section><div class="highlight"><pre><span></span>find<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$hereRaw</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\(</span><span class="w"> </span>-path<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$hereRaw</span><span class="s2">/playing&quot;</span><span class="w"> </span>-o<span class="w"> </span><span class="se">\</span>
+<span class="w">   </span>-path<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$hereRaw</span><span class="s2">/doc/example&quot;</span><span class="w"> </span>-o<span class="w"> </span><span class="se">\</span>
+<span class="w">   </span>-path<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$hereRaw</span><span class="s2">/test&quot;</span><span class="w"> </span>-o<span class="w"> </span><span class="se">\</span>
+<span class="w">   </span>-path<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$hereRaw</span><span class="s2">/template&quot;</span><span class="w"> </span><span class="se">\)</span><span class="w"> </span><span class="se">\</span>
+<span class="w">   </span>-prune<span class="w"> </span>-o<span class="w"> </span><span class="se">\</span>
+<span class="w">   </span>-name<span class="w"> </span><span class="s1">&#39;*.java&#39;</span><span class="w"> </span>-print0<span class="w"> </span><span class="p">|</span><span class="w"> </span>xargs<span class="w"> </span>-0<span class="w"> </span><span class="nv">$JAVAC</span>
+</pre></div>
+</section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              <a href="LLMP_default.html">default theme</a> | <a href="LLMP_abyss.html">abyss theme</a> | <a href="LLMP_void.html">void theme</a> | <a href="LLMP_white.html">white theme</a> | <a href="https://github.com/ionelmc/python-darkslide">github</a>
+            
+            
+            <aside class="source">
+              Source: <a href="LLMP.md">LLMP.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              7/62
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: LLMP.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_code has_footer slide-8">
+          <div class="inner">
+            
+            <header><h1>Make</h1></header>
+            
+            
+            <section><div class="highlight"><pre><span></span>.PHONY:<span class="w"> </span>all
+
+all:
+@echo<span class="w"> </span><span class="s2">&quot;Warning: at present this (FIXME) doesn&#39;t rescan Poem.dsd&quot;</span>
+@echo<span class="w"> </span><span class="s2">&quot;(which doesn&#39;t matter for most users)&quot;</span>
+@echo
+./compile.sh
+</pre></div>
+</section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              <a href="LLMP_default.html">default theme</a> | <a href="LLMP_abyss.html">abyss theme</a> | <a href="LLMP_void.html">void theme</a> | <a href="LLMP_white.html">white theme</a> | <a href="https://github.com/ionelmc/python-darkslide">github</a>
+            
+            
+            <aside class="source">
+              Source: <a href="LLMP.md">LLMP.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              8/62
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: LLMP.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_footer slide-9">
+          <div class="inner">
+            
+            <header><h1>ant</h1></header>
+            
+            
+            <section><p><img alt="ant" src="SadAnt.jpg" title="it was a joke alright!" /></p>
+<p><center>https://ant.apache.org/</center></p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              <a href="LLMP_default.html">default theme</a> | <a href="LLMP_abyss.html">abyss theme</a> | <a href="LLMP_void.html">void theme</a> | <a href="LLMP_white.html">white theme</a> | <a href="https://github.com/ionelmc/python-darkslide">github</a>
+            
+            
+            <aside class="source">
+              Source: <a href="LLMP.md">LLMP.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              9/62
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: LLMP.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_code has_footer slide-10">
+          <div class="inner">
+            
+            <header><h2>ant</h2></header>
+            
+            
+            <section><div class="highlight"><pre><span></span><span class="cm">&lt;!--</span>
+<span class="cm">In order to compile WebMacro, you may need to set these environment variables</span>
+<span class="cm">    JAVACC_HOME: your JavaCC installation home</span>
+<span class="cm"> --&gt;</span>
+<span class="cm">&lt;!--</span>
+<span class="cm">Note, you will need ANT 1.5.x, available from:</span>
+<span class="cm">      http://jakarta.apache.org/ant</span>
+<span class="cm">--&gt;</span>
+<span class="nt">&lt;project</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;WebMacro&quot;</span><span class="w"> </span><span class="na">default=</span><span class="s">&quot;usage&quot;</span><span class="w"> </span><span class="na">basedir=</span><span class="s">&quot;.&quot;</span><span class="nt">&gt;</span>
+
+<span class="nt">&lt;target</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;usage&quot;</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;echo&gt;</span><span class="err">&lt;</span>![CDATA[
+Usage:
+ant<span class="w"> </span>TARGET<span class="w"> </span>[-Dproperty1=value<span class="w"> </span>-DpropertyN=value]
+</pre></div>
+</section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              <a href="LLMP_default.html">default theme</a> | <a href="LLMP_abyss.html">abyss theme</a> | <a href="LLMP_void.html">void theme</a> | <a href="LLMP_white.html">white theme</a> | <a href="https://github.com/ionelmc/python-darkslide">github</a>
+            
+            
+            <aside class="source">
+              Source: <a href="LLMP.md">LLMP.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              10/62
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: LLMP.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_code has_footer slide-11">
+          <div class="inner">
+            
+            
+            <section><div class="highlight"><pre><span></span><span class="nt">&lt;target</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;compile&quot;</span><span class="w"> </span><span class="na">depends=</span><span class="s">&quot;prepare, precompile&quot;</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;filter</span><span class="w"> </span><span class="na">token=</span><span class="s">&quot;VERSION&quot;</span><span class="w"> </span><span class="na">value=</span><span class="s">&quot;${version}&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;filter</span><span class="w"> </span><span class="na">token=</span><span class="s">&quot;BUILD_DATE&quot;</span><span class="w"> </span><span class="na">value=</span><span class="s">&quot;${TODAY}&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;copy</span><span class="w"> </span><span class="na">todir=</span><span class="s">&quot;${tmpdir}&quot;</span><span class="w"> </span><span class="na">filtering=</span><span class="s">&quot;true&quot;</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;fileset</span><span class="w"> </span><span class="na">dir=</span><span class="s">&quot;src&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/copy&gt;</span>
+<span class="w">    </span><span class="nt">&lt;javac</span><span class="w"> </span><span class="na">srcdir=</span><span class="s">&quot;${tmpdir}&quot;</span>
+<span class="w">        </span><span class="na">fork=</span><span class="s">&quot;yes&quot;</span>
+<span class="w">        </span><span class="na">destdir=</span><span class="s">&quot;${classes}&quot;</span>
+<span class="w">        </span><span class="na">debug=</span><span class="s">&quot;on&quot;</span><span class="w"> </span><span class="na">optimize=</span><span class="s">&quot;off&quot;</span><span class="w"> </span><span class="na">deprecation=</span><span class="s">&quot;off&quot;</span><span class="nt">&gt;</span>
+<span class="w">      </span><span class="nt">&lt;classpath</span><span class="w"> </span><span class="na">refid=</span><span class="s">&quot;class.path&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/javac&gt;</span>
+<span class="w">    </span><span class="nt">&lt;copy</span><span class="w"> </span><span class="na">todir=</span><span class="s">&quot;${classes}&quot;</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;fileset</span><span class="w"> </span><span class="na">dir=</span><span class="s">&quot;${tmpdir}&quot;</span><span class="w"> </span><span class="na">includes=</span><span class="s">&quot;**/*.properties&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/copy&gt;</span>
+<span class="w">    </span><span class="nt">&lt;copy</span><span class="w"> </span><span class="na">file=</span><span class="s">&quot;WebMacro.defaults.${wm-style}&quot;</span><span class="w"> </span><span class="na">tofile=</span><span class="s">&quot;${classes}/WebMacro.defaults&quot;</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;touch</span><span class="w"> </span><span class="na">file=</span><span class="s">&quot;${classes}/WM-VERSION-${version}&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/target&gt;</span>
+</pre></div>
+</section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              <a href="LLMP_default.html">default theme</a> | <a href="LLMP_abyss.html">abyss theme</a> | <a href="LLMP_void.html">void theme</a> | <a href="LLMP_white.html">white theme</a> | <a href="https://github.com/ionelmc/python-darkslide">github</a>
+            
+            
+            <aside class="source">
+              Source: <a href="LLMP.md">LLMP.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              11/62
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: LLMP.md -->
+      <div class="slide-wrapper">
+        <div class="slide slide-12">
+          <div class="inner">
+            
+            <header><h1>Maven</h1></header>
+            
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              <a href="LLMP_default.html">default theme</a> | <a href="LLMP_abyss.html">abyss theme</a> | <a href="LLMP_void.html">void theme</a> | <a href="LLMP_white.html">white theme</a> | <a href="https://github.com/ionelmc/python-darkslide">github</a>
+            
+            
+            <aside class="source">
+              Source: <a href="LLMP.md">LLMP.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              12/62
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: LLMP.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_footer slide-13">
+          <div class="inner">
+            
+            <header><h1>Maven - the name</h1></header>
+            
+            
+            <section><p>"Someone who is dazzlingly skilled in any field.</p>
+<p>synonyms: ace, adept, champion, genius, hotshot, sensation, star, superhero, superstar, virtuoso, whiz, whizz, wiz, wizard."</p>
+<p>(not known outside of US) </p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              <a href="LLMP_default.html">default theme</a> | <a href="LLMP_abyss.html">abyss theme</a> | <a href="LLMP_void.html">void theme</a> | <a href="LLMP_white.html">white theme</a> | <a href="https://github.com/ionelmc/python-darkslide">github</a>
+            
+            
+            <aside class="source">
+              Source: <a href="LLMP.md">LLMP.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              13/62
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: LLMP.md -->
+      <div class="slide-wrapper">
+        <div class="slide slide-14">
+          <div class="inner">
+            
+            <header><h1>Maven History</h1></header>
+            
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              <a href="LLMP_default.html">default theme</a> | <a href="LLMP_abyss.html">abyss theme</a> | <a href="LLMP_void.html">void theme</a> | <a href="LLMP_white.html">white theme</a> | <a href="https://github.com/ionelmc/python-darkslide">github</a>
+            
+            
+            <aside class="source">
+              Source: <a href="LLMP.md">LLMP.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              14/62
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: LLMP.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_footer slide-15">
+          <div class="inner">
+            
+            <header><h2>Maven (1)</h2></header>
+            
+            
+            <section><p>It's all about the POM</p>
+<p>and the docs</p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              <a href="LLMP_default.html">default theme</a> | <a href="LLMP_abyss.html">abyss theme</a> | <a href="LLMP_void.html">void theme</a> | <a href="LLMP_white.html">white theme</a> | <a href="https://github.com/ionelmc/python-darkslide">github</a>
+            
+            
+            <aside class="source">
+              Source: <a href="LLMP.md">LLMP.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              15/62
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: LLMP.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_code has_footer slide-16">
+          <div class="inner">
+            
+            <header><h1>&nbsp;</h1></header>
+            
+            
+            <section><h2>Maven2</h2>
+<div class="highlight"><pre><span></span>.m2/repository
+</pre></div>
+
+<p>Yay!</p>
+<h2>Maven3</h2>
+<p>Err</p>
+<h2>Gradle</h2>
+<p>Whatever</p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              <a href="LLMP_default.html">default theme</a> | <a href="LLMP_abyss.html">abyss theme</a> | <a href="LLMP_void.html">void theme</a> | <a href="LLMP_white.html">white theme</a> | <a href="https://github.com/ionelmc/python-darkslide">github</a>
+            
+            
+            <aside class="source">
+              Source: <a href="LLMP.md">LLMP.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              16/62
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: LLMP.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_footer slide-17">
+          <div class="inner">
+            
+            <header><h1>Long Lived Maven Projects</h1></header>
+            
+            
+            <section><h2>Maven is the longest lived Maven project</h2></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              <a href="LLMP_default.html">default theme</a> | <a href="LLMP_abyss.html">abyss theme</a> | <a href="LLMP_void.html">void theme</a> | <a href="LLMP_white.html">white theme</a> | <a href="https://github.com/ionelmc/python-darkslide">github</a>
+            
+            
+            <aside class="source">
+              Source: <a href="LLMP.md">LLMP.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              17/62
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: LLMP.md -->
+      <div class="slide-wrapper">
+        <div class="slide slide-18">
+          <div class="inner">
+            
+            <header><h1>Current Project</h1></header>
+            
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              <a href="LLMP_default.html">default theme</a> | <a href="LLMP_abyss.html">abyss theme</a> | <a href="LLMP_void.html">void theme</a> | <a href="LLMP_white.html">white theme</a> | <a href="https://github.com/ionelmc/python-darkslide">github</a>
+            
+            
+            <aside class="source">
+              Source: <a href="LLMP.md">LLMP.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              18/62
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: LLMP.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_footer slide-19">
+          <div class="inner">
+            
+            <header><h1>Pom Lines</h1></header>
+            
+            
+            <section><pre><code>find * -name pom.xml |xargs wc -l
+
+Was : 40675
+Is:   23525
+</code></pre></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              <a href="LLMP_default.html">default theme</a> | <a href="LLMP_abyss.html">abyss theme</a> | <a href="LLMP_void.html">void theme</a> | <a href="LLMP_white.html">white theme</a> | <a href="https://github.com/ionelmc/python-darkslide">github</a>
+            
+            
+            <aside class="source">
+              Source: <a href="LLMP.md">LLMP.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              19/62
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: LLMP.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_footer slide-20">
+          <div class="inner">
+            
+            <header><h1>Blogger</h1></header>
+            
+            
+            <section><ul>
+<li><a href="https://tim-pizey.blogspot.com/2009/01/first-post.html" target=_>
+First Post - January 2009
+</a></li>
+<li><a href="https://tim-pizey.blogspot.com/2024/01/five-element-maven-version-numbering.html" target=_>
+N5 Versioning
+</a></li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+              <p>I am a blogger
+Blogs are good.  </p>
+            
+            </section>
+          </div>
+          <footer>
+            
+              <a href="LLMP_default.html">default theme</a> | <a href="LLMP_abyss.html">abyss theme</a> | <a href="LLMP_void.html">void theme</a> | <a href="LLMP_white.html">white theme</a> | <a href="https://github.com/ionelmc/python-darkslide">github</a>
+            
+            
+            <aside class="source">
+              Source: <a href="LLMP.md">LLMP.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              20/62
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: LLMP.md -->
+      <div class="slide-wrapper">
+        <div class="slide slide-21">
+          <div class="inner">
+            
+            <header><h1>∀</h1></header>
+            
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              <a href="LLMP_default.html">default theme</a> | <a href="LLMP_abyss.html">abyss theme</a> | <a href="LLMP_void.html">void theme</a> | <a href="LLMP_white.html">white theme</a> | <a href="https://github.com/ionelmc/python-darkslide">github</a>
+            
+            
+            <aside class="source">
+              Source: <a href="LLMP.md">LLMP.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              21/62
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: LLMP.md -->
+      <div class="slide-wrapper">
+        <div class="slide slide-22">
+          <div class="inner">
+            
+            <header><h1>For all</h1></header>
+            
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              <a href="LLMP_default.html">default theme</a> | <a href="LLMP_abyss.html">abyss theme</a> | <a href="LLMP_void.html">void theme</a> | <a href="LLMP_white.html">white theme</a> | <a href="https://github.com/ionelmc/python-darkslide">github</a>
+            
+            
+            <aside class="source">
+              Source: <a href="LLMP.md">LLMP.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              22/62
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: LLMP.md -->
+      <div class="slide-wrapper">
+        <div class="slide slide-23">
+          <div class="inner">
+            
+            <header><h1>Git Tombstones</h1></header>
+            
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              <a href="LLMP_default.html">default theme</a> | <a href="LLMP_abyss.html">abyss theme</a> | <a href="LLMP_void.html">void theme</a> | <a href="LLMP_white.html">white theme</a> | <a href="https://github.com/ionelmc/python-darkslide">github</a>
+            
+            
+            <aside class="source">
+              Source: <a href="LLMP.md">LLMP.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              23/62
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: LLMP.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_footer slide-24">
+          <div class="inner">
+            
+            <header><h1>Git Tombstones</h1></header>
+            
+            
+            <section><ul>
+<li>Nothing is lost in git, delete with confidence</li>
+<li>Out of sight out of mind</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              <a href="LLMP_default.html">default theme</a> | <a href="LLMP_abyss.html">abyss theme</a> | <a href="LLMP_void.html">void theme</a> | <a href="LLMP_white.html">white theme</a> | <a href="https://github.com/ionelmc/python-darkslide">github</a>
+            
+            
+            <aside class="source">
+              Source: <a href="LLMP.md">LLMP.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              24/62
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: LLMP.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_footer slide-25">
+          <div class="inner">
+            
+            <header><h1>rememberance.md</h1></header>
+            
+            
+            <section><p>| File                |    Date    | Reason                                   |
+|---------------------|:----------:|:-----------------------------------------|
+| maven-tomcat-plugin | 2013-11-11 | Who knows, the team just walked away     |
+| tpp-module          | 2024-02-22 | Finished polishing, flushing now         |
+| my-perl-script.pl   | 2019-03-23 | Moving on up                             |</p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              <a href="LLMP_default.html">default theme</a> | <a href="LLMP_abyss.html">abyss theme</a> | <a href="LLMP_void.html">void theme</a> | <a href="LLMP_white.html">white theme</a> | <a href="https://github.com/ionelmc/python-darkslide">github</a>
+            
+            
+            <aside class="source">
+              Source: <a href="LLMP.md">LLMP.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              25/62
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: LLMP.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_footer slide-26">
+          <div class="inner">
+            
+            <header><h1>GhatGPT</h1></header>
+            
+            
+            <section><h3>What happens when you use Maven for a long time?</h3>
+<p>Using Maven for a long time can lead to various outcomes, both positive and negative, depending on how it's utilized and the context of its usage. Here are some potential scenarios:</p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              <a href="LLMP_default.html">default theme</a> | <a href="LLMP_abyss.html">abyss theme</a> | <a href="LLMP_void.html">void theme</a> | <a href="LLMP_white.html">white theme</a> | <a href="https://github.com/ionelmc/python-darkslide">github</a>
+            
+            
+            <aside class="source">
+              Source: <a href="LLMP.md">LLMP.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              26/62
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: LLMP.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_footer slide-27">
+          <div class="inner">
+            
+            <header><h4>Increased Project Stability:</h4></header>
+            
+            
+            <section><p>Over time, as you become more familiar with Maven, your project setups become more standardized and stable. Maven's dependency management ensures that your project remains consistent and avoids dependency conflicts, leading to fewer build errors and smoother development processes.</p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              <a href="LLMP_default.html">default theme</a> | <a href="LLMP_abyss.html">abyss theme</a> | <a href="LLMP_void.html">void theme</a> | <a href="LLMP_white.html">white theme</a> | <a href="https://github.com/ionelmc/python-darkslide">github</a>
+            
+            
+            <aside class="source">
+              Source: <a href="LLMP.md">LLMP.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              27/62
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: LLMP.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_footer slide-28">
+          <div class="inner">
+            
+            <header><h4>Efficient Build Management:</h4></header>
+            
+            
+            <section><p>With experience, you become more proficient in configuring Maven builds efficiently. You might create custom plugins or optimize configurations to streamline the build process, leading to faster builds and improved productivity.</p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              <a href="LLMP_default.html">default theme</a> | <a href="LLMP_abyss.html">abyss theme</a> | <a href="LLMP_void.html">void theme</a> | <a href="LLMP_white.html">white theme</a> | <a href="https://github.com/ionelmc/python-darkslide">github</a>
+            
+            
+            <aside class="source">
+              Source: <a href="LLMP.md">LLMP.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              28/62
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: LLMP.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_footer slide-29">
+          <div class="inner">
+            
+            <header><h4>Dependency Management Challenges:</h4></header>
+            
+            
+            <section><p>As projects grow larger and dependencies proliferate, managing them can become increasingly complex. Dependency conflicts, version mismatches, and transitive dependencies can lead to headaches and require careful management to avoid runtime issues.</p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              <a href="LLMP_default.html">default theme</a> | <a href="LLMP_abyss.html">abyss theme</a> | <a href="LLMP_void.html">void theme</a> | <a href="LLMP_white.html">white theme</a> | <a href="https://github.com/ionelmc/python-darkslide">github</a>
+            
+            
+            <aside class="source">
+              Source: <a href="LLMP.md">LLMP.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              29/62
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: LLMP.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_footer slide-30">
+          <div class="inner">
+            
+            <header><h4>Build Tool Fatigue:</h4></header>
+            
+            
+            <section><p>While Maven is powerful, it's not the only build tool available. After using it for a long time, some developers might start feeling its limitations or desire to explore alternative build tools like Gradle or Bazel for specific projects or scenarios.</p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              <a href="LLMP_default.html">default theme</a> | <a href="LLMP_abyss.html">abyss theme</a> | <a href="LLMP_void.html">void theme</a> | <a href="LLMP_white.html">white theme</a> | <a href="https://github.com/ionelmc/python-darkslide">github</a>
+            
+            
+            <aside class="source">
+              Source: <a href="LLMP.md">LLMP.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              30/62
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: LLMP.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_footer slide-31">
+          <div class="inner">
+            
+            <header><h4>Maintenance Overhead:</h4></header>
+            
+            
+            <section><p>As projects evolve, maintaining Maven configurations can become time-consuming, especially if the project structure or dependencies need frequent updates. Keeping up with new releases, security patches, and best practices can also require ongoing effort.</p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              <a href="LLMP_default.html">default theme</a> | <a href="LLMP_abyss.html">abyss theme</a> | <a href="LLMP_void.html">void theme</a> | <a href="LLMP_white.html">white theme</a> | <a href="https://github.com/ionelmc/python-darkslide">github</a>
+            
+            
+            <aside class="source">
+              Source: <a href="LLMP.md">LLMP.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              31/62
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: LLMP.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_footer slide-32">
+          <div class="inner">
+            
+            <header><h4>Community Support and Resources:</h4></header>
+            
+            
+            <section><p>Long-term use of Maven often means tapping into a vast community of users and resources, including documentation, forums, and plugins. This ecosystem can provide valuable insights, solutions to common problems, and opportunities for collaboration.</p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              <a href="LLMP_default.html">default theme</a> | <a href="LLMP_abyss.html">abyss theme</a> | <a href="LLMP_void.html">void theme</a> | <a href="LLMP_white.html">white theme</a> | <a href="https://github.com/ionelmc/python-darkslide">github</a>
+            
+            
+            <aside class="source">
+              Source: <a href="LLMP.md">LLMP.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              32/62
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: LLMP.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_footer slide-33">
+          <div class="inner">
+            
+            <header><h4>Dependency Ecosystem Changes:</h4></header>
+            
+            
+            <section><p>Over time, the libraries and frameworks your project depends on might evolve or even become deprecated. Staying abreast of these changes and updating dependencies accordingly is essential to ensure the long-term viability and security of your project.</p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              <a href="LLMP_default.html">default theme</a> | <a href="LLMP_abyss.html">abyss theme</a> | <a href="LLMP_void.html">void theme</a> | <a href="LLMP_white.html">white theme</a> | <a href="https://github.com/ionelmc/python-darkslide">github</a>
+            
+            
+            <aside class="source">
+              Source: <a href="LLMP.md">LLMP.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              33/62
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: LLMP.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_footer slide-34">
+          <div class="inner">
+            
+            
+            <section><p>In summary, using Maven over the long term can lead to greater stability, efficiency, and community support for your projects. However, it also comes with challenges such as dependency management complexity and ongoing maintenance overhead. Adaptability and staying informed about best practices and ecosystem changes are key to maximizing the benefits of long-term Maven usage.</p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              <a href="LLMP_default.html">default theme</a> | <a href="LLMP_abyss.html">abyss theme</a> | <a href="LLMP_void.html">void theme</a> | <a href="LLMP_white.html">white theme</a> | <a href="https://github.com/ionelmc/python-darkslide">github</a>
+            
+            
+            <aside class="source">
+              Source: <a href="LLMP.md">LLMP.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              34/62
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: LLMP.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_footer slide-35">
+          <div class="inner">
+            
+            <header><h1>ChatGPT</h1></header>
+            
+            
+            <section><ul>
+<li><code>Tim:</code> Keep answers short and to the point</li>
+<li><code>CGPT:</code> With prolonged use of Maven, you may encounter dependency conflicts, build errors, and potentially slower build times due to the accumulation of dependencies and configurations. It's important to regularly update dependencies and plugins to mitigate these issues.</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              <a href="LLMP_default.html">default theme</a> | <a href="LLMP_abyss.html">abyss theme</a> | <a href="LLMP_void.html">void theme</a> | <a href="LLMP_white.html">white theme</a> | <a href="https://github.com/ionelmc/python-darkslide">github</a>
+            
+            
+            <aside class="source">
+              Source: <a href="LLMP.md">LLMP.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              35/62
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: LLMP.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_footer slide-36">
+          <div class="inner">
+            
+            <header><h1>Imports</h1></header>
+            
+            
+            <section><p><img alt="Imports" src="imports-Screenshot_2024-02-02_100120.png" /></p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              <a href="LLMP_default.html">default theme</a> | <a href="LLMP_abyss.html">abyss theme</a> | <a href="LLMP_void.html">void theme</a> | <a href="LLMP_white.html">white theme</a> | <a href="https://github.com/ionelmc/python-darkslide">github</a>
+            
+            
+            <aside class="source">
+              Source: <a href="LLMP.md">LLMP.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              36/62
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: LLMP.md -->
+      <div class="slide-wrapper">
+        <div class="slide slide-37">
+          <div class="inner">
+            
+            <header><h1>Progress</h1></header>
+            
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              <a href="LLMP_default.html">default theme</a> | <a href="LLMP_abyss.html">abyss theme</a> | <a href="LLMP_void.html">void theme</a> | <a href="LLMP_white.html">white theme</a> | <a href="https://github.com/ionelmc/python-darkslide">github</a>
+            
+            
+            <aside class="source">
+              Source: <a href="LLMP.md">LLMP.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              37/62
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: LLMP.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_footer slide-38">
+          <div class="inner">
+            
+            <header><h1>Artefacts</h1></header>
+            
+            
+            <section><p><img alt="Artefacts" src="Artefacts.png" /></p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              <a href="LLMP_default.html">default theme</a> | <a href="LLMP_abyss.html">abyss theme</a> | <a href="LLMP_void.html">void theme</a> | <a href="LLMP_white.html">white theme</a> | <a href="https://github.com/ionelmc/python-darkslide">github</a>
+            
+            
+            <aside class="source">
+              Source: <a href="LLMP.md">LLMP.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              38/62
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: LLMP.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_footer slide-39">
+          <div class="inner">
+            
+            <header><h1>Classes</h1></header>
+            
+            
+            <section><p><img alt="Classes" src="Classes.png" /></p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              <a href="LLMP_default.html">default theme</a> | <a href="LLMP_abyss.html">abyss theme</a> | <a href="LLMP_void.html">void theme</a> | <a href="LLMP_white.html">white theme</a> | <a href="https://github.com/ionelmc/python-darkslide">github</a>
+            
+            
+            <aside class="source">
+              Source: <a href="LLMP.md">LLMP.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              39/62
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: LLMP.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_footer slide-40">
+          <div class="inner">
+            
+            <header><h1>Ignored Tests</h1></header>
+            
+            
+            <section><p><img alt="&quot;Ignored Tests&quot;" src="IgnoredTests.png" /></p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              <a href="LLMP_default.html">default theme</a> | <a href="LLMP_abyss.html">abyss theme</a> | <a href="LLMP_void.html">void theme</a> | <a href="LLMP_white.html">white theme</a> | <a href="https://github.com/ionelmc/python-darkslide">github</a>
+            
+            
+            <aside class="source">
+              Source: <a href="LLMP.md">LLMP.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              40/62
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: LLMP.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_footer slide-41">
+          <div class="inner">
+            
+            <header><h1>Java Repositories</h1></header>
+            
+            
+            <section><p><img alt="&quot;Java Repositories&quot;" src="JavaRepositories.png" /></p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              <a href="LLMP_default.html">default theme</a> | <a href="LLMP_abyss.html">abyss theme</a> | <a href="LLMP_void.html">void theme</a> | <a href="LLMP_white.html">white theme</a> | <a href="https://github.com/ionelmc/python-darkslide">github</a>
+            
+            
+            <aside class="source">
+              Source: <a href="LLMP.md">LLMP.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              41/62
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: LLMP.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_footer slide-42">
+          <div class="inner">
+            
+            <header><h1>Java Repositories Stacked</h1></header>
+            
+            
+            <section><p><img alt="&quot;Java Repositries&quot;" src="JavaRepositoriesStacked.png" /></p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              <a href="LLMP_default.html">default theme</a> | <a href="LLMP_abyss.html">abyss theme</a> | <a href="LLMP_void.html">void theme</a> | <a href="LLMP_white.html">white theme</a> | <a href="https://github.com/ionelmc/python-darkslide">github</a>
+            
+            
+            <aside class="source">
+              Source: <a href="LLMP.md">LLMP.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              42/62
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: LLMP.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_footer slide-43">
+          <div class="inner">
+            
+            <header><h1>Total Repositories</h1></header>
+            
+            
+            <section><p><img alt="&quot;Total Repositories&quot;" src="TotalRepositories.png" /></p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              <a href="LLMP_default.html">default theme</a> | <a href="LLMP_abyss.html">abyss theme</a> | <a href="LLMP_void.html">void theme</a> | <a href="LLMP_white.html">white theme</a> | <a href="https://github.com/ionelmc/python-darkslide">github</a>
+            
+            
+            <aside class="source">
+              Source: <a href="LLMP.md">LLMP.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              43/62
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: LLMP.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_footer slide-44">
+          <div class="inner">
+            
+            <header><h1>Total Repositories Stacked</h1></header>
+            
+            
+            <section><p><img alt="&quot;Total Repositoeies&quot;" src="TotalRepositoriesStacked.png" /></p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              <a href="LLMP_default.html">default theme</a> | <a href="LLMP_abyss.html">abyss theme</a> | <a href="LLMP_void.html">void theme</a> | <a href="LLMP_white.html">white theme</a> | <a href="https://github.com/ionelmc/python-darkslide">github</a>
+            
+            
+            <aside class="source">
+              Source: <a href="LLMP.md">LLMP.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              44/62
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: LLMP.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_footer slide-45">
+          <div class="inner">
+            
+            <header><h1>Profiles</h1></header>
+            
+            
+            <section><p><img alt="&quot;Profiles&quot;" src="Profiles.png" /></p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              <a href="LLMP_default.html">default theme</a> | <a href="LLMP_abyss.html">abyss theme</a> | <a href="LLMP_void.html">void theme</a> | <a href="LLMP_white.html">white theme</a> | <a href="https://github.com/ionelmc/python-darkslide">github</a>
+            
+            
+            <aside class="source">
+              Source: <a href="LLMP.md">LLMP.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              45/62
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: LLMP.md -->
+      <div class="slide-wrapper">
+        <div class="slide slide-46">
+          <div class="inner">
+            
+            <header><h1>DRY</h1></header>
+            
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              <a href="LLMP_default.html">default theme</a> | <a href="LLMP_abyss.html">abyss theme</a> | <a href="LLMP_void.html">void theme</a> | <a href="LLMP_white.html">white theme</a> | <a href="https://github.com/ionelmc/python-darkslide">github</a>
+            
+            
+            <aside class="source">
+              Source: <a href="LLMP.md">LLMP.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              46/62
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: LLMP.md -->
+      <div class="slide-wrapper">
+        <div class="slide slide-47">
+          <div class="inner">
+            
+            <header><h1>Do NOT Repeat Yourself</h1></header>
+            
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              <a href="LLMP_default.html">default theme</a> | <a href="LLMP_abyss.html">abyss theme</a> | <a href="LLMP_void.html">void theme</a> | <a href="LLMP_white.html">white theme</a> | <a href="https://github.com/ionelmc/python-darkslide">github</a>
+            
+            
+            <aside class="source">
+              Source: <a href="LLMP.md">LLMP.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              47/62
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: LLMP.md -->
+      <div class="slide-wrapper">
+        <div class="slide slide-48">
+          <div class="inner">
+            
+            <header><h1>Mono-Repo</h1></header>
+            
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              <a href="LLMP_default.html">default theme</a> | <a href="LLMP_abyss.html">abyss theme</a> | <a href="LLMP_void.html">void theme</a> | <a href="LLMP_white.html">white theme</a> | <a href="https://github.com/ionelmc/python-darkslide">github</a>
+            
+            
+            <aside class="source">
+              Source: <a href="LLMP.md">LLMP.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              48/62
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: LLMP.md -->
+      <div class="slide-wrapper">
+        <div class="slide slide-49">
+          <div class="inner">
+            
+            <header><h1>#monolithsGood</h1></header>
+            
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              <a href="LLMP_default.html">default theme</a> | <a href="LLMP_abyss.html">abyss theme</a> | <a href="LLMP_void.html">void theme</a> | <a href="LLMP_white.html">white theme</a> | <a href="https://github.com/ionelmc/python-darkslide">github</a>
+            
+            
+            <aside class="source">
+              Source: <a href="LLMP.md">LLMP.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              49/62
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: LLMP.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_footer slide-50">
+          <div class="inner">
+            
+            
+            <section><pre><code>!python --linenos=no
+def log(self, message, level='notice'):
+    if self.logger and not callable(self.logger):
+        raise ValueError(u"Invalid logger set, must be a callable")
+
+    if self.verbose and self.logger:
+        self.logger(message, level)    !python
+def log(self, message, level='notice'):
+    if self.logger and not callable(self.logger):
+        raise ValueError(u"Invalid logger set, must be a callable")
+
+    if self.verbose and self.logger:
+        self.logger(message, level)
+</code></pre></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              <a href="LLMP_default.html">default theme</a> | <a href="LLMP_abyss.html">abyss theme</a> | <a href="LLMP_void.html">void theme</a> | <a href="LLMP_white.html">white theme</a> | <a href="https://github.com/ionelmc/python-darkslide">github</a>
+            
+            
+            <aside class="source">
+              Source: <a href="LLMP.md">LLMP.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              50/62
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: LLMP.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_code has_footer slide-51">
+          <div class="inner">
+            
+            
+            <section><div class="highlight"><pre><span></span><span class="kd">public</span><span class="w"> </span><span class="n">classMyClass</span><span class="w"> </span><span class="p">{</span><span class="w"> </span>
+<span class="p">}</span>
+</pre></div>
+</section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              <a href="LLMP_default.html">default theme</a> | <a href="LLMP_abyss.html">abyss theme</a> | <a href="LLMP_void.html">void theme</a> | <a href="LLMP_white.html">white theme</a> | <a href="https://github.com/ionelmc/python-darkslide">github</a>
+            
+            
+            <aside class="source">
+              Source: <a href="LLMP.md">LLMP.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              51/62
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: LLMP.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_code has_footer slide-52">
+          <div class="inner">
+            
+            
+            <section><div class="highlight"><pre><span></span><span class="nt">&lt;properties&gt;</span>
+<span class="w">    </span><span class="nt">&lt;git.repo.name&gt;</span>module23<span class="nt">&lt;/git.repo.name&gt;</span>
+<span class="nt">&lt;/properties&gt;</span>
+
+<span class="nt">&lt;scm&gt;</span>
+<span class="w">    </span><span class="nt">&lt;connection&gt;</span>scm|git|ssh://git@github.com/timp/${git.repo.name}<span class="nt">&lt;/connection&gt;</span>
+<span class="w">    </span><span class="nt">&lt;developerConnection&gt;</span>scm|git|ssh://git@github.com/timp/${git.repo.name}<span class="nt">&lt;/developerConnection&gt;</span>
+<span class="w">    </span><span class="nt">&lt;url&gt;</span>scm|git|ssh://git@github.com/timp/${git.repo.name}<span class="nt">&lt;/url&gt;</span>
+<span class="w">    </span><span class="nt">&lt;tag&gt;</span>HEAD<span class="nt">&lt;/tag&gt;</span>
+<span class="nt">&lt;/scm&gt;</span>
+</pre></div>
+</section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              <a href="LLMP_default.html">default theme</a> | <a href="LLMP_abyss.html">abyss theme</a> | <a href="LLMP_void.html">void theme</a> | <a href="LLMP_white.html">white theme</a> | <a href="https://github.com/ionelmc/python-darkslide">github</a>
+            
+            
+            <aside class="source">
+              Source: <a href="LLMP.md">LLMP.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              52/62
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: LLMP.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_code has_footer slide-53">
+          <div class="inner">
+            
+            <header><h1>Work around Maven 'inheritance'</h1></header>
+            
+            
+            <section><div class="highlight"><pre><span></span><span class="nt">&lt;scm</span><span class="w"> </span>
+<span class="w">        </span><span class="na">child.scm.connection.inherit.append.path=</span><span class="s">&quot;false&quot;</span><span class="w"> </span>
+<span class="w">        </span><span class="na">child.scm.developerConnection.inherit.append.path=</span><span class="s">&quot;false&quot;</span><span class="w"> </span>
+<span class="w">        </span><span class="na">child.scm.url.inherit.append.path=</span><span class="s">&quot;false&quot;</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;connection&gt;</span>scm|git|ssh://git@github.com/timp/${git.repo.name}<span class="nt">&lt;/connection&gt;</span>
+<span class="w">    </span><span class="nt">&lt;developerConnection&gt;</span>scm|git|ssh://git@github.com/timp/${git.repo.name}<span class="nt">&lt;/developerConnection&gt;</span>
+<span class="w">    </span><span class="nt">&lt;url&gt;</span>scm|git|ssh://git@github.com/timp/${git.repo.name}<span class="nt">&lt;/url&gt;</span>
+<span class="w">    </span><span class="nt">&lt;tag&gt;</span>HEAD<span class="nt">&lt;/tag&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/scm&gt;</span>
+</pre></div>
+</section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              <a href="LLMP_default.html">default theme</a> | <a href="LLMP_abyss.html">abyss theme</a> | <a href="LLMP_void.html">void theme</a> | <a href="LLMP_white.html">white theme</a> | <a href="https://github.com/ionelmc/python-darkslide">github</a>
+            
+            
+            <aside class="source">
+              Source: <a href="LLMP.md">LLMP.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              53/62
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: LLMP.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_code has_footer slide-54">
+          <div class="inner">
+            
+            
+            <section><div class="highlight"><pre><span></span><span class="nt">&lt;properties&gt;</span>
+<span class="w">    </span><span class="nt">&lt;git.repo.name&gt;</span>module23<span class="nt">&lt;/git.repo.name&gt;</span>
+<span class="nt">&lt;/properties&gt;</span>
+</pre></div>
+</section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              <a href="LLMP_default.html">default theme</a> | <a href="LLMP_abyss.html">abyss theme</a> | <a href="LLMP_void.html">void theme</a> | <a href="LLMP_white.html">white theme</a> | <a href="https://github.com/ionelmc/python-darkslide">github</a>
+            
+            
+            <aside class="source">
+              Source: <a href="LLMP.md">LLMP.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              54/62
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: LLMP.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_footer slide-55">
+          <div class="inner">
+            
+            <header><h1>Archiving</h1></header>
+            
+            
+            <section><ul>
+<li>Merge all branches</li>
+<li>Close all pull request</li>
+<li>If not passing tests document in README</li>
+<li>Put reason for archiving in README</li>
+<li>Mark as archived in github</li>
+</ul>
+<h2>Archiving is scary so should be done by a Team Lead</h2></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              <a href="LLMP_default.html">default theme</a> | <a href="LLMP_abyss.html">abyss theme</a> | <a href="LLMP_void.html">void theme</a> | <a href="LLMP_white.html">white theme</a> | <a href="https://github.com/ionelmc/python-darkslide">github</a>
+            
+            
+            <aside class="source">
+              Source: <a href="LLMP.md">LLMP.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              55/62
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: LLMP.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_footer slide-56">
+          <div class="inner">
+            
+            <header><h1>Versioning</h1></header>
+            
+            
+            <section><p>Date.Build ?</p>
+<pre><code> !XML 
+ &lt;dependency&gt;
+   &lt;groupId&gt;commons-io&lt;/groupId&gt;
+   &lt;artifactId&gt;commons-io&lt;/artifactId&gt;
+   &lt;version&gt;20030203.000550&lt;/version&gt;
+   &lt;scope&gt;test&lt;/scope&gt;
+ &lt;/dependency&gt;
+</code></pre>
+<p>For those without Groups:</p>
+<pre><code> !XML 
+ &lt;dependency&gt;
+   &lt;groupId&gt;hsqldb&lt;/groupId&gt;
+   &lt;artifactId&gt;hsqldb&lt;/artifactId&gt;
+   &lt;version&gt;1.8.0.1&lt;/version&gt;
+   &lt;scope&gt;compile&lt;/scope&gt;
+ &lt;/dependency&gt;
+
+  &lt;dependency&gt;
+    &lt;groupId&gt;com.elsevier.smd&lt;/groupId&gt;
+    &lt;artifactId&gt;smd-local-dynamodb-support&lt;/artifactId&gt;
+    &lt;version&gt;2017-03-01&lt;/version&gt;
+  &lt;/dependency&gt;
+
+  &lt;dependency&gt;
+    &lt;groupId&gt;org.eclipse.jetty&lt;/groupId&gt;
+    &lt;artifactId&gt;jetty-security&lt;/artifactId&gt;
+    &lt;version&gt;8.1.7.v20120910&lt;/version&gt;
+    &lt;scope&gt;test&lt;/scope&gt;
+  &lt;/dependency&gt;
+</code></pre></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              <a href="LLMP_default.html">default theme</a> | <a href="LLMP_abyss.html">abyss theme</a> | <a href="LLMP_void.html">void theme</a> | <a href="LLMP_white.html">white theme</a> | <a href="https://github.com/ionelmc/python-darkslide">github</a>
+            
+            
+            <aside class="source">
+              Source: <a href="LLMP.md">LLMP.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              56/62
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: LLMP.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_footer slide-57">
+          <div class="inner">
+            
+            <header><h1>Do not use properties for versions</h1></header>
+            
+            
+            <section><h2>Naming is hard</h2>
+<h2>Do not introduce a new, private, unvalidated property naming system</h2>
+<pre><code> !XML 
+ &lt;properties&gt;
+   &lt;aws.sdk.version&gt;1.12.287&lt;/aws.sdk.version&gt;
+ &lt;/properties&gt;
+&lt;dependency&gt;
+    &lt;groupId&gt;com.amazonaws&lt;/groupId&gt;
+    &lt;artifactId&gt;aws-java-sdk-dynamodb&lt;/artifactId&gt;
+    &lt;version&gt;${aws.sdk.version}&lt;/version&gt;
+&lt;/dependency&gt;
+&lt;dependency&gt;
+    &lt;groupId&gt;com.amazonaws&lt;/groupId&gt;
+    &lt;artifactId&gt;aws-java-sdk-sqs&lt;/artifactId&gt;
+    &lt;version&gt;${aws.sdk.version}&lt;/version&gt;
+&lt;/dependency&gt;
+&lt;dependency&gt;
+    &lt;groupId&gt;com.amazonaws&lt;/groupId&gt;
+    &lt;artifactId&gt;aws-java-sdk-core&lt;/artifactId&gt;
+    &lt;version&gt;${aws.sdk.version}&lt;/version&gt;
+&lt;/dependency&gt;
+&lt;dependency&gt;
+    &lt;groupId&gt;com.amazonaws&lt;/groupId&gt;
+    &lt;artifactId&gt;aws-java-sdk-sns&lt;/artifactId&gt;
+    &lt;version&gt;${aws.sdk.version}&lt;/version&gt;
+&lt;/dependency&gt;
+</code></pre></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              <a href="LLMP_default.html">default theme</a> | <a href="LLMP_abyss.html">abyss theme</a> | <a href="LLMP_void.html">void theme</a> | <a href="LLMP_white.html">white theme</a> | <a href="https://github.com/ionelmc/python-darkslide">github</a>
+            
+            
+            <aside class="source">
+              Source: <a href="LLMP.md">LLMP.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              57/62
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: LLMP.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_footer slide-58">
+          <div class="inner">
+            
+            <header><h1>Take Aways</h1></header>
+            
+            
+            <section><p><img alt="East Oxford Take Away" src="EverestTakeAway.jpg" title="Take Away" /></p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              <a href="LLMP_default.html">default theme</a> | <a href="LLMP_abyss.html">abyss theme</a> | <a href="LLMP_void.html">void theme</a> | <a href="LLMP_white.html">white theme</a> | <a href="https://github.com/ionelmc/python-darkslide">github</a>
+            
+            
+            <aside class="source">
+              Source: <a href="LLMP.md">LLMP.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              58/62
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: LLMP.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_footer slide-59">
+          <div class="inner">
+            
+            <header><h1>Take Aways</h1></header>
+            
+            
+            <section><ul>
+<li>Module sequential artifact id needs to be project scoped</li>
+<li>Open Source library maintainers are not responsible for updating their clients, Enterprise Developers are</li>
+<li>Don't use properties for versions</li>
+<li>Archiving is a Team Lead responsibility</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              <a href="LLMP_default.html">default theme</a> | <a href="LLMP_abyss.html">abyss theme</a> | <a href="LLMP_void.html">void theme</a> | <a href="LLMP_white.html">white theme</a> | <a href="https://github.com/ionelmc/python-darkslide">github</a>
+            
+            
+            <aside class="source">
+              Source: <a href="LLMP.md">LLMP.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              59/62
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: LLMP.md -->
+      <div class="slide-wrapper">
+        <div class="slide slide-60">
+          <div class="inner">
+            
+            <header><h1>Questions ?</h1></header>
+            
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              <a href="LLMP_default.html">default theme</a> | <a href="LLMP_abyss.html">abyss theme</a> | <a href="LLMP_void.html">void theme</a> | <a href="LLMP_white.html">white theme</a> | <a href="https://github.com/ionelmc/python-darkslide">github</a>
+            
+            
+            <aside class="source">
+              Source: <a href="LLMP.md">LLMP.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              60/62
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: LLMP.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_footer slide-61">
+          <div class="inner">
+            
+            <header><h1>More thoughts</h1></header>
+            
+            
+            <section><ul>
+<li>Always have Darkslide open</li>
+<li>N5 versioning, inherit, no version properties </li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              <a href="LLMP_default.html">default theme</a> | <a href="LLMP_abyss.html">abyss theme</a> | <a href="LLMP_void.html">void theme</a> | <a href="LLMP_white.html">white theme</a> | <a href="https://github.com/ionelmc/python-darkslide">github</a>
+            
+            
+            <aside class="source">
+              Source: <a href="LLMP.md">LLMP.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              61/62
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: LLMP.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_qr has_footer slide-62">
+          <div class="inner">
+            
+            <header><h1>Colophon</h1></header>
+            
+            
+            <section><p class="qr"><?xml version='1.0' encoding='UTF-8'?>
+<svg width="148mm" height="148mm" version="1.1" viewBox="0 0 148 148" xmlns="http://www.w3.org/2000/svg"><path d="M16,16H20V20H16zM20,16H24V20H20zM24,16H28V20H24zM28,16H32V20H28zM32,16H36V20H32zM36,16H40V20H36zM40,16H44V20H40zM56,16H60V20H56zM76,16H80V20H76zM88,16H92V20H88zM92,16H96V20H92zM104,16H108V20H104zM108,16H112V20H108zM112,16H116V20H112zM116,16H120V20H116zM120,16H124V20H120zM124,16H128V20H124zM128,16H132V20H128zM16,20H20V24H16zM40,20H44V24H40zM48,20H52V24H48zM52,20H56V24H52zM56,20H60V24H56zM68,20H72V24H68zM76,20H80V24H76zM84,20H88V24H84zM88,20H92V24H88zM104,20H108V24H104zM128,20H132V24H128zM16,24H20V28H16zM24,24H28V28H24zM28,24H32V28H28zM32,24H36V28H32zM40,24H44V28H40zM48,24H52V28H48zM80,24H84V28H80zM84,24H88V28H84zM92,24H96V28H92zM96,24H100V28H96zM104,24H108V28H104zM112,24H116V28H112zM116,24H120V28H116zM120,24H124V28H120zM128,24H132V28H128zM16,28H20V32H16zM24,28H28V32H24zM28,28H32V32H28zM32,28H36V32H32zM40,28H44V32H40zM52,28H56V32H52zM64,28H68V32H64zM72,28H76V32H72zM76,28H80V32H76zM88,28H92V32H88zM104,28H108V32H104zM112,28H116V32H112zM116,28H120V32H116zM120,28H124V32H120zM128,28H132V32H128zM16,32H20V36H16zM24,32H28V36H24zM28,32H32V36H28zM32,32H36V36H32zM40,32H44V36H40zM48,32H52V36H48zM52,32H56V36H52zM56,32H60V36H56zM64,32H68V36H64zM72,32H76V36H72zM76,32H80V36H76zM80,32H84V36H80zM84,32H88V36H84zM88,32H92V36H88zM104,32H108V36H104zM112,32H116V36H112zM116,32H120V36H116zM120,32H124V36H120zM128,32H132V36H128zM16,36H20V40H16zM40,36H44V40H40zM48,36H52V40H48zM56,36H60V40H56zM64,36H68V40H64zM72,36H76V40H72zM76,36H80V40H76zM88,36H92V40H88zM92,36H96V40H92zM104,36H108V40H104zM128,36H132V40H128zM16,40H20V44H16zM20,40H24V44H20zM24,40H28V44H24zM28,40H32V44H28zM32,40H36V44H32zM36,40H40V44H36zM40,40H44V44H40zM48,40H52V44H48zM56,40H60V44H56zM64,40H68V44H64zM72,40H76V44H72zM80,40H84V44H80zM88,40H92V44H88zM96,40H100V44H96zM104,40H108V44H104zM108,40H112V44H108zM112,40H116V44H112zM116,40H120V44H116zM120,40H124V44H120zM124,40H128V44H124zM128,40H132V44H128zM48,44H52V48H48zM56,44H60V48H56zM60,44H64V48H60zM72,44H76V48H72zM76,44H80V48H76zM84,44H88V48H84zM92,44H96V48H92zM96,44H100V48H96zM16,48H20V52H16zM20,48H24V52H20zM28,48H32V52H28zM40,48H44V52H40zM44,48H48V52H44zM60,48H64V52H60zM64,48H68V52H64zM68,48H72V52H68zM72,48H76V52H72zM80,48H84V52H80zM92,48H96V52H92zM104,48H108V52H104zM108,48H112V52H108zM112,48H116V52H112zM120,48H124V52H120zM124,48H128V52H124zM16,52H20V56H16zM20,52H24V56H20zM44,52H48V56H44zM48,52H52V56H48zM52,52H56V56H52zM60,52H64V56H60zM64,52H68V56H64zM68,52H72V56H68zM72,52H76V56H72zM80,52H84V56H80zM96,52H100V56H96zM104,52H108V56H104zM116,52H120V56H116zM128,52H132V56H128zM16,56H20V60H16zM20,56H24V60H20zM28,56H32V60H28zM32,56H36V60H32zM40,56H44V60H40zM44,56H48V60H44zM60,56H64V60H60zM64,56H68V60H64zM72,56H76V60H72zM80,56H84V60H80zM92,56H96V60H92zM100,56H104V60H100zM112,56H116V60H112zM116,56H120V60H116zM120,56H124V60H120zM124,56H128V60H124zM16,60H20V64H16zM20,60H24V64H20zM24,60H28V64H24zM28,60H32V64H28zM44,60H48V64H44zM52,60H56V64H52zM56,60H60V64H56zM60,60H64V64H60zM64,60H68V64H64zM68,60H72V64H68zM76,60H80V64H76zM80,60H84V64H80zM88,60H92V64H88zM92,60H96V64H92zM96,60H100V64H96zM112,60H116V64H112zM120,60H124V64H120zM124,60H128V64H124zM16,64H20V68H16zM24,64H28V68H24zM28,64H32V68H28zM40,64H44V68H40zM44,64H48V68H44zM48,64H52V68H48zM56,64H60V68H56zM60,64H64V68H60zM68,64H72V68H68zM76,64H80V68H76zM80,64H84V68H80zM84,64H88V68H84zM92,64H96V68H92zM96,64H100V68H96zM100,64H104V68H100zM104,64H108V68H104zM116,64H120V68H116zM124,64H128V68H124zM128,64H132V68H128zM20,68H24V72H20zM28,68H32V72H28zM36,68H40V72H36zM48,68H52V72H48zM52,68H56V72H52zM60,68H64V72H60zM68,68H72V72H68zM80,68H84V72H80zM84,68H88V72H84zM92,68H96V72H92zM96,68H100V72H96zM100,68H104V72H100zM16,72H20V76H16zM24,72H28V76H24zM32,72H36V76H32zM36,72H40V76H36zM40,72H44V76H40zM44,72H48V76H44zM48,72H52V76H48zM56,72H60V76H56zM60,72H64V76H60zM72,72H76V76H72zM80,72H84V76H80zM88,72H92V76H88zM96,72H100V76H96zM104,72H108V76H104zM108,72H112V76H108zM112,72H116V76H112zM116,72H120V76H116zM120,72H124V76H120zM124,72H128V76H124zM128,72H132V76H128zM20,76H24V80H20zM32,76H36V80H32zM36,76H40V80H36zM44,76H48V80H44zM48,76H52V80H48zM60,76H64V80H60zM68,76H72V80H68zM80,76H84V80H80zM84,76H88V80H84zM88,76H92V80H88zM96,76H100V80H96zM100,76H104V80H100zM104,76H108V80H104zM116,76H120V80H116zM124,76H128V80H124zM20,80H24V84H20zM28,80H32V84H28zM36,80H40V84H36zM40,80H44V84H40zM48,80H52V84H48zM56,80H60V84H56zM64,80H68V84H64zM76,80H80V84H76zM84,80H88V84H84zM88,80H92V84H88zM96,80H100V84H96zM108,80H112V84H108zM124,80H128V84H124zM20,84H24V88H20zM24,84H28V88H24zM32,84H36V88H32zM36,84H40V88H36zM44,84H48V88H44zM56,84H60V88H56zM64,84H68V88H64zM72,84H76V88H72zM80,84H84V88H80zM84,84H88V88H84zM96,84H100V88H96zM100,84H104V88H100zM104,84H108V88H104zM108,84H112V88H108zM116,84H120V88H116zM128,84H132V88H128zM16,88H20V92H16zM24,88H28V92H24zM28,88H32V92H28zM40,88H44V92H40zM48,88H52V92H48zM60,88H64V92H60zM64,88H68V92H64zM72,88H76V92H72zM84,88H88V92H84zM100,88H104V92H100zM108,88H112V92H108zM112,88H116V92H112zM124,88H128V92H124zM128,88H132V92H128zM28,92H32V96H28zM32,92H36V96H32zM48,92H52V96H48zM52,92H56V96H52zM64,92H68V96H64zM72,92H76V96H72zM84,92H88V96H84zM88,92H92V96H88zM96,92H100V96H96zM100,92H104V96H100zM108,92H112V96H108zM112,92H116V96H112zM124,92H128V96H124zM128,92H132V96H128zM16,96H20V100H16zM24,96H28V100H24zM28,96H32V100H28zM32,96H36V100H32zM36,96H40V100H36zM40,96H44V100H40zM44,96H48V100H44zM48,96H52V100H48zM52,96H56V100H52zM56,96H60V100H56zM68,96H72V100H68zM72,96H76V100H72zM76,96H80V100H76zM80,96H84V100H80zM92,96H96V100H92zM96,96H100V100H96zM100,96H104V100H100zM104,96H108V100H104zM108,96H112V100H108zM112,96H116V100H112zM120,96H124V100H120zM48,100H52V104H48zM52,100H56V104H52zM56,100H60V104H56zM60,100H64V104H60zM68,100H72V104H68zM80,100H84V104H80zM84,100H88V104H84zM88,100H92V104H88zM92,100H96V104H92zM96,100H100V104H96zM112,100H116V104H112zM120,100H124V104H120zM124,100H128V104H124zM128,100H132V104H128zM16,104H20V108H16zM20,104H24V108H20zM24,104H28V108H24zM28,104H32V108H28zM32,104H36V108H32zM36,104H40V108H36zM40,104H44V108H40zM48,104H52V108H48zM68,104H72V108H68zM88,104H92V108H88zM96,104H100V108H96zM104,104H108V108H104zM112,104H116V108H112zM124,104H128V108H124zM16,108H20V112H16zM40,108H44V112H40zM52,108H56V112H52zM68,108H72V112H68zM72,108H76V112H72zM76,108H80V112H76zM96,108H100V112H96zM112,108H116V112H112zM116,108H120V112H116zM120,108H124V112H120zM128,108H132V112H128zM16,112H20V116H16zM24,112H28V116H24zM28,112H32V116H28zM32,112H36V116H32zM40,112H44V116H40zM52,112H56V116H52zM56,112H60V116H56zM64,112H68V116H64zM68,112H72V116H68zM76,112H80V116H76zM80,112H84V116H80zM84,112H88V116H84zM96,112H100V116H96zM100,112H104V116H100zM104,112H108V116H104zM108,112H112V116H108zM112,112H116V116H112zM16,116H20V120H16zM24,116H28V120H24zM28,116H32V120H28zM32,116H36V120H32zM40,116H44V120H40zM48,116H52V120H48zM56,116H60V120H56zM60,116H64V120H60zM64,116H68V120H64zM88,116H92V120H88zM92,116H96V120H92zM96,116H100V120H96zM104,116H108V120H104zM108,116H112V120H108zM112,116H116V120H112zM116,116H120V120H116zM120,116H124V120H120zM124,116H128V120H124zM16,120H20V124H16zM24,120H28V124H24zM28,120H32V124H28zM32,120H36V124H32zM40,120H44V124H40zM52,120H56V124H52zM56,120H60V124H56zM64,120H68V124H64zM72,120H76V124H72zM80,120H84V124H80zM84,120H88V124H84zM88,120H92V124H88zM92,120H96V124H92zM96,120H100V124H96zM112,120H116V124H112zM116,120H120V124H116zM120,120H124V124H120zM128,120H132V124H128zM16,124H20V128H16zM40,124H44V128H40zM48,124H52V128H48zM64,124H68V128H64zM68,124H72V128H68zM72,124H76V128H72zM76,124H80V128H76zM80,124H84V128H80zM84,124H88V128H84zM88,124H92V128H88zM92,124H96V128H92zM96,124H100V128H96zM100,124H104V128H100zM112,124H116V128H112zM124,124H128V128H124zM16,128H20V132H16zM20,128H24V132H20zM24,128H28V132H24zM28,128H32V132H28zM32,128H36V132H32zM36,128H40V132H36zM40,128H44V132H40zM48,128H52V132H48zM60,128H64V132H60zM64,128H68V132H64zM68,128H72V132H68zM72,128H76V132H72zM80,128H84V132H80zM84,128H88V132H84zM96,128H100V132H96zM100,128H104V132H100zM104,128H108V132H104zM108,128H112V132H108zM112,128H116V132H112zM116,128H120V132H116zM124,128H128V132H124z" id="qr-path" fill="#000000" fill-opacity="1" fill-rule="nonzero" stroke="none" /></svg></p>
+<p><center>https://github.com/ionelmc/python-darkslide</center></p>
+<p><em>Tip</em>: Keep a Darkslide slide deck open!</p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              <a href="LLMP_default.html">default theme</a> | <a href="LLMP_abyss.html">abyss theme</a> | <a href="LLMP_void.html">void theme</a> | <a href="LLMP_white.html">white theme</a> | <a href="https://github.com/ionelmc/python-darkslide">github</a>
+            
+            
+            <aside class="source">
+              Source: <a href="LLMP.md">LLMP.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              62/62
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+  <div id="toc" class="sidebar hidden">
+    <h2>Table of Contents</h2>
+    <table>
+      <caption>Table of Contents</caption>
+
+<!-- macro for generating subsection of TOC -->
+
+<!-- end of macro -->
+
+      <!-- generating sections of TOC -->
+      
+      <tr id="toc-row-1">
+        <th><a href="#slide:1">Long Lived <br>Maven Projects</a></th>
+        <td><a href="#slide:1">1</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-2">
+        <th><a href="#slide:2">Keep polishing</a></th>
+        <td><a href="#slide:2">2</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-3">
+        <th><a href="#slide:3">Talk Structure</a></th>
+        <td><a href="#slide:3">3</a></td>
+      </tr>
+      
+         <!-- generating subsections of TOC -->
+         
+         
+        
+        <tr id="toc-row-4" class="sub">
+          <th><a href="#slide:4">The Road to Maven</a></th>
+          <td><a href="#slide:4">4</a></td>
+        </tr>
+        
+        
+      
+      
+      <tr id="toc-row-5">
+        <th><a href="#slide:5">Bash</a></th>
+        <td><a href="#slide:5">5</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-7">
+        <th><a href="#slide:7">The Good Bit</a></th>
+        <td><a href="#slide:7">7</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-8">
+        <th><a href="#slide:8">Make</a></th>
+        <td><a href="#slide:8">8</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-9">
+        <th><a href="#slide:9">ant</a></th>
+        <td><a href="#slide:9">9</a></td>
+      </tr>
+      
+         <!-- generating subsections of TOC -->
+         
+         
+        
+        <tr id="toc-row-10" class="sub">
+          <th><a href="#slide:10">ant</a></th>
+          <td><a href="#slide:10">10</a></td>
+        </tr>
+        
+        
+      
+      
+      <tr id="toc-row-12">
+        <th><a href="#slide:12">Maven</a></th>
+        <td><a href="#slide:12">12</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-13">
+        <th><a href="#slide:13">Maven - the name</a></th>
+        <td><a href="#slide:13">13</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-14">
+        <th><a href="#slide:14">Maven History</a></th>
+        <td><a href="#slide:14">14</a></td>
+      </tr>
+      
+         <!-- generating subsections of TOC -->
+         
+         
+        
+        <tr id="toc-row-15" class="sub">
+          <th><a href="#slide:15">Maven (1)</a></th>
+          <td><a href="#slide:15">15</a></td>
+        </tr>
+        
+        
+      
+      
+      <tr id="toc-row-16">
+        <th><a href="#slide:16">&nbsp;</a></th>
+        <td><a href="#slide:16">16</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-17">
+        <th><a href="#slide:17">Long Lived Maven Projects</a></th>
+        <td><a href="#slide:17">17</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-18">
+        <th><a href="#slide:18">Current Project</a></th>
+        <td><a href="#slide:18">18</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-19">
+        <th><a href="#slide:19">Pom Lines</a></th>
+        <td><a href="#slide:19">19</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-20">
+        <th><a href="#slide:20">Blogger</a></th>
+        <td><a href="#slide:20">20</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-21">
+        <th><a href="#slide:21">∀</a></th>
+        <td><a href="#slide:21">21</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-22">
+        <th><a href="#slide:22">For all</a></th>
+        <td><a href="#slide:22">22</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-23">
+        <th><a href="#slide:23">Git Tombstones</a></th>
+        <td><a href="#slide:23">23</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-24">
+        <th><a href="#slide:24">Git Tombstones</a></th>
+        <td><a href="#slide:24">24</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-25">
+        <th><a href="#slide:25">rememberance.md</a></th>
+        <td><a href="#slide:25">25</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-26">
+        <th><a href="#slide:26">GhatGPT</a></th>
+        <td><a href="#slide:26">26</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-35">
+        <th><a href="#slide:35">ChatGPT</a></th>
+        <td><a href="#slide:35">35</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-36">
+        <th><a href="#slide:36">Imports</a></th>
+        <td><a href="#slide:36">36</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-37">
+        <th><a href="#slide:37">Progress</a></th>
+        <td><a href="#slide:37">37</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-38">
+        <th><a href="#slide:38">Artefacts</a></th>
+        <td><a href="#slide:38">38</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-39">
+        <th><a href="#slide:39">Classes</a></th>
+        <td><a href="#slide:39">39</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-40">
+        <th><a href="#slide:40">Ignored Tests</a></th>
+        <td><a href="#slide:40">40</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-41">
+        <th><a href="#slide:41">Java Repositories</a></th>
+        <td><a href="#slide:41">41</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-42">
+        <th><a href="#slide:42">Java Repositories Stacked</a></th>
+        <td><a href="#slide:42">42</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-43">
+        <th><a href="#slide:43">Total Repositories</a></th>
+        <td><a href="#slide:43">43</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-44">
+        <th><a href="#slide:44">Total Repositories Stacked</a></th>
+        <td><a href="#slide:44">44</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-45">
+        <th><a href="#slide:45">Profiles</a></th>
+        <td><a href="#slide:45">45</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-46">
+        <th><a href="#slide:46">DRY</a></th>
+        <td><a href="#slide:46">46</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-47">
+        <th><a href="#slide:47">Do NOT Repeat Yourself</a></th>
+        <td><a href="#slide:47">47</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-48">
+        <th><a href="#slide:48">Mono-Repo</a></th>
+        <td><a href="#slide:48">48</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-49">
+        <th><a href="#slide:49">#monolithsGood</a></th>
+        <td><a href="#slide:49">49</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-53">
+        <th><a href="#slide:53">Work around Maven 'inheritance'</a></th>
+        <td><a href="#slide:53">53</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-55">
+        <th><a href="#slide:55">Archiving</a></th>
+        <td><a href="#slide:55">55</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-56">
+        <th><a href="#slide:56">Versioning</a></th>
+        <td><a href="#slide:56">56</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-57">
+        <th><a href="#slide:57">Do not use properties for versions</a></th>
+        <td><a href="#slide:57">57</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-58">
+        <th><a href="#slide:58">Take Aways</a></th>
+        <td><a href="#slide:58">58</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-59">
+        <th><a href="#slide:59">Take Aways</a></th>
+        <td><a href="#slide:59">59</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-60">
+        <th><a href="#slide:60">Questions ?</a></th>
+        <td><a href="#slide:60">60</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-61">
+        <th><a href="#slide:61">More thoughts</a></th>
+        <td><a href="#slide:61">61</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-62">
+        <th><a href="#slide:62">Colophon</a></th>
+        <td><a href="#slide:62">62</a></td>
+      </tr>
+      
+      
+    </table>
+  </div>
+  
+  <div id="help" class="sidebar hidden">
+    <h2>Help</h2>
+    <table>
+      <caption>Help</caption>
+      <tr>
+        <th>Table of Contents</th>
+        <td>t</td>
+      </tr>
+      <tr>
+        <th>Exposé</th>
+        <td>ESC</td>
+      </tr>
+      <tr>
+        <th>Presenter View</th>
+        <td>p</td>
+      </tr>
+      <tr>
+        <th>Source Files</th>
+        <td>s</td>
+      </tr>
+      <tr>
+        <th>Slide Numbers</th>
+        <td>n</td>
+      </tr>
+      <tr>
+        <th>Toggle screen blanking</th>
+        <td>b</td>
+      </tr>
+      <tr>
+        <th>Show/hide next slide</th>
+        <td>c</td>
+      </tr>
+      <tr>
+        <th>Notes</th>
+        <td>2</td>
+      </tr>
+      <tr>
+        <th>Help</th>
+        <td>h</td>
+      </tr>
+    </table>
+    <br>
+    <strong>Generated with Darkslide 6.0.0</strong>
+  </div>
+  <script>main()</script>
+</body>
+</html>
