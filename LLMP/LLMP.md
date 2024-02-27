@@ -310,22 +310,23 @@ In the process we have achieved the following:
 ----
 # Dot Graphs
 
-![smd_repo_dependencies.svg](..%2F..%2Felsevier%2Fvtw%2Fvtw-architecture%2Farchive%2F2024-02-26%2Fsmd_repo_dependencies.svg)
+[smd_repo_dependencies.svg](smd_repo_dependencies.svg)
 
-![all_pom_all_dependencies.svg](..%2F..%2Felsevier%2Fvtw%2Fvtw-architecture%2Farchive%2F2024-02-26%2Fall_pom_all_dependencies.svg)
+[all_pom_all_dependencies.svg](all_pom_all_dependencies.svg)
 
-![all_pom_our_dependencies.svg](..%2F..%2Felsevier%2Fvtw%2Fvtw-architecture%2Farchive%2F2024-02-26%2Fall_pom_our_dependencies.svg)
+[all_pom_our_dependencies.svg](all_pom_our_dependencies.svg)
 
-![all_repo_dependencies.svg](..%2F..%2Felsevier%2Fvtw%2Fvtw-architecture%2Farchive%2F2024-02-26%2Fall_repo_dependencies.svg)
+[all_repo_dependencies.svg](all_repo_dependencies.svg)
 
-![conflicts.txt](..%2F..%2Felsevier%2Fvtw%2Fvtw-architecture%2Farchive%2F2024-02-26%2Fconflicts.txt)
+[conflicts.txt](conflicts.txt)
 
-![java_repo_dependencies.svg](..%2F..%2Felsevier%2Fvtw%2Fvtw-architecture%2Farchive%2F2024-02-26%2Fjava_repo_dependencies.svg)
+[java_repo_dependencies.svg](java_repo_dependencies.svg)
 
-![smd_pom_all_dependencies.svg](..%2F..%2Felsevier%2Fvtw%2Fvtw-architecture%2Farchive%2F2024-02-26%2Fsmd_pom_all_dependencies.svg)
+[smd_pom_all_dependencies.svg](smd_pom_all_dependencies.svg)
 
-![smd_pom_our_dependencies.svg](..%2F..%2Felsevier%2Fvtw%2Fvtw-architecture%2Farchive%2F2024-02-26%2Fsmd_pom_our_dependencies.svg)
+[smd_pom_our_dependencies.svg](smd_pom_our_dependencies.svg)
 
+----
 # Java Repositories
 !["Java Repositories"](JavaRepositories.png)
 
