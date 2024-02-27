@@ -254,10 +254,10 @@ Blogs are good.
 
 ----
 # PR Driven Development 
-###Internal Press Release: Important System Upgrade Completed
-###Anticipated release date see: Upgrade Epic Ticket
+###Internal Press Release: $name Upgrade Completed
+###Anticipated release date see Epic Ticket
 
-Today we can announce that we have upgraded the whole of Important System.
+Today we can announce that we have upgraded the whole of $name
 
 In the process we have achieved the following:
 
