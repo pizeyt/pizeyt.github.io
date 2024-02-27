@@ -463,8 +463,9 @@ Both?
 
 
 ----
-# Do not use properties for versions
+# Do not use version properties 
 ## Naming is hard
+
 ## Do not introduce a new, private, unvalidated property naming system
 
      !XML 
@@ -474,21 +475,6 @@ Both?
 	<dependency>
 		<groupId>com.amazonaws</groupId>
 		<artifactId>aws-java-sdk-dynamodb</artifactId>
-		<version>${aws.sdk.version}</version>
-	</dependency>
-	<dependency>
-		<groupId>com.amazonaws</groupId>
-		<artifactId>aws-java-sdk-sqs</artifactId>
-		<version>${aws.sdk.version}</version>
-	</dependency>
-	<dependency>
-		<groupId>com.amazonaws</groupId>
-		<artifactId>aws-java-sdk-core</artifactId>
-		<version>${aws.sdk.version}</version>
-	</dependency>
-	<dependency>
-		<groupId>com.amazonaws</groupId>
-		<artifactId>aws-java-sdk-sns</artifactId>
 		<version>${aws.sdk.version}</version>
 	</dependency>
 
