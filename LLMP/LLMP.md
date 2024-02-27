@@ -472,7 +472,7 @@ Do not introduce a new, private, unvalidated property naming system
        <aws.sdk.version>1.12.287</aws.sdk.version>
      </properties>
 	 
-<dependency>
+     <dependency>
 		<groupId>com.amazonaws</groupId>
 		<artifactId>aws-java-sdk-dynamodb</artifactId>
 		<version>${aws.sdk.version}</version>
