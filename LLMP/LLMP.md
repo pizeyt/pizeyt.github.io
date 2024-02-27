@@ -257,7 +257,7 @@ Blogs are good.
 ###Internal Press Release: $name Upgrade Completed
 ###Anticipated release date see Epic Ticket
 
-Today we can announce that we have upgraded the whole of $name
+## Today we can announce the upgrade of $name
 
 In the process we have achieved the following:
 
