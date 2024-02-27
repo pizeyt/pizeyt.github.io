@@ -141,10 +141,10 @@ synonyms: ace, adept, champion, genius, hotshot, sensation, star, superhero, sup
 
 ----
 ## Maven (1)
-It's all about the POM
+It's all about the Project Object Model (POM)
 
 
-and the docs
+and the web site production
 [https://maven.apache.org/](https://maven.apache.org/)
 
 ----
@@ -165,8 +165,8 @@ Whatever
 ----
 # Long Lived Maven Projects
 ## Chat GPT 
-## Blogging
 ## Slogans
+## Blogging
 ## Press Release Driven Development
 
 
@@ -214,6 +214,16 @@ In summary, using Maven over the long term can lead to greater stability, effici
 - `CGPT:` With prolonged use of Maven, you may encounter dependency conflicts, build errors, and potentially slower build times due to the accumulation of dependencies and configurations. It's important to regularly update dependencies and plugins to mitigate these issues.
 
 
+----
+# Slogans
+## DRY
+### Do NOT Repeat Yourself
+
+## Mono-Repo
+### #monolithsGood
+### MicroServicesBad
+
+## For all ∀
 
 ----
 # Blogger
@@ -244,16 +254,6 @@ First Post - January 2009
 I am a blogger
 Blogs are good.  
 
-----
-# Slogans
-## DRY
-### Do NOT Repeat Yourself
-
-## Mono-Repo
-### #monolithsGood
-### MicroServicesBad
-
-## For all ∀ 
 
 ----
 # PR Driven Development 
