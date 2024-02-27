@@ -268,7 +268,7 @@ In the process we have achieved the following:
 - Updated all libraries
 - Installed Dependabot to ensure we do not fall behind again
 
-### This enables us to take on the strategic work of removing Bad Thing from our estate.
+### This enables us to take on the strategic work of ....
 
 
 
