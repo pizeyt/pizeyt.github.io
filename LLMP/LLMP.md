@@ -459,7 +459,7 @@ Both?
 ----
 # Versions Maven Plugin
 
-- https://www.mojohaus.org/versions/versions-maven-plugin/index.html
+- Just use the [Versions Maven Plugin](https://www.mojohaus.org/versions/versions-maven-plugin/index.html)
 
 
 ----
