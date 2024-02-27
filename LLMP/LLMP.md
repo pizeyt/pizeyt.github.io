@@ -466,7 +466,8 @@ Both?
 # Do not use version properties 
 ## Naming is hard
 
-## Do not introduce a new, private, unvalidated property naming system
+Do not introduce a new, private, unvalidated property naming system
+
 
      !XML 
      <properties>
