@@ -430,7 +430,9 @@ Inheritance of SCM and Profiles tags is more tricky:
 ----
 # Versioning
 ### Other Options: 
+ 
 - Date.Build 
+
 
      !XML 
      <dependency>
@@ -440,22 +442,10 @@ Inheritance of SCM and Profiles tags is more tricky:
        <scope>test</scope>
      </dependency>
 
-- What?
+- Both?
 
 
      !XML 
-     <dependency>
-       <groupId>hsqldb</groupId>
-       <artifactId>hsqldb</artifactId>
-       <version>1.8.0.1</version>
-       <scope>compile</scope>
-     </dependency>
-
-      <dependency>
-        <groupId>com.elsevier.smd</groupId>
-        <artifactId>smd-local-dynamodb-support</artifactId>
-        <version>2017-03-01</version>
-      </dependency>
 
       <dependency>
         <groupId>org.eclipse.jetty</groupId>
@@ -463,6 +453,17 @@ Inheritance of SCM and Profiles tags is more tricky:
         <version>8.1.7.v20120910</version>
         <scope>test</scope>
       </dependency>
+
+---- 
+# N5 Numbering 
+- <a href="https://tim-pizey.blogspot.com/2024/01/five-element-maven-version-numbering.html" target=_>
+  N5 Versioning</a>
+
+----
+# Versions Maven Plugin
+
+- https://www.mojohaus.org/versions/versions-maven-plugin/index.html
+
 
 ----
 # Do not use properties for versions
@@ -494,15 +495,7 @@ Inheritance of SCM and Profiles tags is more tricky:
 		<version>${aws.sdk.version}</version>
 	</dependency>
 
----- 
-# N5 Numbering 
-- <a href="https://tim-pizey.blogspot.com/2024/01/five-element-maven-version-numbering.html" target=_>
-  N5 Versioning</a>
 
-----
-# Versions Maven Plugin
-
-- https://www.mojohaus.org/versions/versions-maven-plugin/index.html
 
 ----
 # Take Aways

@@ -3305,19 +3305,8 @@ Is:   23525
  </dependency></p>
 </li>
 <li>
-<p>What?</p>
-<p>!XML 
- <dependency>
-   <groupId>hsqldb</groupId>
-   <artifactId>hsqldb</artifactId>
-   <version>1.8.0.1</version>
-   <scope>compile</scope>
- </dependency></p>
-<p><dependency>
-    <groupId>com.elsevier.smd</groupId>
-    <artifactId>smd-local-dynamodb-support</artifactId>
-    <version>2017-03-01</version>
-  </dependency></p>
+<p>Both?</p>
+<p>!XML </p>
 <p><dependency>
     <groupId>org.eclipse.jetty</groupId>
     <artifactId>jetty-security</artifactId>
@@ -3355,36 +3344,13 @@ Is:   23525
         <div class="slide has_footer slide-54">
           <div class="inner">
             
-            <header><h1>Do not use properties for versions</h1></header>
+            <header><h1>N5 Numbering</h1></header>
             
             
-            <section><h2>Naming is hard</h2>
-<h2>Do not introduce a new, private, unvalidated property naming system</h2>
-<pre><code> !XML 
- &lt;properties&gt;
-   &lt;aws.sdk.version&gt;1.12.287&lt;/aws.sdk.version&gt;
- &lt;/properties&gt;
-&lt;dependency&gt;
-    &lt;groupId&gt;com.amazonaws&lt;/groupId&gt;
-    &lt;artifactId&gt;aws-java-sdk-dynamodb&lt;/artifactId&gt;
-    &lt;version&gt;${aws.sdk.version}&lt;/version&gt;
-&lt;/dependency&gt;
-&lt;dependency&gt;
-    &lt;groupId&gt;com.amazonaws&lt;/groupId&gt;
-    &lt;artifactId&gt;aws-java-sdk-sqs&lt;/artifactId&gt;
-    &lt;version&gt;${aws.sdk.version}&lt;/version&gt;
-&lt;/dependency&gt;
-&lt;dependency&gt;
-    &lt;groupId&gt;com.amazonaws&lt;/groupId&gt;
-    &lt;artifactId&gt;aws-java-sdk-core&lt;/artifactId&gt;
-    &lt;version&gt;${aws.sdk.version}&lt;/version&gt;
-&lt;/dependency&gt;
-&lt;dependency&gt;
-    &lt;groupId&gt;com.amazonaws&lt;/groupId&gt;
-    &lt;artifactId&gt;aws-java-sdk-sns&lt;/artifactId&gt;
-    &lt;version&gt;${aws.sdk.version}&lt;/version&gt;
-&lt;/dependency&gt;
-</code></pre></section>
+            <section><ul>
+<li><a href="https://tim-pizey.blogspot.com/2024/01/five-element-maven-version-numbering.html" target=_>
+  N5 Versioning</a></li>
+</ul></section>
             
           </div>
           <div class="presenter_notes">
@@ -3414,12 +3380,11 @@ Is:   23525
         <div class="slide has_footer slide-55">
           <div class="inner">
             
-            <header><h1>N5 Numbering</h1></header>
+            <header><h1>Versions Maven Plugin</h1></header>
             
             
             <section><ul>
-<li><a href="https://tim-pizey.blogspot.com/2024/01/five-element-maven-version-numbering.html" target=_>
-  N5 Versioning</a></li>
+<li>https://www.mojohaus.org/versions/versions-maven-plugin/index.html</li>
 </ul></section>
             
           </div>
@@ -3450,12 +3415,36 @@ Is:   23525
         <div class="slide has_footer slide-56">
           <div class="inner">
             
-            <header><h1>Versions Maven Plugin</h1></header>
+            <header><h1>Do not use properties for versions</h1></header>
             
             
-            <section><ul>
-<li>https://www.mojohaus.org/versions/versions-maven-plugin/index.html</li>
-</ul></section>
+            <section><h2>Naming is hard</h2>
+<h2>Do not introduce a new, private, unvalidated property naming system</h2>
+<pre><code> !XML 
+ &lt;properties&gt;
+   &lt;aws.sdk.version&gt;1.12.287&lt;/aws.sdk.version&gt;
+ &lt;/properties&gt;
+&lt;dependency&gt;
+    &lt;groupId&gt;com.amazonaws&lt;/groupId&gt;
+    &lt;artifactId&gt;aws-java-sdk-dynamodb&lt;/artifactId&gt;
+    &lt;version&gt;${aws.sdk.version}&lt;/version&gt;
+&lt;/dependency&gt;
+&lt;dependency&gt;
+    &lt;groupId&gt;com.amazonaws&lt;/groupId&gt;
+    &lt;artifactId&gt;aws-java-sdk-sqs&lt;/artifactId&gt;
+    &lt;version&gt;${aws.sdk.version}&lt;/version&gt;
+&lt;/dependency&gt;
+&lt;dependency&gt;
+    &lt;groupId&gt;com.amazonaws&lt;/groupId&gt;
+    &lt;artifactId&gt;aws-java-sdk-core&lt;/artifactId&gt;
+    &lt;version&gt;${aws.sdk.version}&lt;/version&gt;
+&lt;/dependency&gt;
+&lt;dependency&gt;
+    &lt;groupId&gt;com.amazonaws&lt;/groupId&gt;
+    &lt;artifactId&gt;aws-java-sdk-sns&lt;/artifactId&gt;
+    &lt;version&gt;${aws.sdk.version}&lt;/version&gt;
+&lt;/dependency&gt;
+</code></pre></section>
             
           </div>
           <div class="presenter_notes">
@@ -3963,19 +3952,19 @@ Is:   23525
       
       
       <tr id="toc-row-54">
-        <th><a href="#slide:54">Do not use properties for versions</a></th>
+        <th><a href="#slide:54">N5 Numbering</a></th>
         <td><a href="#slide:54">54</a></td>
       </tr>
       
       
       <tr id="toc-row-55">
-        <th><a href="#slide:55">N5 Numbering</a></th>
+        <th><a href="#slide:55">Versions Maven Plugin</a></th>
         <td><a href="#slide:55">55</a></td>
       </tr>
       
       
       <tr id="toc-row-56">
-        <th><a href="#slide:56">Versions Maven Plugin</a></th>
+        <th><a href="#slide:56">Do not use properties for versions</a></th>
         <td><a href="#slide:56">56</a></td>
       </tr>
       
