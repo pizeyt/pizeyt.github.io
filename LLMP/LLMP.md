@@ -152,6 +152,8 @@ and the docs
 ## Maven2
     !bash
     .m2/repository
+-SNAPSHOT 
+
 Yay!
 
 ## Maven3
@@ -305,23 +307,6 @@ In the process we have achieved the following:
 ----
 # Automated Reporting 
 
-----
-# Artefacts
-![Artefacts](Artefacts.png)
-
-
-
-----
-
-# Classes
-![Classes](Classes.png)
-
-----
-
-# Ignored Tests
-!["Ignored Tests"](IgnoredTests.png)
-
-----
 
 # Java Repositories
 !["Java Repositories"](JavaRepositories.png)
@@ -342,12 +327,31 @@ In the process we have achieved the following:
 !["Total Repositoeies"](TotalRepositoriesStacked.png)
 
 ----
+# Artefacts
+![Artefacts](Artefacts.png)
+
+
+
+----
+
+# Classes
+![Classes](Classes.png)
+
+----
+
+# Ignored Tests
+!["Ignored Tests"](IgnoredTests.png)
+
+
+----
 # Profiles
 !["Profiles"](Profiles.png)
 
 
 
 ----
+# Redundant XML
+- [https://maven.apache.org/pom.html#Inheritance](https://maven.apache.org/pom.html#Inheritance)
     !XML
 
     <properties>
@@ -457,6 +461,15 @@ For those without Groups:
 		<version>${aws.sdk.version}</version>
 	</dependency>
 
+---- 
+# N5 Numbering 
+- <a href="https://tim-pizey.blogspot.com/2024/01/five-element-maven-version-numbering.html" target=_>
+  N5 Versioning</a>
+
+----
+# Versions Maven Plugin
+
+- https://www.mojohaus.org/versions/versions-maven-plugin/index.html
 
 ----
 # Take Aways
@@ -472,6 +485,7 @@ For those without Groups:
 - Open Source library maintainers are not responsible for updating their clients, Enterprise Developers are
 - Don't use properties for versions
 - Archiving is a Team Lead responsibility
+- Keep everything at 1.0.0-SNAPSHOT 
 
 
 -----
