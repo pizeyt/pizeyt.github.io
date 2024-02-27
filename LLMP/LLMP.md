@@ -351,9 +351,10 @@ In the process we have achieved the following:
 
 ----
 # Redundant XML
-- [https://maven.apache.org/pom.html#Inheritance](https://maven.apache.org/pom.html#Inheritance)
-    !XML
 
+[https://maven.apache.org/pom.html#Inheritance](https://maven.apache.org/pom.html#Inheritance)
+
+    !XML
     <properties>
         <git.repo.name>module23</git.repo.name>
     </properties>
@@ -369,18 +370,16 @@ In the process we have achieved the following:
 # Work around Maven 'inheritance'
     !XML
 	<scm 
-            child.scm.connection.inherit.append.path="false" 
-            child.scm.developerConnection.inherit.append.path="false" 
-            child.scm.url.inherit.append.path="false">
+          child.scm.connection.inherit.append.path="false" 
+          child.scm.developerConnection.inherit.append.path="false" 
+          child.scm.url.inherit.append.path="false">
 		<connection>scm|git|ssh://git@github.com/timp/${git.repo.name}</connection>
 		<developerConnection>scm|git|ssh://git@github.com/timp/${git.repo.name}</developerConnection>
 		<url>scm|git|ssh://git@github.com/timp/${git.repo.name}</url>
 		<tag>HEAD</tag>
         </scm>
-
 ---
     !XML
-
     <properties>
         <git.repo.name>module23</git.repo.name>
     </properties>

@@ -2963,27 +2963,25 @@ Is:   23525
       
       <!-- slide source: LLMP.md -->
       <div class="slide-wrapper">
-        <div class="slide has_footer slide-43">
+        <div class="slide has_code has_footer slide-43">
           <div class="inner">
             
             <header><h1>Redundant XML</h1></header>
             
             
-            <section><ul>
-<li>
-<p><a href="https://maven.apache.org/pom.html#Inheritance">https://maven.apache.org/pom.html#Inheritance</a>
-    !XML</p>
-<p><properties>
-    <git.repo.name>module23</git.repo.name>
-</properties></p>
-<p><scm>
-    <connection>scm|git|ssh://git@github.com/timp/${git.repo.name}</connection>
-    <developerConnection>scm|git|ssh://git@github.com/timp/${git.repo.name}</developerConnection>
-    <url>scm|git|ssh://git@github.com/timp/${git.repo.name}</url>
-    <tag>HEAD</tag>
-</scm></p>
-</li>
-</ul></section>
+            <section><p><a href="https://maven.apache.org/pom.html#Inheritance">https://maven.apache.org/pom.html#Inheritance</a></p>
+<div class="highlight"><pre><span></span><span class="nt">&lt;properties&gt;</span>
+<span class="w">    </span><span class="nt">&lt;git.repo.name&gt;</span>module23<span class="nt">&lt;/git.repo.name&gt;</span>
+<span class="nt">&lt;/properties&gt;</span>
+
+<span class="nt">&lt;scm&gt;</span>
+<span class="w">    </span><span class="nt">&lt;connection&gt;</span>scm|git|ssh://git@github.com/timp/${git.repo.name}<span class="nt">&lt;/connection&gt;</span>
+<span class="w">    </span><span class="nt">&lt;developerConnection&gt;</span>scm|git|ssh://git@github.com/timp/${git.repo.name}<span class="nt">&lt;/developerConnection&gt;</span>
+<span class="w">    </span><span class="nt">&lt;url&gt;</span>scm|git|ssh://git@github.com/timp/${git.repo.name}<span class="nt">&lt;/url&gt;</span>
+<span class="w">    </span><span class="nt">&lt;tag&gt;</span>HEAD<span class="nt">&lt;/tag&gt;</span>
+<span class="nt">&lt;/scm&gt;</span>
+</pre></div>
+</section>
             
           </div>
           <div class="presenter_notes">
@@ -3017,9 +3015,9 @@ Is:   23525
             
             
             <section><div class="highlight"><pre><span></span><span class="nt">&lt;scm</span><span class="w"> </span>
-<span class="w">        </span><span class="na">child.scm.connection.inherit.append.path=</span><span class="s">&quot;false&quot;</span><span class="w"> </span>
-<span class="w">        </span><span class="na">child.scm.developerConnection.inherit.append.path=</span><span class="s">&quot;false&quot;</span><span class="w"> </span>
-<span class="w">        </span><span class="na">child.scm.url.inherit.append.path=</span><span class="s">&quot;false&quot;</span><span class="nt">&gt;</span>
+<span class="w">      </span><span class="na">child.scm.connection.inherit.append.path=</span><span class="s">&quot;false&quot;</span><span class="w"> </span>
+<span class="w">      </span><span class="na">child.scm.developerConnection.inherit.append.path=</span><span class="s">&quot;false&quot;</span><span class="w"> </span>
+<span class="w">      </span><span class="na">child.scm.url.inherit.append.path=</span><span class="s">&quot;false&quot;</span><span class="nt">&gt;</span>
 <span class="w">    </span><span class="nt">&lt;connection&gt;</span>scm|git|ssh://git@github.com/timp/${git.repo.name}<span class="nt">&lt;/connection&gt;</span>
 <span class="w">    </span><span class="nt">&lt;developerConnection&gt;</span>scm|git|ssh://git@github.com/timp/${git.repo.name}<span class="nt">&lt;/developerConnection&gt;</span>
 <span class="w">    </span><span class="nt">&lt;url&gt;</span>scm|git|ssh://git@github.com/timp/${git.repo.name}<span class="nt">&lt;/url&gt;</span>
