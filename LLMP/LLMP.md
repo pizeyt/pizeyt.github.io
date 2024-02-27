@@ -338,7 +338,7 @@ Inheritance of SCM and Profiles tags is more tricky:
 ----
 # Repeated block 
 
-    !XML
+    !xml
     <properties>
         <git.repo.name>module23</git.repo.name>
     </properties>
@@ -352,7 +352,7 @@ Inheritance of SCM and Profiles tags is more tricky:
 
 ----
 # Work around Maven 'inheritance'
-    !XML
+    !xml
 	<scm 
           child.scm.connection.inherit.append.path="false" 
           child.scm.developerConnection.inherit.append.path="false" 
@@ -363,7 +363,7 @@ Inheritance of SCM and Profiles tags is more tricky:
 		<tag>HEAD</tag>
     </scm>
 ---
-    !XML
+    !xml
     <properties>
         <git.repo.name>module23</git.repo.name>
     </properties>
@@ -434,7 +434,7 @@ Inheritance of SCM and Profiles tags is more tricky:
  
 Date.Build 
 
-     !XML 
+    !xml
      <dependency>
        <groupId>commons-io</groupId>
        <artifactId>commons-io</artifactId>
@@ -444,7 +444,7 @@ Date.Build
 
 Both?
 
-     !XML 
+    !xml
       <dependency>
         <groupId>org.eclipse.jetty</groupId>
         <artifactId>jetty-security</artifactId>
@@ -473,10 +473,12 @@ Both?
 
 Do not introduce a new, private, unvalidated property naming system
 
+    !xml
      <properties>
        <aws.sdk.version>1.12.287</aws.sdk.version>
      </properties>
 	 
+    !xml
      <dependency>
 		<groupId>com.amazonaws</groupId>
 		<artifactId>aws-java-sdk-dynamodb</artifactId>

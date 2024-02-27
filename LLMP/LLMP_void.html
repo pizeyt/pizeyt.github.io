@@ -3287,7 +3287,7 @@ Is:   23525
       
       <!-- slide source: LLMP.md -->
       <div class="slide-wrapper">
-        <div class="slide has_footer slide-53">
+        <div class="slide has_code has_footer slide-53">
           <div class="inner">
             
             <header><h1>Versioning</h1></header>
@@ -3295,23 +3295,23 @@ Is:   23525
             
             <section><h2>Possible Options</h2>
 <p>Date.Build </p>
-<pre><code> !XML 
- &lt;dependency&gt;
-   &lt;groupId&gt;commons-io&lt;/groupId&gt;
-   &lt;artifactId&gt;commons-io&lt;/artifactId&gt;
-   &lt;version&gt;20030203.000550&lt;/version&gt;
-   &lt;scope&gt;test&lt;/scope&gt;
- &lt;/dependency&gt;
-</code></pre>
+<div class="highlight"><pre><span></span><span class="w"> </span><span class="nt">&lt;dependency&gt;</span>
+<span class="w">   </span><span class="nt">&lt;groupId&gt;</span>commons-io<span class="nt">&lt;/groupId&gt;</span>
+<span class="w">   </span><span class="nt">&lt;artifactId&gt;</span>commons-io<span class="nt">&lt;/artifactId&gt;</span>
+<span class="w">   </span><span class="nt">&lt;version&gt;</span>20030203.000550<span class="nt">&lt;/version&gt;</span>
+<span class="w">   </span><span class="nt">&lt;scope&gt;</span>test<span class="nt">&lt;/scope&gt;</span>
+<span class="w"> </span><span class="nt">&lt;/dependency&gt;</span>
+</pre></div>
+
 <p>Both?</p>
-<pre><code> !XML 
-  &lt;dependency&gt;
-    &lt;groupId&gt;org.eclipse.jetty&lt;/groupId&gt;
-    &lt;artifactId&gt;jetty-security&lt;/artifactId&gt;
-    &lt;version&gt;8.1.7.v20120910&lt;/version&gt;
-    &lt;scope&gt;test&lt;/scope&gt;
-  &lt;/dependency&gt;
-</code></pre></section>
+<div class="highlight"><pre><span></span><span class="w">  </span><span class="nt">&lt;dependency&gt;</span>
+<span class="w">    </span><span class="nt">&lt;groupId&gt;</span>org.eclipse.jetty<span class="nt">&lt;/groupId&gt;</span>
+<span class="w">    </span><span class="nt">&lt;artifactId&gt;</span>jetty-security<span class="nt">&lt;/artifactId&gt;</span>
+<span class="w">    </span><span class="nt">&lt;version&gt;</span>8.1.7.v20120910<span class="nt">&lt;/version&gt;</span>
+<span class="w">    </span><span class="nt">&lt;scope&gt;</span>test<span class="nt">&lt;/scope&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/dependency&gt;</span>
+</pre></div>
+</section>
             
           </div>
           <div class="presenter_notes">
@@ -3411,7 +3411,7 @@ Is:   23525
       
       <!-- slide source: LLMP.md -->
       <div class="slide-wrapper">
-        <div class="slide has_footer slide-56">
+        <div class="slide has_code has_footer slide-56">
           <div class="inner">
             
             <header><h1>Do not use version properties</h1></header>
@@ -3419,16 +3419,18 @@ Is:   23525
             
             <section><h2>Naming is hard</h2>
 <p>Do not introduce a new, private, unvalidated property naming system</p>
-<pre><code> &lt;properties&gt;
-   &lt;aws.sdk.version&gt;1.12.287&lt;/aws.sdk.version&gt;
- &lt;/properties&gt;
+<div class="highlight"><pre><span></span><span class="w"> </span><span class="nt">&lt;properties&gt;</span>
+<span class="w">   </span><span class="nt">&lt;aws.sdk.version&gt;</span>1.12.287<span class="nt">&lt;/aws.sdk.version&gt;</span>
+<span class="w"> </span><span class="nt">&lt;/properties&gt;</span>
 
- &lt;dependency&gt;
-    &lt;groupId&gt;com.amazonaws&lt;/groupId&gt;
-    &lt;artifactId&gt;aws-java-sdk-dynamodb&lt;/artifactId&gt;
-    &lt;version&gt;${aws.sdk.version}&lt;/version&gt;
- &lt;/dependency&gt;
-</code></pre></section>
+!xml
+<span class="w"> </span><span class="nt">&lt;dependency&gt;</span>
+<span class="w">    </span><span class="nt">&lt;groupId&gt;</span>com.amazonaws<span class="nt">&lt;/groupId&gt;</span>
+<span class="w">    </span><span class="nt">&lt;artifactId&gt;</span>aws-java-sdk-dynamodb<span class="nt">&lt;/artifactId&gt;</span>
+<span class="w">    </span><span class="nt">&lt;version&gt;</span>${aws.sdk.version}<span class="nt">&lt;/version&gt;</span>
+<span class="w"> </span><span class="nt">&lt;/dependency&gt;</span>
+</pre></div>
+</section>
             
           </div>
           <div class="presenter_notes">
