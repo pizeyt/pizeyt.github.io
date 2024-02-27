@@ -1,6 +1,6 @@
 # Long Lived <br>Maven Projects
 
-.footer: [default theme](LLMP_default.html) | [abyss theme](LLMP_abyss.html) | [void theme](LLMP_void.html) | [white theme](LLMP_white.html) | [github](https://github.com/ionelmc/python-darkslide)
+.footer: [default theme](LLMP_default.html) | [abyss theme](LLMP_abyss.html) | [void theme](LLMP_void.html) | [white theme](LLMP_white.html) |[slides](https://pizeyt.github.io/LLMP/LLMP_default.html) |[github](https://github.com/pizeyt/pizeyt.github.io/tree/master/LLMP)
 
 # Tim . Pizey . UK
 
@@ -164,19 +164,6 @@ Whatever
 ## Maven is the longest lived Maven project
 
 
-----
-# Current Project
-
-
----- 
-# Pom Lines
-
-    find * -name pom.xml |xargs wc -l
-
-    Was : 40675
-    Is:   23525 
-
-
 
 ----
 # Blogger
@@ -193,30 +180,6 @@ N5 Versioning
 
 I am a blogger
 Blogs are good.  
-
-----
-# ∀
-
-----
-# For all
-
----- 
-# Git Tombstones
-
----- 
-# Git Tombstones
-
-- Nothing is lost in git, delete with confidence
-- Out of sight out of mind
-
----- 
-# rememberance.md
-
-| File                |    Date    | Reason                                   |
-|---------------------|:----------:|:-----------------------------------------|
-| maven-tomcat-plugin | 2013-11-11 | Who knows, the team just walked away     |
-| tpp-module          | 2024-02-22 | Finished polishing, flushing now         |
-| my-perl-script.pl   | 2019-03-23 | Moving on up                             |
 
 ----
 # GhatGPT
@@ -263,11 +226,63 @@ In summary, using Maven over the long term can lead to greater stability, effici
 
 
 ----
+# Long Lived Projects 
+
+----
+# ∀
+
+----
+# For all
+
+---- 
+# Git Tombstones
+
+---- 
+# Git Tombstones
+
+- Nothing is lost in git, delete with confidence
+- Out of sight out of mind
+
+---- 
+# rememberance.md
+
+| File                |    Date    | Reason                                   |
+|---------------------|:----------:|:-----------------------------------------|
+| maven-tomcat-plugin | 2013-11-11 | Who knows, the team just walked away     |
+| tpp-module          | 2024-02-22 | Finished polishing, flushing now         |
+| my-perl-script.pl   | 2019-03-23 | Moving on up                             |
+
+
+----
+# DRY
+## Do NOT Repeat Yourself
+
+----
+# Mono-Repo
+## #monolithsGood
+
+
+
+----
+# Current Project
+
+
+---- 
+# Pom Lines
+
+    find * -name pom.xml |xargs wc -l
+
+    Was : 40675
+    Is:   23525 
+
+----
 # Imports
 
 ![Imports](imports-Screenshot_2024-02-02_100120.png)
 
-----
+
+
+
 # Progress
 ----
 # Artefacts
@@ -310,39 +325,6 @@ In summary, using Maven over the long term can lead to greater stability, effici
 !["Profiles"](Profiles.png)
 
 
-----
-# DRY
-----
-# Do NOT Repeat Yourself
-
-
-----
-# Mono-Repo
-----
-# #monolithsGood
-
-
-----
-
-    !python --linenos=no
-    def log(self, message, level='notice'):
-        if self.logger and not callable(self.logger):
-            raise ValueError(u"Invalid logger set, must be a callable")
-
-        if self.verbose and self.logger:
-            self.logger(message, level)    !python
-    def log(self, message, level='notice'):
-        if self.logger and not callable(self.logger):
-            raise ValueError(u"Invalid logger set, must be a callable")
-
-        if self.verbose and self.logger:
-            self.logger(message, level)
-
-
-----
-    !java
-    public classMyClass { 
-    }
 
 ----
     !XML
@@ -483,9 +465,9 @@ For those without Groups:
 # Slides
 
 
-.qr: https://github.com/ionelmc/python-darkslide
+.qr: https://pizeyt.github.io/LLMP/LLMP_default.html
 
-<center>https://github.com/ionelmc/python-darkslide</center>
+<center>https://pizeyt.github.io/LLMP/LLMP_default.html</center>
 
 
 ----
