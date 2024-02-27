@@ -530,7 +530,7 @@ Both?
 
 ![With Shyju](J-Ox.jpg "J-Ox")
 
-## Thank you to Humand (Jo, Becky, Matheus) for [J-Ox 2024-02-27](https://www.meetup.com/j-o-x-java-oxford-meetup/events/298949769/) 
+Thank you to Humand (Jo, Becky, Matheus) for [J-Ox 2024-02-27](https://www.meetup.com/j-o-x-java-oxford-meetup/events/298949769/) 
 
 
 
