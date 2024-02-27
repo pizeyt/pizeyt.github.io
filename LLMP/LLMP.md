@@ -303,7 +303,7 @@ In the process we have achieved the following:
     Is:   23525 
 
 ----
-# Automated Progress Reporting 
+# Automated Reporting 
 
 ----
 # Artefacts
