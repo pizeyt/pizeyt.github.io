@@ -429,10 +429,9 @@ Inheritance of SCM and Profiles tags is more tricky:
 
 ----
 # Versioning
-### Other Options: 
+## Possible Options 
  
-- Date.Build 
-
+Date.Build 
 
      !XML 
      <dependency>
@@ -442,11 +441,9 @@ Inheritance of SCM and Profiles tags is more tricky:
        <scope>test</scope>
      </dependency>
 
-- Both?
-
+Both?
 
      !XML 
-
       <dependency>
         <groupId>org.eclipse.jetty</groupId>
         <artifactId>jetty-security</artifactId>
