@@ -1,0 +1,348 @@
+[INFO] ---------< com.elsevier.smd.api-registry:api-registry-parent >----------
+[INFO] -------------< com.elsevier.smd.api-registry:api-registry >-------------
+[INFO] ---------< com.elsevier.smd.api-registry:api-registry-jersey >----------
+[INFO] ---------< com.elsevier.smd.api-registry:api-registry-spring >----------
+[INFO] ------< com.elsevier.smd.audit.logging:smd-audit-logging-parent >-------
+[INFO] ----------< com.elsevier.smd.audit.logging:audit-logger-dao >-----------
+[INFO] --------< com.elsevier.smd.audit.logging:audit-logger-stepdefs >--------
+[INFO] -----< com.elsevier.smd.audit.logging:audit-logger-servlet-filter >-----
+[INFO] |  |  +- (com.elsevier.smd.format.support:smd-format-support:jar:2.180.1.0.7:test - omitted for conflict with 2.180.1.0.9)
+[INFO] -----< com.elsevier.smd.authentication:smd-authentication-parent >------
+[INFO] -------< com.elsevier.smd.authentication:authentication-service >-------
+[INFO] -----< com.elsevier.smd.authentication:ucs-authentication-service >-----
+[INFO] -------------------< com.elsevier.smd.base:smd-base >-------------------
+[INFO] -------------------< com.elsevier:smd-common-parent >-------------------
+[INFO] ------------------< com.elsevier:smd-java-extension >-------------------
+[INFO] ----------------< com.elsevier:smd-common-junit-parent >----------------
+[INFO] -------------< com.elsevier:smd-common-junit-test-common >--------------
+[INFO] --------------< com.elsevier:smd-common-dynamic-logging >---------------
+[INFO] ------------------< com.elsevier:pooled-rest-client >-------------------
+[INFO] ------------------< com.elsevier:api-client-library >-------------------
+[INFO] --< com.elsevier.smd.format.support:smd-content-profile-format-support-parent >--
+[INFO] --< com.elsevier.smd.format.support:smd-content-profile-format-support >--
+[INFO] |  +- (com.elsevier.smd.placeholder.stepdef.support:placeholder-stepdef-support:jar:2.0.2:compile - omitted for conflict with 2.320.2.0.10)
+[INFO] -----< com.elsevier.smd.format.support:smd-format-support-parent >------
+[INFO] ---------< com.elsevier.smd.format.support:smd-format-support >---------
+[INFO] ------< com.elsevier.smd.http.stepdefs:smd-http-stepdefs-parent >-------
+[INFO] ----------< com.elsevier.smd.http.stepdefs:smd-http-stepdefs >----------
+[INFO] ---------< com.elsevier.smd.jmxsupport:smd-jmxsupport-parent >----------
+[INFO] -------------< com.elsevier.smd.jmxsupport:smd-jmxnaming >--------------
+[INFO] ---< com.elsevier.smd.format.support:smd-json-format-support-parent >---
+[INFO] ------< com.elsevier.smd.format.support:smd-json-format-support >-------
+[INFO] --< com.elsevier.smd.format.support:smd-jsonld-format-support-parent >--
+[INFO] -----< com.elsevier.smd.format.support:smd-jsonld-format-support >------
+[INFO] ---------------< com.elsevier:smd-local-dynamodb-parent >---------------
+[INFO] ------------------< com.elsevier:smd-local-dynamodb >-------------------
+[INFO] ------------< com.elsevier:smd-local-elasticsearch-parent >-------------
+[INFO] ----------------< com.elsevier:smd-local-elasticsearch >----------------
+[INFO] ---------------< com.elsevier:smd-local-mongodb-parent >----------------
+[INFO] -------------------< com.elsevier:smd-local-mongodb >-------------------
+[INFO] -----------------< com.elsevier:smd-local-sftp-parent >-----------------
+[INFO] --------------------< com.elsevier:smd-local-sftp >---------------------
+[INFO] --< com.elsevier.smd.microservicesexceptions:microservicesexceptions-parent >--
+[INFO] --< com.elsevier.smd.microservicesexceptions:microservicesexceptions-exception-builder >--
+[INFO] -------< com.elsevier.smd.mongodb-client:mongodb-client-parent >--------
+[INFO] -----------< com.elsevier.smd.mongodb-client:mongodb-client >-----------
+[INFO] --< com.elsevier.smd.placeholder.stepdef.support:placeholder-stepdef-support-parent >--
+[INFO] --< com.elsevier.smd.placeholder.stepdef.support:placeholder-stepdef-support >--
+[INFO] --< com.elsevier.smd.format.support:smd-separated-value-format-support-parent >--
+[INFO] --< com.elsevier.smd.format.support:smd-separated-value-format-support >--
+[INFO] --------< com.elsevier.smd.timemachine:smd-timemachine-parent >---------
+[INFO] ------------< com.elsevier.smd.timemachine:smd-timemachine >------------
+[INFO] ---------< com.elsevier.smd.timemachine:smd-timemachine-steps >---------
+[INFO] -------------------< com.elsevier.vtw.apps:vtw-apps >-------------------
+[INFO] -------------< com.elsevier.vtw.apps:vtw-web-test-common >--------------
+[INFO] -------------< com.elsevier.vtw.apps:vtw-workflow-common >--------------
+[INFO] -----------------< com.elsevier.vtw.apps:vtw-workflow >-----------------
+[INFO] |  +- (com.elsevier.vtw.core:vtw-rest-client:jar:1.200.17.0.22:compile - omitted for conflict with 1.200.17.0.30)
+[INFO] |  +- (com.elsevier.vtw.core:vtw-properties:jar:1.200.17.0.22:compile - omitted for conflict with 1.200.17.0.30)
+[INFO] |  +- (com.elsevier.vtw.core:vtw-aws-common:jar:1.200.17.0.22:compile - omitted for conflict with 1.200.17.0.30)
+[INFO] ---------------< com.elsevier.vtw.apps:vtw-workflow-web >---------------
+[INFO] |  |  +- (com.elsevier.vtw.core:vtw-rest-client:jar:1.200.17.0.22:compile - omitted for conflict with 1.200.17.0.30)
+[INFO] |  |  +- (com.elsevier.vtw.core:vtw-properties:jar:1.200.17.0.22:compile - omitted for conflict with 1.200.17.0.30)
+[INFO] |  |  +- (com.elsevier.vtw.core:vtw-aws-common:jar:1.200.17.0.22:compile - omitted for conflict with 1.200.17.0.30)
+[INFO] -------< com.elsevier.vtw.apps:vtw-events-router-state-checker >--------
+[INFO] |  |  +- com.elsevier:smd-common-dynamic-logging:jar:2.150.5.0.18:compile (version managed from 5.0.5)
+[INFO] |  |  +- com.elsevier.smd.timemachine:smd-timemachine:jar:2.340.4.0.15:compile (version managed from 4.0.8)
+[INFO] |  |  +- com.elsevier.smd.microservicesexceptions:microservicesexceptions-exception-builder:jar:2.300.3.0.9:compile (version managed from 2.300.3.0.7)
+[INFO] -----------< com.elsevier.vtw.apps:vtw-events-router-rules >------------
+[INFO] |  +- (com.elsevier.vtw.core:vtw-rest-client:jar:1.200.17.0.22:compile - omitted for conflict with 1.200.17.0.30)
+[INFO] |  +- (com.elsevier.vtw.core:vtw-aws-common:jar:1.200.17.0.22:compile - omitted for conflict with 1.200.17.0.30)
+[INFO] |  +- (com.elsevier.vtw.core:vtw-framework-util:jar:1.200.17.0.22:compile - omitted for conflict with 1.200.17.0.30)
+[INFO] -------------< com.elsevier.vtw.apps:vtw-router-processor >-------------
+[INFO] |  +- (com.elsevier.vtw.core:vtw-framework-util:jar:1.200.17.0.22:compile - omitted for conflict with 1.200.17.0.30)
+[INFO] |  +- (com.elsevier.vtw.core:vtw-aws-common:jar:1.200.17.0.22:compile - omitted for conflict with 1.200.17.0.30)
+[INFO] |  |  +- (com.elsevier.vtw.core:vtw-aws-common:jar:1.200.17.0.22:compile - omitted for conflict with 1.200.17.0.30)
+[INFO] |  |  +- (com.elsevier.vtw.core:vtw-rest-client:jar:1.200.17.0.22:compile - omitted for conflict with 1.200.17.0.30)
+[INFO] |  |  +- (com.elsevier.vtw.core:vtw-properties:jar:1.200.17.0.22:compile - omitted for conflict with 1.200.17.0.30)
+[INFO] |  +- (com.elsevier.vtw.core:vtw-aws-common:jar:1.200.17.0.22:compile - omitted for conflict with 1.200.17.0.30)
+[INFO] |  |  +- (com.elsevier.vtw.core:vtw-aws-common:jar:1.200.17.0.22:compile - omitted for conflict with 1.200.17.0.30)
+[INFO] |  |  |  +- (com.elsevier.vtw.core:vtw-rest-client:jar:1.200.17.0.22:compile - omitted for conflict with 1.200.17.0.30)
+[INFO] |  |  |  +- (com.elsevier.vtw.core:vtw-properties:jar:1.200.17.0.22:compile - omitted for conflict with 1.200.17.0.30)
+[INFO] |  |  |  +- (com.elsevier.vtw.core:vtw-aws-common:jar:1.200.17.0.22:compile - omitted for conflict with 1.200.17.0.30)
+[INFO] |  |  |  |  +- (com.elsevier.vtw.core:vtw-framework-util:jar:1.200.17.0.22:compile - omitted for conflict with 1.200.17.0.30)
+[INFO] |  +- (com.elsevier.vtw.core:vtw-properties:jar:1.200.17.0.22:compile - omitted for conflict with 1.200.17.0.30)
+[INFO] |  +- (com.elsevier.vtw.core:vtw-rest-client:jar:1.200.17.0.22:compile - omitted for conflict with 1.200.17.0.30)
+[INFO] --------------< com.elsevier.vtw.apps:vtw-service-queue >---------------
+[INFO] ---< com.elsevier.vtw.business.testing:vtw-business-testing-parent >----
+[INFO] -----------< com.elsevier.vtw.business.testing:aws-stepdefs >-----------
+[INFO] -----< com.elsevier.vtw.business.testing:business-testing-common >------
+[INFO] ----------< com.elsevier.vtw.cel.service:cel-service-parent >-----------
+[INFO] --------------< com.elsevier.vtw.cel.service:cel-service >--------------
+[INFO] -------------< com.elsevier.vtw.copyright:vtw-cgs-parent >--------------
+[INFO] -------------< com.elsevier.vtw.copyright:vtw-cgs-service >-------------
+[INFO] |  |  +- com.elsevier.vtw.core:vtw-test-common:jar:1.200.17.0.30:test (version managed from 1.200.17.0.30; scope managed from compile)
+[INFO] ---------------< com.elsevier.vtw.copyright:vtw-cgs-api >---------------
+[INFO] |  +- com.elsevier.vtw.core:vtw-test-common:jar:1.200.17.0.30:test (version managed from 1.200.17.0.30; scope managed from compile)
+[INFO] |  +- (com.elsevier.vtw.core:vtw-framework-util:jar:1.200.17.0.22:test - omitted for conflict with 1.200.17.0.30)
+[INFO] ---------------< com.elsevier.vtw.copyright:vtw-cgs-web >---------------
+[INFO] |  |  +- (com.elsevier.vtw.core:vtw-framework-util:jar:1.200.17.0.30:compile - omitted for conflict with 1.200.17.0.22)
+[INFO] |  |  +- com.elsevier.smd.microservicesexceptions:microservicesexceptions-exception-builder:jar:2.300.3.0.9:compile (version managed from 2.300.3.0.7)
+[INFO] +- com.elsevier.vtw.core:vtw-test-common:jar:1.200.17.0.30:test (scope not updated to compile)
+[INFO] |  |  +- com.elsevier:smd-common-dynamic-logging:jar:2.150.5.0.18:compile (version managed from 5.0.5)
+[INFO] |  +- (com.elsevier.vtw.core:vtw-rest-client:jar:1.200.17.0.22:test - omitted for conflict with 1.200.17.0.30)
+[INFO] |  +- (com.elsevier.vtw.core:vtw-aws-common:jar:1.200.17.0.22:test - omitted for conflict with 1.200.17.0.30)
+[INFO] ------------< com.elsevier.vtw.core:vtw-common-web-parent >-------------
+[INFO] ----------------< com.elsevier.vtw.core:vtw-common-web >----------------
+[INFO] |  |  +- com.elsevier.smd.microservicesexceptions:microservicesexceptions-exception-builder:jar:2.300.3.0.9:test (version managed from 2.300.3.0.7)
+[INFO] +- com.elsevier.smd.api-registry:api-registry:jar:2.220.3.0.17:test (scope not updated to test)
+[INFO] ------< com.elsevier.vtw.configuration:vtw-configuration-parent >-------
+[INFO] -----------< com.elsevier.vtw.configuration:vtw-data-utils >------------
+[INFO] |  +- com.elsevier:smd-common-junit-test-common:jar:2.150.5.0.18:test (version managed from 2.150.5.0.15)
+[INFO] ---------< com.elsevier.vtw.configuration:vtw-property-config >---------
+[INFO] |  +- com.elsevier:smd-common-junit-test-common:jar:2.150.5.0.18:test (version managed from 2.150.5.0.15)
+[INFO] ----------------< com.elsevier.vtw.core:vtw-core-root >-----------------
+[INFO] -------< com.elsevier.vtw.core.import:vtw-dependency-management >-------
+[INFO] ------------< com.elsevier.vtw.core.import:vtw-core-import >------------
+[INFO] -------------< com.elsevier.vtw.core.check:vtw-core-check >-------------
+[INFO] -------------< com.elsevier.vtw.core.check:vtw-core-base >--------------
+[INFO] -------< com.elsevier.vtw.core.check:vtw-core-check-deduplicate >-------
+[INFO] --------------< com.elsevier.vtw.core:vtw-service-parent >--------------
+[INFO] ----------------< com.elsevier.vtw.core:vtw-web-parent >----------------
+[INFO] -------------< com.elsevier.vtw.core:vtw-rest-api-parent >--------------
+[INFO] -------------< com.elsevier.vtw.core:vtw-workflow-parent >--------------
+[INFO] ---------------< com.elsevier.vtw.core:vtw-test-common >----------------
+[INFO] --------------< com.elsevier.vtw.core:vtw-framework-util >--------------
+[INFO] ----------------< com.elsevier.vtw.core:vtw-properties >----------------
+[INFO]    +- com.elsevier:smd-common-junit-test-common:jar:2.150.5.0.18:test (version managed from 2.150.5.0.15)
+[INFO] -----------< com.elsevier.vtw.core:vtw-fixture-test-common >------------
+[INFO] ----------------< com.elsevier.vtw.core:vtw-aws-common >----------------
+[INFO] -----------------< com.elsevier.vtw.core:vtw-auth-dao >-----------------
+[INFO] ----------------< com.elsevier.vtw.core:vtw-ldap-auth >-----------------
+[INFO] ---------------< com.elsevier.vtw.core:vtw-rest-client >----------------
+[INFO] ---------------< com.elsevier.vtw.core:vtw-digest-auth >----------------
+[INFO] ------< com.elsevier.vtw.core:vtw-test-elasticsearch-properties >-------
+[INFO] -----------< com.elsevier.vtw.core:vtw-elasticsearch-common >-----------
+[INFO] -----------------< com.elsevier.vtw.core:vtw-resource >-----------------
+[INFO] -------------< com.elsevier.vtw.core:vtw-dataset-service >--------------
+[INFO] --------------< com.elsevier.vtw.core:vtw-identity-model >--------------
+[INFO] --------< com.elsevier.vtw.core:vtw-duplicate-identity-checker >--------
+[INFO] -------------< com.elsevier.vtw.core:vtw-events-generator >-------------
+[INFO] -----------------< com.elsevier.vtw.core:vtw-ftp-util >-----------------
+[INFO] ---------------< com.elsevier.vtw.core:vtw-core-parent >----------------
+[INFO] -------------< com.elsevier.vtw.delivery:vtw-delivery-app >-------------
+[INFO] -----------< com.elsevier.vtw.delivery:vtw-delivery-service >-----------
+[INFO] |  |  +- (com.elsevier.vtw.core:vtw-test-common:jar:17.0.10:compile - omitted for conflict with 1.200.17.0.30)
+[INFO] |  |  +- com.elsevier:smd-common-dynamic-logging:jar:2.150.5.0.18:compile (version managed from 5.0.5)
+[INFO] |  |  +- com.elsevier.smd.timemachine:smd-timemachine:jar:2.340.4.0.15:compile (version managed from 4.0.8)
+[INFO] |  |  +- com.elsevier.smd.microservicesexceptions:microservicesexceptions-exception-builder:jar:2.300.3.0.9:compile (version managed from 3.0.3)
+[INFO] |  +- (com.elsevier.vtw.core:vtw-framework-util:jar:1.200.17.0.30:compile - omitted for conflict with 17.0.10)
+[INFO] |  +- (com.elsevier.vtw.core:vtw-framework-util:jar:1.200.17.0.30:compile - omitted for conflict with 17.0.10)
+[INFO] -------------< com.elsevier.vtw.delivery:vtw-delivery-api >-------------
+[INFO] |  |  |  +- (com.elsevier.vtw.core:vtw-test-common:jar:17.0.10:compile - omitted for conflict with 1.200.17.0.30)
+[INFO] |  |  |  +- com.elsevier:smd-common-dynamic-logging:jar:2.150.5.0.18:compile (version managed from 5.0.5)
+[INFO] |  |  |  +- com.elsevier.smd.timemachine:smd-timemachine:jar:2.340.4.0.15:compile (version managed from 4.0.8)
+[INFO] |  |  |  +- com.elsevier.smd.microservicesexceptions:microservicesexceptions-exception-builder:jar:2.300.3.0.9:compile (version managed from 3.0.3)
+[INFO] |  |  +- (com.elsevier.vtw.core:vtw-framework-util:jar:1.200.17.0.30:compile - omitted for conflict with 17.0.10)
+[INFO] |  |  +- (com.elsevier.vtw.core:vtw-framework-util:jar:1.200.17.0.30:compile - omitted for conflict with 17.0.10)
+[INFO] ----< com.elsevier.vtw.event.framework:vtw-event-framework-parent >-----
+[INFO] ----< com.elsevier.vtw.event.framework:vtw-event-framework-common >-----
+[INFO] ------< com.elsevier.vtw.event.framework:vtw-event-framework-lib >------
+[INFO] ---------< com.elsevier.vtw.event.framework:vtw-event-service >---------
+[INFO] ------< com.elsevier.vtw.event.framework:vtw-event-framework-api >------
+[INFO] |  \- com.elsevier.smd.microservicesexceptions:microservicesexceptions-exception-builder:jar:2.300.3.0.9:compile (version managed from 3.0.3)
+[INFO] |  |  +- (com.elsevier.smd.placeholder.stepdef.support:placeholder-stepdef-support:jar:2.320.2.0.8:test - omitted for conflict with 2.320.2.0.10)
+[INFO] |  |  +- (com.elsevier.smd.format.support:smd-format-support:jar:2.180.1.0.7:test - omitted for conflict with 2.180.1.0.9)
+[INFO] |  +- com.elsevier:smd-common-junit-test-common:jar:2.150.5.0.18:compile (version managed from 5.0.5)
+[INFO] |  +- (com.elsevier:smd-java-extension:jar:5.0.5:compile - omitted for conflict with 2.150.5.0.17)
+[INFO] ----------< com.elsevier.events.common:events-common-parent >-----------
+[INFO] ----------< com.elsevier.events.common:events-router-common >-----------
+[INFO] |  +- com.elsevier:smd-common-junit-test-common:jar:2.150.5.0.18:test (version managed from 2.150.5.0.15)
+[INFO] -------------< com.elsevier.vtw.apps:vtw-events-processor >-------------
+[INFO] |  |  +- (com.elsevier.vtw.core:vtw-framework-util:jar:1.200.17.0.30:compile - omitted for conflict with 17.0.10)
+[INFO] |  |  +- (com.elsevier.vtw.core:vtw-properties:jar:17.0.10:compile - omitted for conflict with 1.200.17.0.30)
+[INFO] |  +- (com.elsevier.vtw.core:vtw-aws-common:jar:17.0.10:compile - omitted for conflict with 1.200.17.0.30)
+[INFO] |  +- (com.elsevier.vtw.core:vtw-properties:jar:17.0.10:compile - omitted for conflict with 1.200.17.0.30)
+[INFO] |  +- (com.elsevier.vtw.core:vtw-dataset-service:jar:17.0.10:compile - omitted for conflict with 1.200.17.0.30)
+[INFO] |  |  \- com.elsevier.smd.timemachine:smd-timemachine:jar:2.340.4.0.15:compile (version managed from 4.0.8)
+[INFO] |  |  +- (com.elsevier.vtw.core:vtw-test-common:jar:17.0.10:compile - omitted for conflict with 1.200.17.0.30)
+[INFO] |  |  +- com.elsevier:smd-common-dynamic-logging:jar:2.150.5.0.18:compile (version managed from 5.0.5)
+[INFO] |  |  +- com.elsevier.smd.microservicesexceptions:microservicesexceptions-exception-builder:jar:2.300.3.0.9:compile (version managed from 3.0.3)
+[INFO] |  |  |  +- (com.elsevier.vtw.core:vtw-framework-util:jar:1.200.17.0.30:compile - omitted for conflict with 17.0.10)
+[INFO] |  +- (com.elsevier.vtw.core:vtw-framework-util:jar:17.0.9:compile - omitted for conflict with 17.0.10)
+[INFO] |  +- com.elsevier:smd-common-junit-test-common:jar:2.150.5.0.18:test (version managed from 2.150.5.0.15)
+[INFO] ----------< com.elsevier.events.router:events-router-parent >-----------
+[INFO] --------------< com.elsevier.events.router:events-router >--------------
+[INFO] |  |  +- com.elsevier:smd-common-dynamic-logging:jar:2.150.5.0.18:compile (version managed from 5.0.5)
+[INFO] |  |  +- com.elsevier.smd.microservicesexceptions:microservicesexceptions-exception-builder:jar:2.300.3.0.9:compile (version managed from 2.300.3.0.7)
+[INFO] |  |  +- (com.elsevier.vtw.core:vtw-framework-util:jar:1.200.17.0.30:compile - omitted for conflict with 1.200.17.0.22)
+[INFO] |  +- (com.elsevier.vtw.core:vtw-framework-util:jar:17.0.9:test - omitted for conflict with 1.200.17.0.22)
+[INFO] |  +- com.elsevier.vtw.core:vtw-rest-client:jar:17.0.9:runtime (scope not updated to runtime)
+[INFO] |  |  +- (com.elsevier.vtw.core:vtw-properties:jar:17.0.9:runtime - omitted for conflict with 1.200.17.0.30)
+[INFO] |  |  +- (com.elsevier.vtw.core:vtw-framework-util:jar:17.0.9:runtime - omitted for conflict with 1.200.17.0.22)
+[INFO] |  +- (com.elsevier.vtw.core:vtw-aws-common:jar:17.0.9:test - omitted for conflict with 1.200.17.0.30)
+[INFO] |  +- (com.elsevier.vtw.core:vtw-framework-util:jar:1.200.17.0.30:test - omitted for conflict with 1.200.17.0.22)
+[INFO] |  |  +- (com.elsevier.vtw.core:vtw-rest-client:jar:1.200.17.0.22:runtime - omitted for conflict with 17.0.9)
+[INFO] |  |  +- (com.elsevier.vtw.core:vtw-aws-common:jar:1.200.17.0.22:runtime - omitted for conflict with 1.200.17.0.30)
+[INFO] |  +- (com.elsevier.vtw.core:vtw-rest-client:jar:1.200.17.0.22:runtime - omitted for conflict with 17.0.9)
+[INFO] |  +- (com.elsevier.vtw.core:vtw-aws-common:jar:1.200.17.0.22:runtime - omitted for conflict with 1.200.17.0.30)
+[INFO] |  +- com.elsevier:smd-common-junit-test-common:jar:2.150.5.0.18:test (version managed from 2.150.5.0.15)
+[INFO] -----------------< com.elsevier.events.router:cel-api >-----------------
+[INFO] |  |  +- com.elsevier:smd-common-dynamic-logging:jar:2.150.5.0.18:compile (version managed from 5.0.5)
+[INFO] |  |  +- com.elsevier.smd.microservicesexceptions:microservicesexceptions-exception-builder:jar:2.300.3.0.9:compile (version managed from 2.300.3.0.7)
+[INFO] |  |  +- (com.elsevier.vtw.core:vtw-framework-util:jar:1.200.17.0.30:compile - omitted for conflict with 1.200.17.0.22)
+[INFO] |  |  +- (com.elsevier.vtw.core:vtw-properties:jar:17.0.9:test - omitted for conflict with 1.200.17.0.30)
+[INFO] |  +- (com.elsevier.vtw.core:vtw-aws-common:jar:17.0.9:test - omitted for conflict with 1.200.17.0.30)
+[INFO] ------------------< com.elsevier.gis:vtw-gis-parent >-------------------
+[INFO] ------------------< com.elsevier.gis:vtw-gis-service >------------------
+[INFO] |  +- com.elsevier:smd-common-junit-test-common:jar:2.150.5.0.18:test (version managed from 5.0.5)
+[INFO] --------------------< com.elsevier.gis:vtw-gis-api >--------------------
+[INFO] --------------< com.elsevier.vtw.inner:inner-vtw-parent >---------------
+[INFO] --------------< com.elsevier.vtw.inner:inner-vtw-common >---------------
+[INFO] ---------------< com.elsevier.vtw.inner:inner-vtw-model >---------------
+[INFO] |  +- com.elsevier.vtw.core:vtw-test-common:jar:1.200.17.0.30:test (version managed from 1.200.17.0.30; scope managed from compile)
+[INFO] ---------------< com.elsevier.vtw.inner:inner-vtw-ewii >----------------
+[INFO] |  +- com.elsevier.vtw.core:vtw-test-common:jar:1.200.17.0.30:test (version managed from 1.200.17.0.30; scope managed from compile)
+[INFO] -------------< com.elsevier.vtw.inner:ucs-common-service >--------------
+[INFO] |  +- com.elsevier.vtw.core:vtw-test-common:jar:1.200.17.0.30:test (version managed from 1.200.17.0.30; scope managed from compile)
+[INFO] |  +- com.elsevier:api-client-library:jar:2.150.5.0.18:compile (version managed from 5.0.5)
+[INFO] |  \- com.elsevier.smd.timemachine:smd-timemachine:jar:2.340.4.0.15:compile (version managed from 4.0.8)
+[INFO] --------------< com.elsevier.vtw.inner:inner-vtw-adaptor >--------------
+[INFO] |  +- com.elsevier.vtw.inner:inner-vtw-ewii:jar:1.280.13.0.25-SNAPSHOT:compile (version managed from 1.280.13.0.25-SNAPSHOT)
+[INFO] |  |  +- com.elsevier:api-client-library:jar:2.150.5.0.18:compile (version managed from 5.0.5)
+[INFO] |  |  \- com.elsevier.smd.timemachine:smd-timemachine:jar:2.340.4.0.15:compile (version managed from 4.0.8)
+[INFO] |  +- com.elsevier.vtw.core:vtw-test-common:jar:1.200.17.0.30:test (version managed from 1.200.17.0.30; scope managed from compile)
+[INFO] ------------< com.elsevier.vtw.inner:inner-vtw-etl-service >------------
+[INFO] |  +- com.elsevier.vtw.inner:inner-vtw-ewii:jar:1.280.13.0.25-SNAPSHOT:compile (version managed from 1.280.13.0.25-SNAPSHOT)
+[INFO] |  |  +- com.elsevier:api-client-library:jar:2.150.5.0.18:compile (version managed from 5.0.5)
+[INFO] --------------< com.elsevier.vtw.inner:inner-vtw-etl-api >--------------
+[INFO] |  +- com.elsevier.vtw.inner:ucs-common-service:jar:1.280.13.0.25-SNAPSHOT:compile (version managed from 1.280.13.0.25-SNAPSHOT)
+[INFO] |  |  +- com.elsevier.vtw.inner:inner-vtw-ewii:jar:1.280.13.0.25-SNAPSHOT:compile (version managed from 1.280.13.0.25-SNAPSHOT)
+[INFO] |  |  |  +- com.elsevier:api-client-library:jar:2.150.5.0.18:compile (version managed from 5.0.5)
+[INFO] |  +- com.elsevier.vtw.inner:inner-vtw-model:jar:1.280.13.0.25-SNAPSHOT:compile (version managed from 1.280.13.0.25-SNAPSHOT)
+[INFO] |  +- com.elsevier.vtw.inner:inner-vtw-common:jar:1.280.13.0.25-SNAPSHOT:compile (version managed from 1.280.13.0.25-SNAPSHOT)
+[INFO] |  |  +- com.elsevier.vtw.core:vtw-test-common:jar:1.200.17.0.30:test (version managed from 1.200.17.0.30; scope managed from compile)
+[INFO] --------< com.elsevier.vtw.inner:inner-vtw-integration-service >--------
+[INFO] |  +- com.elsevier.vtw.inner:inner-vtw-ewii:jar:1.280.13.0.25-SNAPSHOT:compile (version managed from 1.280.13.0.25-SNAPSHOT)
+[INFO] |  +- com.elsevier.vtw.core:vtw-test-common:jar:1.200.17.0.30:test (version managed from 1.200.17.0.30; scope managed from compile)
+[INFO] ----------< com.elsevier.vtw.inner:inner-vtw-integration-api >----------
+[INFO] |  +- com.elsevier.vtw.inner:ucs-common-service:jar:1.280.13.0.25-SNAPSHOT:compile (version managed from 1.280.13.0.25-SNAPSHOT)
+[INFO] |  |  +- com.elsevier.vtw.inner:inner-vtw-ewii:jar:1.280.13.0.25-SNAPSHOT:compile (version managed from 1.280.13.0.25-SNAPSHOT)
+[INFO] |  +- com.elsevier.vtw.inner:inner-vtw-common:jar:1.280.13.0.25-SNAPSHOT:compile (version managed from 1.280.13.0.25-SNAPSHOT)
+[INFO] |  |  +- com.elsevier.vtw.core:vtw-test-common:jar:1.200.17.0.30:test (version managed from 1.200.17.0.30; scope managed from compile)
+[INFO] -----------< com.elsevier.vtw.metadata:vtw-metadata-parent >------------
+[INFO] -----------< com.elsevier.vtw.metadata:vtw-metadata-common >------------
+[INFO] -------------< com.elsevier.vtw.metadata:vtw-metadata-dao >-------------
+[INFO] |  +- com.elsevier:smd-common-junit-test-common:jar:2.150.5.0.18:test (version managed from 2.150.5.0.15)
+[INFO] ----------< com.elsevier.vtw.metadata:vtw-validation-service >----------
+[INFO] ---------< com.elsevier.vtw.metadata:vtw-addonsearch-service >----------
+[INFO] +- com.elsevier.vtw.core:vtw-test-common:jar:1.200.17.0.30:test (scope not updated to compile)
+[INFO] -----------< com.elsevier.vtw.metadata:vtw-contributor-dao >------------
+[INFO] -----------< com.elsevier.vtw.metadata:vtw-metadata-service >-----------
+[INFO] |  +- com.elsevier:smd-common-junit-test-common:jar:2.150.5.0.18:test (version managed from 2.150.5.0.15)
+[INFO] ---------< com.elsevier.vtw.metadata:vtw-metadata-api-adapter >---------
+[INFO] -------------< com.elsevier.vtw.metadata:vtw-metadata-api >-------------
+[INFO] +- com.elsevier.vtw.core:vtw-test-common:jar:1.200.17.0.30:test (scope not updated to compile)
+[INFO] |  +- com.elsevier:smd-common-junit-test-common:jar:2.150.5.0.18:test (version managed from 2.150.5.0.15)
+[INFO] -----------< com.elsevier.vtw.metadata:vtw-contributor-api >------------
+[INFO] +- com.elsevier.vtw.core:vtw-test-common:jar:1.200.17.0.30:test (scope not updated to compile)
+[INFO] |  |  +- com.elsevier.smd.microservicesexceptions:microservicesexceptions-exception-builder:jar:2.300.3.0.9:compile (version managed from 2.300.3.0.7)
+[INFO] |  |  +- (com.elsevier.smd.placeholder.stepdef.support:placeholder-stepdef-support:jar:2.320.2.0.8:test - omitted for conflict with 2.320.2.0.10)
+[INFO] |  |  +- (com.elsevier.smd.format.support:smd-format-support:jar:2.180.1.0.7:test - omitted for conflict with 2.180.1.0.9)
+[INFO] |  +- com.elsevier:smd-local-mongodb:jar:2.260.5.0.8:test (version managed from 2.260.5.0.8; scope managed from compile)
+[INFO] |  |  +- com.elsevier:smd-common-junit-test-common:jar:2.150.5.0.18:test (version managed from 2.150.5.0.15)
+[INFO] --< com.elsevier.vtw.metadata:vtw-metadata-synthetic-data-generation >--
+[INFO] ---------< com.elsevier.vtw.event.framework.rules:sample-rule >---------
+[INFO] -------------< com.elsevier.vtw.oa:vtw-open-access-parent >-------------
+[INFO] ------------< com.elsevier.vtw.oa:vtw-open-access-service >-------------
+[INFO] |  +- (com.elsevier.vtw.core:vtw-framework-util:jar:17.0.9:compile - omitted for conflict with 1.200.17.0.30)
+[INFO] ------------< com.elsevier.vtw.oa:vtw-open-access-workflow >------------
+[INFO] |  |  +- (com.elsevier.vtw.core:vtw-framework-util:jar:17.0.9:compile - omitted for conflict with 1.200.17.0.30)
+[INFO] --------------< com.elsevier.vtw.oa:vtw-open-access-api >---------------
+[INFO] |  |  +- (com.elsevier.vtw.core:vtw-framework-util:jar:17.0.9:compile - omitted for conflict with 1.200.17.0.30)
+[INFO] |  |  +- com.elsevier.smd.microservicesexceptions:microservicesexceptions-exception-builder:jar:2.300.3.0.9:compile (version managed from 2.300.3.0.7)
+[INFO] --------------< com.elsevier.vtw.oa:vtw-open-access-web >---------------
+[INFO] |  |  +- (com.elsevier.vtw.core:vtw-framework-util:jar:17.0.9:compile - omitted for conflict with 1.200.17.0.30)
+[INFO] |  +- (com.elsevier.vtw.core:vtw-framework-util:jar:1.200.17.0.18:compile - omitted for conflict with 1.200.17.0.30)
+[INFO] |  |  +- (com.elsevier.smd.placeholder.stepdef.support:placeholder-stepdef-support:jar:2.320.2.0.8:test - omitted for conflict with 2.320.2.0.10)
+[INFO] |  |  +- (com.elsevier.smd.format.support:smd-format-support:jar:2.180.1.0.7:test - omitted for conflict with 2.180.1.0.9)
+[INFO] |  |  +- com.elsevier:smd-common-junit-test-common:jar:2.150.5.0.18:test (version managed from 2.150.5.0.15)
+[INFO] ----------< com.elsevier.vtw.oa:vtw-open-access-workflow-web >----------
+[INFO] |  |  |  +- (com.elsevier.vtw.core:vtw-framework-util:jar:17.0.9:compile - omitted for conflict with 1.200.17.0.30)
+[INFO] -------------< com.elsevier.vtw.patent:vtw-patents-parent >-------------
+[INFO] ------------< com.elsevier.vtw.patent:vtw-patents-service >-------------
+[INFO] |  +- com.elsevier.vtw.core:vtw-framework-util:jar:1.200.17.0.30:compile (version managed from 17.0.10)
+[INFO] ------------< com.elsevier.vtw.patent:vtw-patents-download >------------
+[INFO] |  |  +- com.elsevier.vtw.core:vtw-framework-util:jar:1.200.17.0.30:compile (version managed from 17.0.10)
+[INFO] -------------< com.elsevier.vtw.patent:vtw-patents-submit >-------------
+[INFO] |  |  +- com.elsevier.vtw.core:vtw-framework-util:jar:1.200.17.0.30:compile (version managed from 17.0.10)
+[INFO] -----------< com.elsevier.vtw.property:vtw-property-parent >------------
+[INFO] -------------< com.elsevier.vtw.property:vtw-property-dao >-------------
+[INFO] |  +- com.elsevier:smd-common-junit-test-common:jar:2.150.5.0.18:test (version managed from 2.150.5.0.15)
+[INFO] +- com.elsevier.smd.timemachine:smd-timemachine:jar:2.340.4.0.15:test (scope not updated to compile)
+[INFO] -----------< com.elsevier.vtw.property:vtw-property-service >-----------
+[INFO] |  +- com.elsevier:smd-common-junit-test-common:jar:2.150.5.0.18:test (version managed from 2.150.5.0.15)
+[INFO] -------------< com.elsevier.vtw.property:vtw-property-api >-------------
+[INFO] |  |  +- com.elsevier.smd.microservicesexceptions:microservicesexceptions-exception-builder:jar:2.300.3.0.9:compile (version managed from 2.300.3.0.7)
+[INFO] -------------------< com.elsevier.vtw.rp:vtw-rp-app >-------------------
+[INFO] ----------------< com.elsevier.vtw.apps:vtw-rp-service >----------------
+[INFO] |  |  +- (com.elsevier.vtw.core:vtw-framework-util:jar:1.200.17.0.22:compile - omitted for conflict with 1.200.17.0.30)
+[INFO] |  +- (com.elsevier.vtw.core:vtw-properties:jar:1.200.17.0.22:compile - omitted for conflict with 1.200.17.0.30)
+[INFO] ------------------< com.elsevier.vtw.apps:vtw-rp-api >------------------
+[INFO] |  |  |  +- (com.elsevier.vtw.core:vtw-framework-util:jar:1.200.17.0.22:compile - omitted for conflict with 1.200.17.0.30)
+[INFO] |  |  +- (com.elsevier.vtw.core:vtw-properties:jar:1.200.17.0.22:compile - omitted for conflict with 1.200.17.0.30)
+[INFO] |  |  +- com.elsevier.smd.microservicesexceptions:microservicesexceptions-exception-builder:jar:2.300.3.0.9:compile (version managed from 2.300.3.0.7)
+[INFO] ------------------< com.elsevier.vtw.apps:vtw-rp-web >------------------
+[INFO] |  |  |  +- (com.elsevier.vtw.core:vtw-framework-util:jar:1.200.17.0.22:compile - omitted for conflict with 1.200.17.0.30)
+[INFO] |  |  +- (com.elsevier.vtw.core:vtw-properties:jar:1.200.17.0.22:compile - omitted for conflict with 1.200.17.0.30)
+[INFO] |  |  +- com.elsevier.smd.microservicesexceptions:microservicesexceptions-exception-builder:jar:2.300.3.0.9:compile (version managed from 2.300.3.0.7)
+[INFO] --------------------< com.elsevier.vtw.sdk:vtw-sdk >--------------------
+[INFO] -----------------< com.elsevier.vtw.sdk:vtw-java-sdk >------------------
+[INFO] --------------< com.elsevier.sms:shared-messaging-parent >--------------
+[INFO] --------------< com.elsevier.sms:shared-messaging-common >--------------
+[INFO] ---------------< com.elsevier.sms:shared-messaging-api >----------------
+[INFO] |  \- com.elsevier.smd.microservicesexceptions:microservicesexceptions-exception-builder:jar:2.300.3.0.9:compile (version managed from 3.0.3)
+[INFO] |  +- com.elsevier:smd-common-junit-test-common:jar:2.150.5.0.18:compile (version managed from 2.150.5.0.15)
+[INFO] |  +- (com.elsevier:smd-java-extension:jar:2.150.5.0.17:test - omitted for conflict with 2.150.5.0.15)
+[INFO] |  |  +- (com.elsevier.smd.placeholder.stepdef.support:placeholder-stepdef-support:jar:2.320.2.0.8:test - omitted for conflict with 2.320.2.0.10)
+[INFO] |  |  +- (com.elsevier.smd.format.support:smd-format-support:jar:2.180.1.0.7:test - omitted for conflict with 2.180.1.0.9)
+[INFO] -------------< com.elsevier.sms:shared-messaging-service >--------------
+[INFO] ----------< com.elsevier.vtw.skip.mgmt:vtw-skip-mgmt-parent >-----------
+[INFO] ----------< com.elsevier.vtw.skip.mgmt:vtw-skip-mgmt-service >----------
+[INFO] ------------< com.elsevier.vtw.skip.mgmt:vtw-skip-mgmt-web >------------
+[INFO] ----------------< com.elsevier.vtw.testing:vtw-testing >----------------
+[INFO] ------------< com.elsevier.vtw.testing:vtw-api-test-common >------------
+[INFO] --------------< com.elsevier.vtw.web:vtw-web-aggregation >--------------
+[INFO] -----------------< com.elsevier.vtw.web:inner-vtw-web >-----------------
+[INFO] |  |  +- (com.elsevier.smd.placeholder.stepdef.support:placeholder-stepdef-support:jar:2.320.2.0.8:test - omitted for conflict with 2.320.2.0.10)
+[INFO] |  |  +- (com.elsevier.smd.format.support:smd-format-support:jar:2.180.1.0.7:test - omitted for conflict with 2.180.1.0.9)
+[INFO] |  +- com.elsevier:smd-common-junit-test-common:jar:2.150.5.0.18:test (version managed from 2.150.5.0.15)
+[INFO] ---------------< com.elsevier.vtw.web:vtw-metadata-web >----------------
+[INFO] |  +- com.elsevier.smd.timemachine:smd-timemachine:jar:2.340.4.0.15:compile (version managed from 4.0.8)
+[INFO] |  +- com.elsevier:smd-common-junit-test-common:jar:2.150.5.0.18:test (version managed from 2.150.5.0.15)
+[INFO] |  |  +- (com.elsevier.smd.placeholder.stepdef.support:placeholder-stepdef-support:jar:2.320.2.0.8:test - omitted for conflict with 2.320.2.0.10)
+[INFO] |  |  +- (com.elsevier.smd.format.support:smd-format-support:jar:2.180.1.0.7:test - omitted for conflict with 2.180.1.0.9)
+[INFO] ---------------< com.elsevier.vtw.web:vtw-property-web >----------------
+[INFO] |  |  +- com.elsevier.vtw.core:vtw-test-common:jar:1.200.17.0.30:test (version managed from 1.200.17.0.30; scope managed from compile)
+[INFO] |  +- com.elsevier.smd.timemachine:smd-timemachine:jar:2.340.4.0.15:compile (version managed from 4.0.8)
+[INFO] |  |  +- (com.elsevier.smd.mongodb-client:mongodb-client:jar:2.310.2.0.8:compile - omitted for conflict with 2.0.3)
+[INFO] |  |  +- (com.elsevier.smd.placeholder.stepdef.support:placeholder-stepdef-support:jar:2.320.2.0.8:test - omitted for conflict with 2.320.2.0.10)
+[INFO] |  |  +- (com.elsevier.smd.format.support:smd-format-support:jar:2.180.1.0.7:test - omitted for conflict with 2.180.1.0.9)
+[INFO] |  +- com.elsevier:smd-common-junit-test-common:jar:2.150.5.0.18:test (version managed from 2.150.5.0.15)
+[INFO] ---------------< com.elsevier.vtw.web:vtw-dashboard-web >---------------
+[INFO] |  +- com.elsevier.vtw.core:vtw-test-common:jar:1.200.17.0.30:test (version managed from 1.200.17.0.30; scope managed from compile)
+[INFO] |  |  +- (com.elsevier.smd.placeholder.stepdef.support:placeholder-stepdef-support:jar:2.320.2.0.8:test - omitted for conflict with 2.320.2.0.10)
+[INFO] |  |  +- (com.elsevier.smd.format.support:smd-format-support:jar:2.180.1.0.7:test - omitted for conflict with 2.180.1.0.9)
+[INFO] |  +- com.elsevier:smd-local-mongodb:jar:2.260.5.0.8:test (version managed from 2.260.5.0.8; scope managed from compile)
+[INFO] |  |  +- com.elsevier:smd-common-junit-test-common:jar:2.150.5.0.18:test (version managed from 2.150.5.0.15)
+[INFO] --------------< com.elsevier.vtw:vtw-architecture-parent >--------------
