@@ -542,4 +542,4 @@ Thank you to Humand (Jo, Becky, Matheus) for [J-Ox 2024-02-27](https://www.meetu
 
 ----
 #PPS
-![ThankYou20240227_233006.jpg](ThankYou from Humand)
+![Thank You from Humand](ThankYou20240227_233006.jpg
