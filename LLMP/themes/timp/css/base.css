@@ -30,6 +30,26 @@ p, body, header {
     width: 70px;
 }
 
+
+
+header {
+    text-align: center;
+    margin: auto;
+    width: 93%;
+//    border: 3px solid #73AD21;
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+    width: 100%;
+    //border: 3px solid #FFAD21;
+    padding: 10px;
+}
+
+
+
+
 p.hr {
     height: 0px;
     font-size: 0px !important;
