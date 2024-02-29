@@ -18,7 +18,6 @@ p, body, header {
    //border: 3px solid #FF0000;
  }
 #logo {
-    width:100%;
     //border: 3px solid #00FF00;
     top: 95px;
     right: 70px;
@@ -46,63 +45,6 @@ h1 {
     //border: 3px solid #FFAD21;
     padding: 10px;
 }
-
-
-
-
-h1 {
-font-family: "Droid Sans";
-font-size: 24px;
-font-style: normal;
-font-variant: normal;
-font-weight: 700;
-line-height: 26.4px;
-}
-h3 {
-font-family: "Droid Sans";
-font-size: 14px;
-font-style: normal;
-font-variant: normal;
-font-weight: 700;
-line-height: 15.4px;
-}
-p {
-font-family: "Droid Sans";
-font-size: 14px;
-font-style: normal;
-font-variant: normal;
-font-weight: 400;
-line-height: 20px;
-}
-blockquote {
- font-family: "Droid Sans";
- font-size: 21px;
- font-style: normal;
- font-variant: normal;
- font-weight: 400;
- line-height: 30px;
-}
-pre {
- font-family: "Droid Sans";
- font-size: 13px;
- font-style: normal;
- font-variant: normal;
- font-weight: 400;
- line-height: 18.5714px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
