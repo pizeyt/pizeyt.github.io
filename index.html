@@ -10044,10 +10044,18 @@ Run a bash script to install from a &lt;code&gt;libs&lt;/code&gt; directory into
 &lt;code&gt;mvn --no-transfer-progress install:install-file -Dpackaging=jar -DgeneratePom=true \
 -DgroupId=com.old -DartifactId=dark -Dversion=9.0.3  -Dfile=dark-9.0.3.jar&lt;/code&gt;</pre>
 </div>
-<div created="20250115163222470" modified="20250115163629186" tags="" title="Managing tests using Junit tags">
+<div created="20250115163222470" modified="20250115164304232" tags="" title="Managing tests using Junit tags">
 <pre>JUnit tests are great, and after a while using the JUnit hammer everything becomes a JUnit nail.
 
-Many tools integrate JUnit and makes assumptions about your use of Junit and so a handy way of overriding those assumptions was built in: &lt;tt&gt;@Ignore&lt;/tt&gt;
+!! Not a Test
+One can use Junit as a runner, the only other mechanism was  to add a &lt;tt&gt;main()&lt;/tt&gt; method.
+
+!! Not a Unit Test
+The standard distinction is between Unit Tests which are run requiring nothing off the machinethey are run on and are ''fast''.
+
+Many tools integrate JUnit and makes assumptions about your use of Junit and so a handy way of overriding those assumptions was built in: &lt;tt&gt;@Ignore&lt;/tt&gt;.
+
+
 
 
 
