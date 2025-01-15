@@ -10044,16 +10044,34 @@ Run a bash script to install from a &lt;code&gt;libs&lt;/code&gt; directory into
 &lt;code&gt;mvn --no-transfer-progress install:install-file -Dpackaging=jar -DgeneratePom=true \
 -DgroupId=com.old -DartifactId=dark -Dversion=9.0.3  -Dfile=dark-9.0.3.jar&lt;/code&gt;</pre>
 </div>
-<div created="20250115163222470" modified="20250115164304232" tags="" title="Managing tests using Junit tags">
+<div created="20250115163222470" modified="20250115184438180" tags="" title="Managing tests using Junit tags">
 <pre>JUnit tests are great, and after a while using the JUnit hammer everything becomes a JUnit nail.
+
+Many tools integrate JUnit and makes assumptions about your use of Junit. 
+Any file in a directory called &lt;tt&gt;test&lt;/tt&gt;, or a file name ending in &lt;tt&gt;Test&lt;/tt&gt;,  or with the class annotated with &lt;tt&gt;RunWith&lt;/tt&gt; and one or more methods annotated with &lt;tt&gt;Test&lt;/tt&gt; is assumed to be a test and will be run. 
+
+So a handy way of overriding those assumptions was built in: &lt;tt&gt;@Ignore&lt;/tt&gt;.
+
+This enables a test to look like a test, be in the correct place for a test but not actually to be run. 
+
 
 !! Not a Test
 One can use Junit as a runner, the only other mechanism was  to add a &lt;tt&gt;main()&lt;/tt&gt; method.
+Thsi can be useful for processing data, say from within your IDE. 
 
 !! Not a Unit Test
-The standard distinction is between Unit Tests which are run requiring nothing off the machinethey are run on and are ''fast''.
+Unit Tests are run requiring nothing off the machine they are run on and are ''fast''.
 
-Many tools integrate JUnit and makes assumptions about your use of Junit and so a handy way of overriding those assumptions was built in: &lt;tt&gt;@Ignore&lt;/tt&gt;.
+Many systems have Integration Tests which are expected in a directory called &lt;tt&gt;it&lt;/tt&gt;, may require other fixtures, not necessarily on the machine running the test, and are only run by the test runner rather than the developer. 
+
+You can also control the addition of other paths for test discovery by the test runner. 
+
+
+!! Fix required in Code
+A broken test, ie a test which fails, is a marvellous and valuable thing, but it cannot necessarily be fixed immediately. 
+We will need to schedule the fix, but we cannot have a failing test as our build relies upon tests succeeding. 
+One mechanism is to rename the c
+
 
 
 
