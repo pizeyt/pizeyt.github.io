@@ -225,6 +225,8 @@ Error message and password prompt
 
 <li>Load artefacts not built within this repository</li>
 
+<li>Managing tests using Junit tags</li>
+
 <li>My mother on Science Direct</li>
 
 <li>My mother on SCOPUS</li>
@@ -9656,9 +9658,8 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div created="20200717093946417" modified="20250117182058522" title="$:/DefaultTiddlers">
-<pre>Home
-</pre>
+<div created="20200717093946417" modified="20250115161500556" title="$:/DefaultTiddlers">
+<pre>Home</pre>
 </div>
 <div created="20200720222713509" modified="20200720222717172" title="$:/GitHub/Filename">
 <pre>index.html</pre>
@@ -9695,10 +9696,10 @@ Error message and password prompt
 <div created="20241217153833309" modified="20241217153835912" title="$:/state/image-picker/system--39172741">
 <pre>hide</pre>
 </div>
-<div created="20211018203040113" modified="20241217235601020" title="$:/state/sidebar">
+<div created="20211018203040113" modified="20250117181921868" title="$:/state/sidebar">
 <pre>yes</pre>
 </div>
-<div created="20200720222619029" modified="20250117182054288" title="$:/state/tab-1749438307">
+<div created="20200720222619029" modified="20241217235616552" title="$:/state/tab-1749438307">
 <pre>$:/core/ui/ControlPanel/Info</pre>
 </div>
 <div created="20200720222624805" modified="20220426095302005" title="$:/state/tab-2065006209">
@@ -9707,13 +9708,13 @@ Error message and password prompt
 <div created="20220426114632150" modified="20220426114632150" title="$:/state/tab/moresidebar-1850697562">
 <pre>$:/core/ui/MoreSideBar/System</pre>
 </div>
-<div created="20200717094020014" modified="20250117182041763" title="$:/state/tab/sidebar--595412856">
-<pre>$:/core/ui/SideBar/Open</pre>
+<div created="20200717094020014" modified="20250115161511407" title="$:/state/tab/sidebar--595412856">
+<pre>$:/core/ui/SideBar/Recent</pre>
 </div>
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20250117182011928" list="" modified="20250117182011928" title="$:/StoryList">
+<div created="20250117182236655" list="[[Managing tests using Junit tags]] Home" modified="20250117182236655" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -10042,6 +10043,43 @@ Run a bash script to install from a &lt;code&gt;libs&lt;/code&gt; directory into
 &lt;br&gt;
 &lt;code&gt;mvn --no-transfer-progress install:install-file -Dpackaging=jar -DgeneratePom=true \
 -DgroupId=com.old -DartifactId=dark -Dversion=9.0.3  -Dfile=dark-9.0.3.jar&lt;/code&gt;</pre>
+</div>
+<div created="20250115163222470" modified="20250117182238652" tags="" title="Managing tests using Junit tags">
+<pre>JUnit tests are great, and after a while using the JUnit hammer everything becomes a JUnit nail.
+
+Many tools integrate JUnit and makes assumptions about your use of Junit. 
+Any file in a directory called &lt;tt&gt;test&lt;/tt&gt;, or a file name ending in &lt;tt&gt;Test&lt;/tt&gt;,  
+or with the class annotated with &lt;tt&gt;RunWith&lt;/tt&gt;,
+ and one or more methods annotated with &lt;tt&gt;Test&lt;/tt&gt; is assumed to be a test and will be run. 
+
+So a handy way of overriding those assumptions was built in: &lt;tt&gt;@Ignore&lt;/tt&gt;.
+
+This enables a test to look like a test, be in the correct place for a test, but not actually to be run. 
+
+
+!! Not a Test
+One can use Junit as a runner, the only other mechanism was  to add a &lt;tt&gt;main()&lt;/tt&gt; method.
+This can be useful for processing data, say from within your IDE. 
+
+!! Not a Unit Test
+Unit Tests are run requiring nothing off the machine they are run on and are ''fast''.
+
+Many systems have Integration Tests which are expected in a directory called &lt;tt&gt;it&lt;/tt&gt;, may require other fixtures, not necessarily on the machine running the test, and are only run by the test runner rather than the developer. 
+
+You can also control the addition of other paths for test discovery by the test runner. 
+
+
+!! Fix required in Code
+A broken test, ie a test which fails, is a marvellous and valuable thing, but it cannot necessarily be fixed immediately. 
+We will need to schedule the fix, but we cannot have a failing test as our build relies upon tests succeeding. 
+One mechanism is to rename the c
+
+!! Fix Required in Test
+We can't work until it works, we live in the real world. Sometimes tests that are failing need to be committed. 
+
+
+
+</pre>
 </div>
 <div created="20220608115536104" modified="20220608115709114" tags="" title="My mother on Science Direct">
 <pre>My mother has 14 papers on Science Direct, something I am very proud of: 
